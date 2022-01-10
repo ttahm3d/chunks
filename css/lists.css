@@ -2,6 +2,14 @@
 	margin: 0;
 }
 
+.no-padding {
+	padding: 0;
+}
+
+.pad-left-1 {
+	padding-left: 1rem;
+}
+
 .style-none {
 	list-style: none;
 }
@@ -21,4 +29,14 @@
 
 .list-icon {
 	font-size: 1.5rem;
+}
+
+.list-item {
+	font-size: 1.2rem;
+	color: var(--font-400);
+}
+
+.list-item-2 {
+	font-size: 1.1rem;
+	color: var(--font-400);
 }
