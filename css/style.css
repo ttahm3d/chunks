@@ -1,37 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Noto+Sans:wght@400;700&display=swap");
 
+/* importing css from other files */
+
+@import url("./colors.css");
+@import url("./layout.css");
+@import url("./lists.css");
+@import url("./links.css");
+
+/* CSS Resets begin here */
+
 *,
 ::before,
 ::after {
 	box-sizing: border-box;
-}
-
-:root {
-	--primary: hsl(208, 100%, 55%);
-	--primary-light: hsl(208, 100%, 70%);
-	--primary-lighter: hsl(208, 100%, 85%);
-	--bg-700: hsl(0, 0, 95%);
-	--bg-600: hsl(0, 0, 90%);
-	--bg-500: hsl(0, 0, 90%);
-	--bg-400: hsl(0, 0, 85%);
-	--bg-200: hsl(0, 0, 80%);
-	--font-700: hsl(0, 0, 4%);
-	--font-600: hsl(0, 0, 12%);
-	--font-500: hsl(0, 0, 20%);
-	--font-400: hsl(0, 0, 28%);
-	--font-300: hsl(0, 0, 36%);
-	--red-700: hsl(0, 100%, 49%);
-	--red-500: hsl(0, 100%, 65%);
-	--red-300: hsl(0, 100%, 89%);
-	--green-700: hsl(108, 100%, 49%);
-	--green-500: hsl(108, 100%, 65%);
-	--green-300: hsl(108, 100%, 89%);
-	--yellow-700: hsl(56, 100%, 49%);
-	--yellow-500: hsl(56, 100%, 65%);
-	--yellow-300: hsl(56, 100%, 89%);
-	--blue-700: hsl(205, 100%, 49%);
-	--blue-500: hsl(205, 100%, 65%);
-	--blue-300: hsl(205, 100%, 89%);
 }
 
 body {
@@ -42,6 +23,7 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	line-height: 1.5;
 }
 
 button,
@@ -62,15 +44,28 @@ h6 {
 
 footer {
 	margin-top: auto;
+	border-top: 1px solid var(--border);
+	padding: 1rem 2rem;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: var(--primary-light);
+}
+
+/* Header styles */
 header {
-	padding: 0.5rem 1rem;
+	border-bottom: 1px solid var(--border);
 	position: sticky;
 	top: 0;
 }
 
 .navbar {
+	padding: 0 2rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
@@ -89,4 +84,20 @@ header {
 
 .navlist-item {
 	padding-right: 0.5rem;
+}
+
+/* styling for hero section */
+
+.container {
+	width: 90vw;
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+.hero {
+	padding: 2rem 0;
+}
+
+.hero h1 {
+	font-size: 3.6rem;
 }
