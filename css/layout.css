@@ -1,0 +1,70 @@
+/* utility classes */
+
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-reverse {
+	flex-direction: row-reverse;
+}
+
+.flex-column-reverse {
+	flex-direction: column-reverse;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.align-start {
+	align-items: flex-start;
+}
+
+.align-end {
+	align-items: flex-end;
+}
+
+.align-base {
+	align-items: baseline;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.flex-center {
+	align-items: center;
+	justify-content: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.justify-around {
+	justify-content: space-around;
+}
+
+.justify-evenly {
+	justify-content: space-evenly;
+}
+
+.wd-100 {
+	width: 100%;
+}
+
+.hg-100 {
+	height: 100%;
+}
+
+.vh-100 {
+	height: 100vh;
+}
+
+.p-justify {
+	text-align: justify;
+}
