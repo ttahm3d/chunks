@@ -1,0 +1,98 @@
+@import url("./colors.css");
+
+.heading-1 {
+	font-size: 2.2rem;
+}
+
+.heading-1 {
+	font-size: 2.2rem;
+}
+
+.heading-2 {
+	font-size: 1.8rem;
+}
+
+.heading-3 {
+	font-size: 1.4rem;
+}
+
+.heading-4 {
+	font-size: 1rem;
+}
+
+.heading-5 {
+	font-size: 0.9rem;
+}
+
+.heading-6 {
+	font-size: 0.8rem;
+}
+
+.p-large {
+	font-size: 1.2rem;
+}
+
+.p-normal {
+	font-size: 1rem;
+}
+
+.p-small {
+	font-size: 0.75rem;
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5,
+.heading-6,
+.p-large,
+.p-normal,
+.p-small strong {
+	font-weight: 700;
+	color: var(--font-700);
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5,
+.heading-6,
+.p-large,
+.p-normal,
+.p-small span {
+	color: var(--primary);
+}
+
+.head-lvl-1 {
+	color: var(--font-700);
+}
+
+.head-lvl-2 {
+	color: var(--font-600);
+}
+
+.head-lvl-3 {
+	color: var(--font-500);
+}
+
+.head-lvl-4 {
+	color: var(--font-400);
+}
+
+.head-lvl-5 {
+	color: var(--font-300);
+}
+
+.p-lvl-1 {
+	color: var(--font-700);
+}
+
+.p-lvl-2 {
+	color: var(--font-500);
+}
+
+.p-lvl-3 {
+	color: var(--font-300);
+}
