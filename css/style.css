@@ -6,6 +6,7 @@
 @import url("./layout.css");
 @import url("./lists.css");
 @import url("./links.css");
+@import url("./text.css");
 
 /* CSS Resets begin here */
 
@@ -17,7 +18,7 @@
 
 body {
 	margin: 0;
-	background-color: var(--bg-600);
+	background-color: var(--bg-700);
 	font-family: "Lato", sans-serif;
 	color: var(--font-600);
 	min-height: 100vh;
@@ -44,8 +45,8 @@ h6 {
 
 footer {
 	margin-top: auto;
-	border-top: 1px solid var(--border);
-	padding: 1rem 2rem;
+	border-top: 1px solid var(--bg-400);
+	padding: 0 2rem;
 }
 
 a {
@@ -59,13 +60,13 @@ a:hover {
 
 /* Header styles */
 header {
-	border-bottom: 1px solid var(--border);
+	border-bottom: 1px solid var(--bg-400);
 	position: sticky;
 	top: 0;
+	backdrop-filter: blur(0.75rem);
 }
 
 .navbar {
-	padding: 0 2rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
