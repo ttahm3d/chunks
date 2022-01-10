@@ -1,14 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Noto+Sans:wght@400;700&display=swap");
 
-* {
+*,
+::before,
+::after {
 	box-sizing: border-box;
+}
+
+:root {
+	--primary: hsl(208, 100%, 55%);
+	--primary-light: hsl(208, 100%, 70%);
+	--primary-lighter: hsl(208, 100%, 85%);
+	--bg-700: hsl(0, 0, 95%);
+	--bg-600: hsl(0, 0, 90%);
+	--bg-500: hsl(0, 0, 90%);
+	--bg-400: hsl(0, 0, 85%);
+	--bg-200: hsl(0, 0, 80%);
+	--font-700: hsl(0, 0, 4%);
+	--font-600: hsl(0, 0, 12%);
+	--font-500: hsl(0, 0, 20%);
+	--font-400: hsl(0, 0, 28%);
+	--font-300: hsl(0, 0, 36%);
+	--red-700: hsl(0, 100%, 49%);
+	--red-500: hsl(0, 100%, 65%);
+	--red-300: hsl(0, 100%, 89%);
+	--green-700: hsl(108, 100%, 49%);
+	--green-500: hsl(108, 100%, 65%);
+	--green-300: hsl(108, 100%, 89%);
+	--yellow-700: hsl(56, 100%, 49%);
+	--yellow-500: hsl(56, 100%, 65%);
+	--yellow-300: hsl(56, 100%, 89%);
+	--blue-700: hsl(205, 100%, 49%);
+	--blue-500: hsl(205, 100%, 65%);
+	--blue-300: hsl(205, 100%, 89%);
 }
 
 body {
 	margin: 0;
-	background-color: #fbfbfb;
+	background-color: var(--bg-600);
 	font-family: "Lato", sans-serif;
-	color: #1a1a1a;
+	color: var(--font-600);
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -26,8 +56,37 @@ h4,
 h5,
 h6 {
 	font-family: "Noto Sans", sans-serif;
+	margin: 0;
+	padding-top: 1rem;
 }
 
 footer {
 	margin-top: auto;
+}
+
+header {
+	padding: 0.5rem 1rem;
+	position: sticky;
+	top: 0;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.logo {
+	color: var(--primary);
+}
+
+.navlist {
+	display: flex;
+	margin: 0;
+	list-style: none;
+	font-size: 1.2rem;
+}
+
+.navlist-item {
+	padding-right: 0.5rem;
 }
