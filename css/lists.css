@@ -1,3 +1,5 @@
+@import url("./colors.css");
+
 .list {
 	margin: 0;
 }
@@ -39,4 +41,13 @@
 .list-item-2 {
 	font-size: 1.1rem;
 	color: var(--font-400);
+}
+
+.hover-styles {
+	display: block;
+	padding: 0.25rem;
+}
+
+.hover-styles:hover {
+	background-color: var(--bg-500);
 }
