@@ -52,56 +52,137 @@
 				<pre><code>Add CDN Link and way to import image / code here</code></pre>
 			</section>
 			<section>
-				<h2 class=".heading-2 head-lvl-3" if="available-components">
+				<h2 class="heading-2 head-lvl-3" if="available-components">
 					Available components
 				</h2>
 				<ul class="list style-none">
-					<li class="list-item"><a href="#avatar">avatar</a></li>
-					<li class="list-item"><a href="#alert">alert</a></li>
 					<li class="list-item">
-						<a href="#badges">badges</a>
+						<a class="hover-styles" href="#avatar">avatar</a>
+					</li>
+					<li class="list-item">
+						<a class="hover-styles" href="#alert">alert</a>
+					</li>
+					<li class="list-item">
+						<a class="hover-styles" href="#badge">badges</a>
 						<ul class="list style-none pad-left-1">
 							<li class="list-item-2">
-								<a href="#badge-on-icon">badge on icon</a>
+								<a class="hover-styles" href="#badge-on-icon">badge on icon</a>
 							</li>
 							<li class="list-item-2">
-								<a href="#badge-on-avatars">badge on avatar</a>
+								<a class="hover-styles" href="#badge-on-avatars"
+									>badge on avatar</a
+								>
 							</li>
 						</ul>
 					</li>
-					<li class="list-item"><a href="#button">button</a></li>
-					<li class="list-item"><a href="#card">card</a></li>
-					<li class="list-item"><a href="#image">image</a></li>
-					<li class="list-item"><a href="#input">input</a></li>
+					<li class="list-item">
+						<a class="hover-styles" href="#button">button</a>
+						<ul class="list style-none pad-left-1">
+							<li class="list-item-2">
+								<a class="hover-styles" href="#primary-button"
+									>primary button</a
+								>
+							</li>
+							<li class="list-item-2">
+								<a class="hover-styles" href="#link-button">link button</a>
+							</li>
+							<li class="list-item-2">
+								<a class="hover-styles" href="#icon-button">icon button</a>
+							</li>
+							<li class="list-item-2">
+								<a class="hover-styles" href="#floating-action-button"
+									>floating action button</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="list-item">
+						<a class="hover-styles" href="#card">card</a>
+					</li>
+					<li class="list-item">
+						<a class="hover-styles" href="#image">image</a>
+					</li>
+					<li class="list-item">
+						<a class="hover-styles" href="#input">input</a>
+					</li>
 				</ul>
 			</section>
 			<section>
 				<div>
-					<h3 id="#avatar">avatar</h3>
+					<h3 class="heading-3 head-lvl-3" id="avatar">avatar</h3>
 				</div>
 				<div>
-					<h3 id="#alert">alert</h3>
+					<h3 class="heading-3 head-lvl-3" id="alert">alert</h3>
+					<p class="justify">
+						alerts are very common in most of the applications. To provide
+						feedback to use to any of his / her actions, we make use of alerts.
+						There are multiple types of alerts availale as mentioned below.
+					</p>
+					<p class="alert alert-info">This is an example of info alert</p>
+					<p class="alert alert-success">This is an example of success alert</p>
+					<p class="alert alert-error">This is an example of error alert</p>
+					<p class="alert alert-warning">This is an example of warning alert</p>
 				</div>
 				<div>
-					<h3 id="#badge">badge</h3>
+					<h3 class="heading-3 head-lvl-3" id="badge">badge</h3>
+					<h4 class="heading-4 head-lvl-4" id="badge-on-icon">badge on icon</h4>
+					<h4 class="heading-4 head-lvl-4" id="badge-on-avatar">
+						badge on avatar
+					</h4>
 				</div>
 				<div>
-					<h3 id="#button">button</h3>
+					<h3 class="heading-3 head-lvl-3" id="button">button</h3>
+					<p class="justify">
+						buttons are used in two ways &mdash; buttons and call to action
+						links. Call to actions are used to grab users attention to some
+						specific thing that you want the user to click at. There are various
+						variants of buttons. These classes can be used on both buttons and
+						anchor links
+					</p>
+					<h4 class="heading-4 head-lvl-4" id="primary-button">
+						normal button
+					</h4>
+					<div class="flex flex-gap-2">
+						<button class="btn btn-primary">primary button</button>
+						<button class="btn btn-secondary">secondary button</button>
+						<button class="btn btn-danger">danger button</button>
+					</div>
+					<h4 class="heading-4 head-lvl-4" id="link-button">link button</h4>
+					<div class="flex flex-gap-2">
+						<a href="#" class="link link-primary">primary link</a>
+						<a href="#" class="link link-secondary">secondary link</a>
+					</div>
+					<h4 class="heading-4 head-lvl-4" id="icon-button">icon button</h4>
+					<div class="flex flex-gap-2">
+						<button class="btn btn-success">
+							<span><i class="fas fa-shopping-cart"></i></span>&nbsp;add to cart
+						</button>
+						<button class="btn btn-danger">
+							<span><i class="fas fa-trash"></i></span>&nbsp;delete
+						</button>
+					</div>
+					<h4 class="heading-4 head-lvl-4" id="floating-action-button">
+						floating action button
+					</h4>
+					<div class="flex flex-gap-2">
+						<button class="btn-float btn-float-action">
+							<span><i class="fas fa-plus"></i></span>
+						</button>
+					</div>
 				</div>
 				<div>
-					<h3 id="#card">card</h3>
+					<h3 class="heading-3 head-lvl-3" id="card">card</h3>
 				</div>
 				<div>
-					<h3 id="#image">image</h3>
+					<h3 class="heading-3 head-lvl-3" id="image">image</h3>
 				</div>
 				<div>
-					<h3 id="#input">input</h3>
+					<h3 class="heading-3 head-lvl-3" id="input">input</h3>
 				</div>
 			</section>
 		</main>
 		<footer class="flex flex-center flex-column">
 			<p>Created by Tahir Ahmed T</p>
-
 			<ul class="list style-none horizontal wd-100 justify-center list-gap-1">
 				<li>
 					<a
