@@ -76,3 +76,7 @@
 .pad-2-tb {
 	padding: 2rem 0;
 }
+
+.flex-gap-2 {
+	gap: 2rem;
+}
