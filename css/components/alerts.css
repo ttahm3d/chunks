@@ -21,6 +21,6 @@
 }
 
 .alert-warning {
-	background-color: var(--yellow-300);
-	color: var(--yellow-700);
+	background-color: var(--orange-300);
+	color: var(--orange-700);
 }

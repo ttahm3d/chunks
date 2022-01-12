@@ -18,8 +18,9 @@
 	background-color: inherit;
 }
 
-.btn-secondary:hover {
-	background-color: var(--primary-light);
+.btn-secondary:hover,
+.link-secondary:hover {
+	background-color: var(--primary-lighter);
 }
 
 .btn-danger {
@@ -40,7 +41,7 @@
 
 .btn-float {
 	border: 0;
-	padding: 0.5rem;
+	padding: 0.5rem 0.6rem;
 }
 
 .btn-float-action {
