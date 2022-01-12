@@ -63,10 +63,12 @@ a {
 
 /* Header styles */
 header {
+	background-color: var(--bg-700);
 	border-bottom: 1px solid var(--bg-400);
 	position: sticky;
 	top: 0;
 	backdrop-filter: blur(0.75rem);
+	z-index: 9;
 }
 
 .navbar {
@@ -88,6 +90,10 @@ header {
 
 .navlist-item {
 	padding-right: 0.5rem;
+}
+
+nav a:hover {
+	color: var(--primary);
 }
 
 /* styling for hero section */
@@ -116,4 +122,11 @@ div > h3 {
 
 div h4 {
 	scroll-margin-top: 2.5rem;
+}
+
+.stick-top {
+	position: sticky;
+	top: 3.5rem;
+	background-color: var(--bg-700);
+	z-index: 8;
 }
