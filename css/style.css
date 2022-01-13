@@ -43,7 +43,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
 	font-family: "Noto Sans", sans-serif;
 	margin: 0;
 	padding-top: 1rem;
@@ -59,6 +60,10 @@ footer {
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+img {
+	max-width: 100%;
 }
 
 /* Header styles */
