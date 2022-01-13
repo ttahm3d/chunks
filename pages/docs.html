@@ -98,6 +98,11 @@
 					</li>
 					<li class="list-item">
 						<a class="hover-styles" href="#card">card</a>
+						<ul class="list style-none pad-left-1">
+							<li class="list-item-2">
+								<a class="hover-styles" href="#simple-card">simple card</a>
+							</li>
+						</ul>
 					</li>
 					<li class="list-item">
 						<a class="hover-styles" href="#image">image</a>
@@ -186,18 +191,113 @@
 					<h3 class="heading-3 head-lvl-3 stick-top" id="card">card</h3>
 					<p class="justify">
 						cards are content containers. They are used to display products in
-						shopping apps or display items of similar types. There are multiple
-						variants of cards avaialbe as below.
+						shopping apps or to display items of similar types. There are
+						multiple variants of cards avaialbe as below.
 					</p>
-					<h4 class="heading-4 head-lvl-4 stick-top">Simple card</h4>
+					<h4 class="heading-4 head-lvl-4 stick-top" id="simple-card">
+						simple card
+					</h4>
 					<p class="justify">card to display text content</p>
-					<div>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
-							dolore dolores repudiandae veritatis debitis esse temporibus unde
-							nemo doloremque deserunt, molestiae tenetur, ad obcaecati
-							molestias sed aperiam ut illum explicabo?
-						</p>
+					<div class="card-grid card-row-3">
+						<div class="card card-bg card-p-t-b">
+							<p>This is example of simple card</p>
+						</div>
+					</div>
+					<h4
+						class="heading-4 head-lvl-4 stick-top"
+						id="card-with-image-and-text"
+					>
+						card with image and text
+					</h4>
+					<div class="card-grid card-row-3">
+						<div class="card card-bg card-p-eq-1">
+							<div class="card-image">
+								<img
+									src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+									alt="headphones"
+								/>
+							</div>
+							<div class="card-text card-text-center">
+								<p class="card-title bold">headphones</p>
+							</div>
+						</div>
+						<div class="card card-border card-p-eq-1">
+							<div class="card-image">
+								<img
+									src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+									alt="headphones"
+								/>
+							</div>
+							<div class="card-text card-text-center">
+								<p class="card-title bold">headphones</p>
+							</div>
+						</div>
+					</div>
+					<h4
+						class="heading-4 head-lvl-4 stick-top"
+						id="card-with-image-and-text"
+					>
+						horizontal card
+					</h4>
+					<p class="justify">
+						This can be used to display product details horizontally
+					</p>
+					<div class="card-horizontal card-border card-p-eq-1">
+						<div class="card-image image-center">
+							<img
+								src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+								alt="waterbottle"
+							/>
+						</div>
+						<div
+							class="card-text hz-card-text flex flex-column justify-between"
+						>
+							<div>
+								<p class="p-lvl-1 bold heading-3">Water bottle</p>
+								<p class="justify">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
+									aliquid esse magni architecto.
+								</p>
+							</div>
+							<button class="btn btn-success">
+								<span><i class="fas fa-shopping-cart"></i></span>&nbsp;add to
+								cart
+							</button>
+						</div>
+					</div>
+					<h4
+						class="heading-4 head-lvl-4 stick-top"
+						id="card-with-image-and-text"
+					>
+						vertical card
+					</h4>
+					<p class="justify">
+						This can be used to display product details vertically.
+					</p>
+					<div class="card-grid card-row-3">
+						<div class="card card-border card-p-eq-1">
+							<div class="card-image image-center">
+								<img
+									src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+									alt="waterbottle"
+								/>
+							</div>
+							<div
+								class="card-text hz-card-text flex flex-column justify-between"
+							>
+								<div>
+									<p class="p-lvl-1 bold heading-3">Water bottle</p>
+									<p class="justify">
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+										Illo aliquid esse magni architecto.
+									</p>
+								</div>
+								<button class="btn btn-success">
+									<span><i class="fas fa-shopping-cart"></i></span>&nbsp;add to
+									cart
+								</button>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div>

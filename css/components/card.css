@@ -1,0 +1,79 @@
+@import url("../colors.css");
+
+.card-grid {
+	display: grid;
+	gap: 1rem;
+}
+
+.card-row-3 {
+	grid-template-columns: 1fr;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.card-horizontal {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.card-bg {
+	background-color: var(--bg-500);
+}
+
+.card-border {
+	border: 1px solid var(--bg-500);
+}
+
+.card-text-center {
+	text-align: center;
+}
+
+.card-title {
+	color: var(--font-700);
+}
+
+.card-p {
+	padding: 0.5;
+}
+
+.card-p-t-b {
+	padding: 2rem 1rem;
+}
+
+.card-p-eq-1 {
+	padding: 1rem;
+}
+
+.card-p-eq-2 {
+	padding: 2rem;
+}
+
+.card-image {
+	inset: 0 0;
+}
+
+.card-text {
+	padding: 0 0.5rem;
+}
+
+.image-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (min-width: 48em) {
+	.card-row-3 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 64em) {
+	.card-row-3 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
