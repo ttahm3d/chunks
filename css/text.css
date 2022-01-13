@@ -96,3 +96,7 @@
 .p-lvl-3 {
 	color: var(--font-300);
 }
+
+.bold {
+	font-weight: 600;
+}
