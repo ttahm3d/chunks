@@ -120,10 +120,6 @@ nav a:hover {
 	font-size: 3.6rem;
 }
 
-section > div {
-	min-height: 30vh;
-}
-
 div > h3 {
 	scroll-margin-top: 2.5rem;
 }
