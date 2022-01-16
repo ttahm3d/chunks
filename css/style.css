@@ -46,8 +46,7 @@ h5,
 h6 {
 	font-family: "Noto Sans", sans-serif;
 	margin: 0;
-	padding-top: 1rem;
-	padding-bottom: 0.5rem;
+	padding: 0.5rem 0;
 }
 
 p {
@@ -121,16 +120,18 @@ nav a:hover {
 }
 
 div > h3 {
-	scroll-margin-top: 2.5rem;
+	/* scroll-margin-top: 2.5rem; */
+	scroll-padding-top: 3.3125rem;
 }
 
 div h4 {
-	scroll-margin-top: 2.5rem;
+	/* scroll-margin-top: 2.5rem; */
+	scroll-padding-top: 3.3125rem;
 }
 
 .stick-top {
 	position: sticky;
-	top: 3.5rem;
+	top: 3.3125rem;
 	background-color: var(--bg-700);
 	z-index: 8;
 }
@@ -144,6 +145,10 @@ div h4 {
 	padding: 0 1rem 0 0;
 }
 
+.component-description {
+	padding: 1.5rem 0;
+}
+
 @media screen and (min-width: 48em) {
 	.component-section {
 		grid-template-columns: 1fr 3fr;
@@ -155,5 +160,6 @@ div h4 {
 		top: 3.5rem;
 		height: calc(100vh - 4rem);
 		overflow-y: scroll;
+		padding-bottom: 2rem;
 	}
 }
