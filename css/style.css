@@ -12,8 +12,8 @@
 /* CSS Resets begin here */
 
 *,
-::before,
-::after {
+*::before,
+*::after {
 	box-sizing: border-box;
 }
 
