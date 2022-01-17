@@ -1,5 +1,3 @@
-@import url("../colors.css");
-
 .card-grid {
 	display: grid;
 	gap: 1rem;
