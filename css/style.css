@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Noto+Sans:wght@400;700&display=swap");
 
-/* importing css from other files */
-
-@import url("./colors.css");
-@import url("./layout.css");
-@import url("./lists.css");
-@import url("./links.css");
-@import url("./text.css");
 @import url("./components/index.css");
 
 /* color palette */
@@ -108,28 +101,28 @@ header {
 	z-index: 9;
 }
 
-.navbar {
+.i-navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
 }
 
-.logo {
+.i-logo {
 	color: var(--primary);
 }
 
-.navlist {
+.i-navlist {
 	display: flex;
 	margin: 0;
 	list-style: none;
 	font-size: 1.2rem;
 }
 
-.navlist-item {
+.i-navlist-item {
 	padding-right: 0.5rem;
 }
 
-nav a:hover {
+.i-navbar a:hover {
 	color: var(--primary);
 }
 
