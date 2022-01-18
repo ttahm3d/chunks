@@ -61,10 +61,6 @@ input {
 	font-family: inherit;
 }
 
-img {
-	max-width: 100%;
-}
-
 h1,
 h2,
 h3,
@@ -129,7 +125,7 @@ img {
 
 .i-container {
 	width: 90vw;
-	max-width: 60em;
+	max-width: 60rem;
 	margin: 0 auto;
 }
 
