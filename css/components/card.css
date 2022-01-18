@@ -3,7 +3,7 @@
 	gap: 1rem;
 }
 
-.card-row-3 {
+.card-row {
 	grid-template-columns: 1fr;
 }
 
@@ -65,13 +65,13 @@
 }
 
 @media screen and (min-width: 48em) {
-	.card-row-3 {
+	.card-row {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 @media screen and (min-width: 64em) {
-	.card-row-3 {
+	.card-row {
 		grid-template-columns: repeat(3, 1fr);
 	}
 }

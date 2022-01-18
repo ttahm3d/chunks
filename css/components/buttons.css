@@ -1,7 +1,21 @@
 .btn {
 	outline: 0;
+	cursor: pointer;
 	border: 0;
 	padding: 0.5rem 0.8rem;
+	z-index: 1;
+}
+
+.btn-rounded {
+	border-radius: 0.5rem;
+}
+
+.link {
+	padding: 0.5rem 0.8rem;
+	display: inline-block;
+}
+
+.link-rounded {
 	border-radius: 0.5rem;
 }
 
@@ -21,20 +35,14 @@
 	background-color: var(--primary-lighter);
 }
 
-.btn-danger {
-	background-color: var(--red-300);
-	color: var(--red-700);
-}
-
-.link {
-	padding: 0.5rem 0.8rem;
-	border-radius: 0.5rem;
-	display: inline-block;
-}
-
 .btn-success {
 	background-color: var(--green-700);
 	color: var(--green-300);
+}
+
+.btn-danger {
+	background-color: var(--red-300);
+	color: var(--red-700);
 }
 
 .btn-float {
