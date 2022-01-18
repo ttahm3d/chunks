@@ -12,8 +12,8 @@
 		<title>Chunks</title>
 	</head>
 	<body>
-		<header class="header">
-			<nav class="i-navbar container">
+		<header class="i-header">
+			<nav class="i-navbar i-container">
 				<div class="nav-item">
 					<h2 class="i-logo">
 						<a href="../index.html">
@@ -40,13 +40,13 @@
 			</nav>
 		</header>
 
-		<main class="container">
+		<main class="i-container">
 			<section class="pad-2-tb">
 				<h2 class=".heading-2 head-lvl-3" id="getting-started">
 					Getting Started
 				</h2>
-				<p class="justify">Get started with Chunks.</p>
-				<p class="justify">
+				<p class="justify no-margin">Get started with Chunks.</p>
+				<p class="justify no-margin">
 					It&apos;s a component library with utility classes. Plug the CDN link
 					in your project and you have the below components in your app
 				</p>
@@ -74,7 +74,7 @@
 									>
 								</li>
 								<li class="list-item-2">
-									<a class="hover-styles" href="#badge-on-avatars"
+									<a class="hover-styles" href="#badge-on-avatar"
 										>badge on avatar</a
 									>
 								</li>
@@ -136,7 +136,32 @@
 				<div class="components">
 					<div class="component-container">
 						<h3 class="heading-3 head-lvl-3 stick-top" id="avatar">avatar</h3>
-						<div class="component-description"></div>
+						<div class="component-description">
+							<p class="justify">
+								avatars are used to show profile images in headers or profile
+								information sections. They can be in multiple sizes. sm &mdash;
+								for small, md &mdash; for medium and lg &mdash; for large
+							</p>
+						</div>
+						<div class="component-description">
+							<div class="flex align-base flex-gap-2">
+								<img
+									src="../assets/avatar-1.svg"
+									alt="avatar 1"
+									class="avatar avatar-sm avatar-border"
+								/>
+								<img
+									src="../assets/avatar-2.svg"
+									alt="avatar 2"
+									class="avatar avatar-md avatar-border"
+								/>
+								<img
+									src="../assets/avatar-3.svg"
+									alt="avatar 3"
+									class="avatar avatar-lg avatar-border"
+								/>
+							</div>
+						</div>
 					</div>
 
 					<div class="component-container">
@@ -149,16 +174,24 @@
 								below.
 							</p>
 							<div class="alert alert-info">
-								<p class="justify">This is an example of info alert</p>
+								<p class="justify no-margin">
+									This is an example of info alert
+								</p>
 							</div>
 							<div class="alert alert-success">
-								<p class="justify">This is an example of success alert</p>
+								<p class="justify no-margin">
+									This is an example of success alert
+								</p>
 							</div>
 							<div class="alert alert-error">
-								<p class="justify">This is an example of error alert</p>
+								<p class="justify no-margin">
+									This is an example of error alert
+								</p>
 							</div>
 							<div class="alert alert-warning">
-								<p class="justify">This is an example of warning alert</p>
+								<p class="justify no-margin">
+									This is an example of warning alert
+								</p>
 							</div>
 						</div>
 					</div>
@@ -172,14 +205,24 @@
 								used to indicate number of unread notifications
 							</p>
 						</div>
-						<h4 class="heading-4 head-lvl-4 stick-top" id="badge-on-icon">
-							badge on icon
-						</h4>
-						<div class="component-description"></div>
-						<h4 class="heading-4 head-lvl-4 stick-top" id="badge-on-avatar">
-							badge on avatar
-						</h4>
-						<div class="component-description"></div>
+						<h4 class="heading-4 head-lvl-4">badge on icon</h4>
+						<div class="component-description">
+							<p class="justify">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Praesentium neque ex fuga debitis, cupiditate doloremque est
+								necessitatibus. Officia totam modi et. Vitae, ab recusandae!
+								Voluptatum porro facere ea facilis repudiandae!
+							</p>
+						</div>
+						<h4 class="heading-4 head-lvl-4">badge on avatar</h4>
+						<div class="component-description">
+							<p class="justify">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Praesentium neque ex fuga debitis, cupiditate doloremque est
+								necessitatibus. Officia totam modi et. Vitae, ab recusandae!
+								Voluptatum porro facere ea facilis repudiandae!
+							</p>
+						</div>
 					</div>
 
 					<div class="component-container">
@@ -193,28 +236,50 @@
 								buttons and anchor links
 							</p>
 						</div>
-						<h4 class="heading-4 head-lvl-4 stick-top" id="primary-button">
-							normal button
-						</h4>
+						<h4 class="heading-4 head-lvl-4">normal button</h4>
+						<div class="component-description">
+							<p class="justify">
+								there are multiple variants of buttons. buttons with background
+								color are usually used as main call to action buttons &mdash;
+								usually with primary background. there are other types also such
+								as secondary, danger &mdash; to indicate things that might cause
+								something to be deleted, and success &mdash; for affirmations.
+								They can also be rounded
+							</p>
+						</div>
 						<div class="component-description">
 							<div class="flex flex-gap-2">
 								<button class="btn btn-primary">primary button</button>
-								<button class="btn btn-secondary">secondary button</button>
+								<button class="btn btn-secondary btn-rounded">
+									secondary button
+								</button>
 								<button class="btn btn-danger">danger button</button>
+								<button class="btn btn-success">success button</button>
 							</div>
 						</div>
-						<h4 class="heading-4 head-lvl-4 stick-top" id="link-button">
-							link button
-						</h4>
+						<h4 class="heading-4 head-lvl-4">link button</h4>
+						<div class="component-description">
+							<p class="justify">
+								these are links &mdash; to other parts of the webpage or to
+								other websites. They can be made rounded.
+							</p>
+						</div>
 						<div class="component-description">
 							<div class="flex flex-gap-2">
 								<a href="##" class="link link-primary">primary link</a>
-								<a href="##" class="link link-secondary">secondary link</a>
+								<a href="##" class="link link-secondary link-rounded"
+									>secondary link</a
+								>
 							</div>
 						</div>
-						<h4 class="heading-4 head-lvl-4 stick-top" id="icon-button">
-							icon button
-						</h4>
+						<h4 class="heading-4 head-lvl-4">icon button</h4>
+						<div class="component-description">
+							<p class="justify">
+								these are generally see in shopping sites. they are just another
+								set of buttons that come with icons. These icons can be added
+								from font-awesome
+							</p>
+						</div>
 						<div class="component-description">
 							<div class="flex flex-gap-2 stick-top">
 								<button class="btn btn-success">
@@ -226,12 +291,15 @@
 								</button>
 							</div>
 						</div>
-						<h4
-							class="heading-4 head-lvl-4 stick-top"
-							id="floating-action-button"
-						>
-							floating action button
-						</h4>
+						<h4 class="heading-4 head-lvl-4">floating action button</h4>
+						<div class="component-desctiption">
+							<p class="justify">
+								these buttons are fixed to a particular part of the viewport and
+								are stacked on top of all the things. the always appear in the
+								viewport and are usually used to provide a way to allow user to
+								scroll to top or open menus
+							</p>
+						</div>
 						<div class="component-description">
 							<div class="flex flex-gap-2">
 								<button
@@ -253,25 +321,18 @@
 								multiple variants of cards avaialbe as below.
 							</p>
 						</div>
-						<h4 class="heading-4 head-lvl-4 stick-top" id="simple-card">
-							simple card
-						</h4>
+						<h4 class="heading-4 head-lvl-4">simple card</h4>
 						<div class="component-description">
 							<p class="justify">card to display text content</p>
-							<div class="card-grid card-row-3">
+							<div class="card-grid card-row">
 								<div class="card card-bg card-p-t-b">
 									<p>This is example of simple card</p>
 								</div>
 							</div>
 						</div>
-						<h4
-							class="heading-4 head-lvl-4 stick-top"
-							id="card-with-image-and-text"
-						>
-							card with image and text
-						</h4>
+						<h4 class="heading-4 head-lvl-4">card with image and text</h4>
 						<div class="component-description">
-							<div class="card-grid card-row-3">
+							<div class="card-grid card-row">
 								<div class="card card-bg card-p-eq-1">
 									<div class="card-image">
 										<img
@@ -296,9 +357,7 @@
 								</div>
 							</div>
 						</div>
-						<h4 class="heading-4 head-lvl-4 stick-top" id="horizontal-card">
-							horizontal card
-						</h4>
+						<h4 class="heading-4 head-lvl-4">horizontal card</h4>
 						<div class="component-description">
 							<p class="justify">
 								This can be used to display product details horizontally
@@ -327,14 +386,12 @@
 								</div>
 							</div>
 						</div>
-						<h4 class="heading-4 head-lvl-4 stick-top" id="vertical-card">
-							vertical card
-						</h4>
+						<h4 class="heading-4 head-lvl-4">vertical card</h4>
 						<div class="component-description">
 							<p class="justify">
 								This can be used to display product details vertically.
 							</p>
-							<div class="card-grid card-row-3">
+							<div class="card-grid card-row">
 								<div class="card card-border card-p-eq-1">
 									<div class="card-image image-center">
 										<img
@@ -377,7 +434,9 @@
 
 		<footer class="flex flex-center flex-column">
 			<p>Created by Tahir Ahmed T</p>
-			<ul class="list style-none horizontal wd-100 justify-center list-gap-1">
+			<ul
+				class="list style-none horizontal wd-100 justify no-margin-center list-gap-1"
+			>
 				<li>
 					<a
 						class="list-icon"
