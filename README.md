@@ -11,5 +11,5 @@ Built as part of [neog.camp](https://neog.camp) level 1
 Add the below code in your `.css` file
 
 ```CSS
-  @import url('https://chunk.netlify.app/css/styles.css')
+  @import url('https://chunksui.netlify.app//css/style.css')
 ```
