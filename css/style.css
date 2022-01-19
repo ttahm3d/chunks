@@ -1,19 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Noto+Sans:wght@400;700&display=swap");
 
-/* importing css from other files */
-
-@import url("./colors.css");
-@import url("./layout.css");
-@import url("./lists.css");
-@import url("./links.css");
-@import url("./text.css");
 @import url("./components/index.css");
+
+/* color palette */
+
+:root {
+	--primary: hsl(208, 80%, 55%);
+	--primary-light: hsl(208, 100%, 70%);
+	--primary-lighter: hsl(208, 100%, 85%);
+	--bg-700: hsl(0, 0%, 98%);
+	--bg-600: hsl(0, 0%, 90%);
+	--bg-500: hsl(0, 0%, 85%);
+	--bg-400: hsl(0, 0%, 80%);
+	--bg-200: hsl(0, 0%, 70%);
+	--font-700: hsl(0, 0%, 4%);
+	--font-600: hsl(0, 0%, 14%);
+	--font-500: hsl(0, 0%, 28%);
+	--font-400: hsl(0, 0%, 42%);
+	--font-300: hsl(0, 0%, 56%);
+	--red-700: hsl(0, 100%, 42%);
+	--red-500: hsl(0, 100%, 65%);
+	--red-300: hsl(0, 100%, 95%);
+	--green-700: hsl(108, 72%, 30%);
+	--green-500: hsl(108, 100%, 65%);
+	--green-300: hsl(108, 100%, 95%);
+	--orange-700: hsl(34, 100%, 30%);
+	--orange-500: hsl(34, 100%, 65%);
+	--orange-300: hsl(34, 100%, 95%);
+	--blue-700: hsl(205, 100%, 35%);
+	--blue-500: hsl(205, 100%, 65%);
+	--blue-300: hsl(205, 100%, 95%);
+}
 
 /* CSS Resets begin here */
 
 *,
-::before,
-::after {
+*::before,
+*::after {
 	box-sizing: border-box;
 }
 
@@ -46,12 +69,7 @@ h5,
 h6 {
 	font-family: "Noto Sans", sans-serif;
 	margin: 0;
-	padding-top: 1rem;
-	padding-bottom: 0.5rem;
-}
-
-p {
-	margin: 0;
+	padding: 0 0 0.5rem;
 }
 
 footer {
@@ -70,45 +88,44 @@ img {
 }
 
 /* Header styles */
-header {
+.i-header {
 	background-color: var(--bg-700);
 	border-bottom: 1px solid var(--bg-400);
 	position: sticky;
 	top: 0;
-	backdrop-filter: blur(0.75rem);
 	z-index: 9;
 }
 
-.navbar {
+.i-navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
 }
 
-.logo {
+.i-logo {
 	color: var(--primary);
 }
 
-.navlist {
+.i-navlist {
 	display: flex;
 	margin: 0;
 	list-style: none;
 	font-size: 1.2rem;
 }
 
-.navlist-item {
+.i-navlist-item {
 	padding-right: 0.5rem;
 }
 
-nav a:hover {
+.i-navbar a:hover {
 	color: var(--primary);
 }
 
 /* styling for hero section */
 
-.container {
+.i-container {
 	width: 90vw;
-	max-width: 60em;
+	max-width: 60rem;
 	margin: 0 auto;
 }
 
@@ -120,17 +137,52 @@ nav a:hover {
 	font-size: 3.6rem;
 }
 
+.no-margin {
+	margin: 0;
+}
+
 div > h3 {
-	scroll-margin-top: 2.5rem;
+	/* scroll-margin-top: 2.5rem; */
+	scroll-padding-top: 3.1125rem;
 }
 
 div h4 {
-	scroll-margin-top: 2.5rem;
+	/* scroll-margin-top: 2.5rem; */
+	scroll-padding-top: 3.0125rem;
 }
 
 .stick-top {
 	position: sticky;
-	top: 3.5rem;
+	top: 2.8125rem;
 	background-color: var(--bg-700);
 	z-index: 8;
+}
+
+.component-section {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.component-list {
+	padding: 0 1rem 0 0;
+}
+
+.component-description {
+	padding: 1.5rem 0;
+	scroll-padding-top: 5rem;
+}
+
+@media screen and (min-width: 48em) {
+	.component-section {
+		grid-template-columns: 1fr 3fr;
+		gap: 2rem;
+	}
+
+	.component-list {
+		position: sticky;
+		top: 3.5rem;
+		height: calc(100vh - 4rem);
+		overflow-y: scroll;
+		padding-bottom: 2rem;
+	}
 }
