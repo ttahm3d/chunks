@@ -1,0 +1,57 @@
+.badge {
+	position: relative;
+}
+
+.badge-padding {
+	padding: 1rem;
+}
+
+.badge-sm {
+	font-size: 0.8rem;
+}
+
+.badge-md {
+	font-size: 1rem;
+}
+
+.badge-lg {
+	font-size: 1.6rem;
+}
+
+.badge-counter {
+	position: absolute;
+	font-size: 0.8rem;
+	padding: 0.2rem;
+	width: 1.2rem;
+	height: 1.2rem;
+	text-align: center;
+}
+
+.badge-top-right {
+	top: 0.25rem;
+	right: 0.25rem;
+}
+
+.badge-clr-blue {
+	color: var(--bg-700);
+	background-color: var(--blue-700);
+}
+
+.badge-clr-red {
+	color: var(--bg-700);
+	background-color: var(--red-700);
+}
+
+.badge-clr-green {
+	color: var(--bg-700);
+	background-color: var(--green-700);
+}
+
+.badge-clr-orange {
+	color: var(--bg-700);
+	background-color: var(--orange-500);
+}
+
+.badge-round {
+	border-radius: 50%;
+}
