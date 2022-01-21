@@ -55,3 +55,51 @@
 .badge-round {
 	border-radius: 50%;
 }
+
+.badge-dot-green {
+	border-radius: 50%;
+	background-color: var(--green-700);
+	padding: 0.3125rem;
+}
+
+.badge-dot-orange {
+	border-radius: 50%;
+	padding: 0.3125rem;
+	background-color: var(--orange-500);
+}
+
+.badge-dot-red {
+	border-radius: 50%;
+	padding: 0.3125rem;
+	background-color: var(--red-700);
+}
+
+.badge-white-container {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: var(--bg-700);
+	border: 0.03125rem solid var(--font-300);
+	width: 0.85rem;
+	height: 0.85rem;
+	padding: 0.125rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.badge-green {
+	border: 0.25rem solid var(--green-700);
+	border-radius: 50%;
+}
+
+.badge-red {
+	border: 0.25rem solid var(--red-700);
+	border-radius: 50%;
+}
+
+.badge-orange {
+	border: 0.25rem solid var(--orange-500);
+	border-radius: 50%;
+}
