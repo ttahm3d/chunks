@@ -145,21 +145,30 @@
 						</div>
 						<div class="component-description">
 							<div class="flex align-base flex-gap-2">
-								<img
-									src="../assets/avatar-1.svg"
-									alt="avatar 1"
-									class="avatar avatar-sm avatar-border"
-								/>
-								<img
-									src="../assets/avatar-2.svg"
-									alt="avatar 2"
-									class="avatar avatar-md avatar-border"
-								/>
-								<img
-									src="../assets/avatar-3.svg"
-									alt="avatar 3"
-									class="avatar avatar-lg avatar-border"
-								/>
+								<div class="avatar avatar-border">
+									<img
+										src="../assets/avatar-1.svg"
+										alt="avatar 1"
+										loading="lazy"
+										class="avatar-round avatar-sm"
+									/>
+								</div>
+								<div class="avatar avatar-border">
+									<img
+										src="../assets/avatar-2.svg"
+										alt="avatar 2"
+										loading="lazy"
+										class="avatar-round avatar-md"
+									/>
+								</div>
+								<div class="avatar avatar-border">
+									<img
+										src="../assets/avatar-3.svg"
+										alt="avatar 3"
+										loading="lazy"
+										class="avatar-round avatar-lg"
+									/>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -202,26 +211,139 @@
 							<p class="justify">
 								badges are usually seen in social media apps to indicate the
 								status of whether a person is online or offline. They are also
-								used to indicate number of unread notifications
+								used to indicate number of unread notifications. There are
+								multiple variants of these that come with different colors and
 							</p>
 						</div>
+
 						<h4 class="heading-4 head-lvl-4">badge on icon</h4>
 						<div class="component-description">
 							<p class="justify">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Praesentium neque ex fuga debitis, cupiditate doloremque est
-								necessitatibus. Officia totam modi et. Vitae, ab recusandae!
-								Voluptatum porro facere ea facilis repudiandae!
+								badge on icon can be used to show number of notifications,
+								unread messages and so on. It usually has a icon with a number
+								representing count on that notification
 							</p>
+						</div>
+						<div class="component-description">
+							<div class="flex flex-gap-2 wrap">
+								<div
+									class="far fa-envelope badge badge-lg badge-icon badge-padding"
+								>
+									<div
+										class="badge-counter badge-top-right badge-clr-blue badge-round"
+									>
+										5
+									</div>
+								</div>
+								<div
+									class="far fa-bell badge badge-lg badge-icon badge-padding"
+								>
+									<div
+										class="badge-counter badge-top-right badge-clr-red badge-round"
+									>
+										8
+									</div>
+								</div>
+								<div
+									class="fas fa-heart badge badge-lg badge-icon badge-padding"
+								>
+									<div
+										class="badge-counter badge-top-right badge-clr-orange badge-round"
+									>
+										4
+									</div>
+								</div>
+								<div
+									class="fas fa-shopping-cart badge badge-lg badge-icon badge-padding"
+								>
+									<div
+										class="badge-counter badge-top-right badge-clr-green badge-round"
+									>
+										2
+									</div>
+								</div>
+							</div>
 						</div>
 						<h4 class="heading-4 head-lvl-4">badge on avatar</h4>
 						<div class="component-description">
 							<p class="justify">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Praesentium neque ex fuga debitis, cupiditate doloremque est
-								necessitatibus. Officia totam modi et. Vitae, ab recusandae!
-								Voluptatum porro facere ea facilis repudiandae!
+								badges on avatars can be used to indicate the status of the
+								person - whether he / she is online. They can be as simple as a
+								small dot or a circle with border around the image
 							</p>
+						</div>
+						<div class="component-description">
+							<div class="flex flex-gap-2 wrap align-base">
+								<div class="badge">
+									<div class="avatar avatar-border">
+										<img
+											src="../assets/avatar-1.svg"
+											alt="avatar 1"
+											loading="lazy"
+											class="avatar-round avatar-sm"
+										/>
+									</div>
+									<div class="badge-white-container">
+										<div class="badge-dot-green"></div>
+									</div>
+								</div>
+								<div class="badge">
+									<div class="avatar avatar-border">
+										<img
+											src="../assets/avatar-1.svg"
+											alt="avatar 1"
+											loading="lazy"
+											class="avatar-round avatar-sm"
+										/>
+									</div>
+									<div class="badge-white-container">
+										<div class="badge-dot-orange"></div>
+									</div>
+								</div>
+								<div class="badge">
+									<div class="avatar avatar-border">
+										<img
+											src="../assets/avatar-1.svg"
+											alt="avatar 1"
+											loading="lazy"
+											class="avatar-round avatar-sm"
+										/>
+									</div>
+									<div class="badge-white-container">
+										<div class="badge-dot-red"></div>
+									</div>
+								</div>
+								<div class="badge badge-red">
+									<div class="avatar">
+										<img
+											src="../assets/avatar-4.svg"
+											alt="avatar 4"
+											loading="lazy"
+											class="avatar-round avatar-sm"
+										/>
+									</div>
+								</div>
+								<div class="badge badge-green">
+									<div class="avatar">
+										<img
+											src="../assets/avatar-4.svg"
+											alt="avatar 4"
+											loading="lazy"
+											class="avatar-round avatar-sm"
+										/>
+									</div>
+								</div>
+								<div class="badge badge-orange">
+									<div class="avatar">
+										<img
+											src="../assets/avatar-4.svg"
+											alt="avatar 4"
+											loading="lazy"
+											class="avatar-round avatar-sm"
+										/>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 
@@ -283,11 +405,12 @@
 						<div class="component-description">
 							<div class="flex flex-gap-2 stick-top">
 								<button class="btn btn-success">
-									<span><i class="fas fa-shopping-cart"></i></span>&nbsp;add to
-									cart
+									<div class="fas fa-shopping-cart"></div>
+									&nbsp;add to cart
 								</button>
 								<button class="btn btn-danger">
-									<span><i class="fas fa-trash"></i></span>&nbsp;delete
+									<div class="fas fa-trash"></div>
+									&nbsp;delete
 								</button>
 							</div>
 						</div>
@@ -336,6 +459,7 @@
 								<div class="card card-bg card-p-eq-1">
 									<div class="card-image">
 										<img
+											loading="lazy"
 											src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
 											alt="headphones"
 										/>

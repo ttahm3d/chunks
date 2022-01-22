@@ -28,8 +28,11 @@
 	--orange-500: hsl(34, 100%, 65%);
 	--orange-300: hsl(34, 100%, 95%);
 	--blue-700: hsl(205, 100%, 35%);
-	--blue-500: hsl(205, 100%, 65%);
-	--blue-300: hsl(205, 100%, 95%);
+	/* --blue-500: hsl(205, 100%, 65%); */
+	/* --blue-300: hsl(205, 100%, 95%); */
+	/* --blue-700: hsl(200, 100%, 15%); */
+	--blue-500: hsl(200, 100%, 50%);
+	--blue-300: hsl(200, 100%, 90%);
 }
 
 /* CSS Resets begin here */
@@ -91,6 +94,7 @@ img {
 .i-header {
 	background-color: var(--bg-700);
 	border-bottom: 1px solid var(--bg-400);
+	padding: 0.5rem 0 0;
 	position: sticky;
 	top: 0;
 	z-index: 9;
@@ -153,7 +157,8 @@ div h4 {
 
 .stick-top {
 	position: sticky;
-	top: 2.8125rem;
+	/* top: 2.8125rem; */
+	top: 3.25rem;
 	background-color: var(--bg-700);
 	z-index: 8;
 }
@@ -168,7 +173,7 @@ div h4 {
 }
 
 .component-description {
-	padding: 1.5rem 0;
+	padding: 1.8rem 0;
 	scroll-padding-top: 5rem;
 }
 
