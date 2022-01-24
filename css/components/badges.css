@@ -22,9 +22,12 @@
 	position: absolute;
 	font-size: 0.8rem;
 	padding: 0.2rem;
-	width: 1.2rem;
-	height: 1.2rem;
-	text-align: center;
+	min-width: 1.2rem;
+	min-height: 1.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: inherit;
 }
 
 .badge-top-right {
@@ -82,7 +85,6 @@
 	border: 0.03125rem solid var(--font-300);
 	width: 0.85rem;
 	height: 0.85rem;
-	padding: 0.125rem;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
