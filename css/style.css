@@ -119,6 +119,8 @@ img {
 
 .i-navlist-item {
 	padding-right: 0.5rem;
+	font-weight: 600;
+	letter-spacing: -0.09rem;
 }
 
 .i-navbar a:hover {
@@ -129,7 +131,7 @@ img {
 
 .i-container {
 	width: 90vw;
-	max-width: 60rem;
+	max-width: 70rem;
 	margin: 0 auto;
 }
 
