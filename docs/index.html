@@ -9,6 +9,13 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+			integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="../css/style.css" />
 		<title>Chunks</title>
 	</head>
@@ -45,12 +52,24 @@
 				<h2 class=".heading-2 head-lvl-3" id="getting-started">
 					Getting Started
 				</h2>
-				<p class="justify no-margin">Get started with Chunks.</p>
-				<p class="justify no-margin">
-					It&apos;s a component library with utility classes. Plug the CDN link
-					in your project and you have the below components in your app
+				<p class="justify">
+					<span>Chunks</span> is a component library with utility classes.
+					Utility classes allow users to develop UI screens at a much faster
+					speed than that is achieved when writing own css. There are few
+					componenets which the user can create by just using few of the utilty
+					classes. This allows the user to focus on creating the functionality
+					rather than worrying about the design
 				</p>
-				<pre><code>Add CDN Link and way to import image / code here</code></pre>
+				<p class="justify">
+					All that one has to do is to add the below import in his / her css
+					file.
+				</p>
+
+				<p class="p-lvl-2">Below is a list of components that user can use.</p>
+
+				<div class="code-example">
+					<pre><code class="css">@import url("chunksui.netlify.com/css/style.css")</code></pre>
+				</div>
 			</section>
 
 			<section class="component-section">
@@ -67,7 +86,7 @@
 						</li>
 						<li class="list-item">
 							<a class="hover-styles" href="#badge">badges</a>
-							<ul class="list style-none pad-left-1">
+							<!-- <ul class="list style-none pad-left-1">
 								<li class="list-item-2">
 									<a class="hover-styles" href="#badge-on-icon"
 										>badge on icon</a
@@ -78,11 +97,11 @@
 										>badge on avatar</a
 									>
 								</li>
-							</ul>
+							</ul> -->
 						</li>
 						<li class="list-item">
 							<a class="hover-styles" href="#button">button</a>
-							<ul class="list style-none pad-left-1">
+							<!-- <ul class="list style-none pad-left-1">
 								<li class="list-item-2">
 									<a class="hover-styles" href="#primary-button"
 										>primary button</a
@@ -99,11 +118,11 @@
 										>floating action button</a
 									>
 								</li>
-							</ul>
+							</ul> -->
 						</li>
 						<li class="list-item">
 							<a class="hover-styles" href="#card">card</a>
-							<ul class="list style-none pad-left-1">
+							<!-- <ul class="list style-none pad-left-1">
 								<li class="list-item-2">
 									<a class="hover-styles" href="#">simple card</a>
 								</li>
@@ -116,7 +135,7 @@
 								<li class="list-item-2">
 									<a class="hover-styles" href="#">horizontal card</a>
 								</li>
-							</ul>
+							</ul> -->
 						</li>
 						<li class="list-item">
 							<a class="hover-styles" href="#image">image</a>
@@ -585,5 +604,14 @@
 				</li>
 			</ul>
 		</footer>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+			integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			hljs.highlightAll();
+		</script>
 	</body>
 </html>

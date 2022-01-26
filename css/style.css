@@ -161,6 +161,11 @@ img {
 	max-width: 90vw;
 }
 
+.inline-code-block {
+	display: inline-block;
+	padding: 0 0.5rem;
+}
+
 pre code {
 	padding: 1rem;
 	width: 100%;

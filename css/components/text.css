@@ -57,10 +57,9 @@
 .heading-4,
 .heading-5,
 .heading-6,
-.p-large,
-.p-normal,
-.p-small span {
+p > span {
 	color: var(--primary);
+	font-weight: 600;
 }
 
 .head-lvl-1 {
