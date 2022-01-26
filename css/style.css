@@ -157,36 +157,21 @@ img {
 	margin: 0;
 }
 
-.code-example {
-	max-width: 90vw;
-}
-
-.inline-code-block {
-	display: inline-block;
-	padding: 0 0.5rem;
-}
-
-pre code {
-	padding: 1rem;
-	width: 100%;
-}
-
 div > h3 {
 	/* scroll-margin-top: 2.5rem; */
 	scroll-padding-top: 3.1125rem;
 }
 
-div h4 {
-	/* scroll-margin-top: 2.5rem; */
-	scroll-padding-top: 3.0125rem;
-}
-
 .stick-top {
 	position: sticky;
-	/* top: 2.8125rem; */
 	top: 3.25rem;
 	background-color: var(--bg-700);
 	z-index: 8;
+}
+
+.component-example {
+	background-color: hsla(0, 0%, 95%, 0.9);
+	padding: 1rem;
 }
 
 .component-section {
@@ -199,8 +184,30 @@ div h4 {
 }
 
 .component-description {
-	padding: 1.8rem 0;
+	padding: 1.8rem 0 0;
 	scroll-padding-top: 5rem;
+}
+
+/* .code-example { */
+/* width: 100%; */
+/* max-width: 90vw; */
+/* margin: 0 auto; */
+/* border: 1px solid red; */
+/* } */
+
+/* https://alexhooley.com/html-code-blocks-responsive/ */
+
+.code-example pre {
+	white-space: pre-wrap;
+}
+
+/* pre code {
+	padding: 1rem;
+	width: 100%;
+} */
+
+pre code.hljs {
+	overflow-x: scroll;
 }
 
 @media screen and (min-width: 48em) {
