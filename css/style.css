@@ -179,6 +179,11 @@ div > h3 {
 	grid-template-columns: 1fr;
 }
 
+.component-container {
+	border-bottom: 1px solid var(--font-400);
+	margin-bottom: 1rem;
+}
+
 .component-list {
 	padding: 0 1rem 0 0;
 }
@@ -199,16 +204,16 @@ div > h3 {
 
 .code-example pre {
 	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	margin: 0 auto;
 }
 
 /* pre code {
 	padding: 1rem;
 	width: 100%;
 } */
-
-pre code.hljs {
-	overflow-x: scroll;
-}
 
 @media screen and (min-width: 48em) {
 	.component-section {
