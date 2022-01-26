@@ -4,9 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="svg" href="/assets/chunks-icon.svg" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+			integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="../css/style.css" />
 		<title>Chunks</title>
@@ -44,17 +52,29 @@
 				<h2 class=".heading-2 head-lvl-3" id="getting-started">
 					Getting Started
 				</h2>
-				<p class="justify no-margin">Get started with Chunks.</p>
-				<p class="justify no-margin">
-					It&apos;s a component library with utility classes. Plug the CDN link
-					in your project and you have the below components in your app
+				<p class="justify">
+					<span>Chunks</span> is a component library with utility classes.
+					Utility classes allow users to develop UI screens at a much faster
+					speed than that is achieved when writing own css. There are few
+					componenets which the user can create by just using few of the utilty
+					classes. This allows the user to focus on creating the functionality
+					rather than worrying about the design
 				</p>
-				<pre><code>Add CDN Link and way to import image / code here</code></pre>
+				<p class="justify">
+					All that one has to do is to add the below import in his / her css
+					file.
+				</p>
+
+				<p class="p-lvl-2">Below is a list of components that user can use.</p>
+
+				<div class="code-example">
+					<pre><code class="css">@import url("chunksui.netlify.app/css/style.css")</code></pre>
+				</div>
 			</section>
 
 			<section class="component-section">
 				<div class="component-list">
-					<h2 class="heading-3 head-lvl-3" if="available-components">
+					<h2 class="heading-3 head-lvl-3" id="available-components">
 						Available components
 					</h2>
 					<ul class="list style-none">
@@ -66,7 +86,7 @@
 						</li>
 						<li class="list-item">
 							<a class="hover-styles" href="#badge">badges</a>
-							<ul class="list style-none pad-left-1">
+							<!-- <ul class="list style-none pad-left-1">
 								<li class="list-item-2">
 									<a class="hover-styles" href="#badge-on-icon"
 										>badge on icon</a
@@ -77,11 +97,11 @@
 										>badge on avatar</a
 									>
 								</li>
-							</ul>
+							</ul> -->
 						</li>
 						<li class="list-item">
 							<a class="hover-styles" href="#button">button</a>
-							<ul class="list style-none pad-left-1">
+							<!-- <ul class="list style-none pad-left-1">
 								<li class="list-item-2">
 									<a class="hover-styles" href="#primary-button"
 										>primary button</a
@@ -98,11 +118,11 @@
 										>floating action button</a
 									>
 								</li>
-							</ul>
+							</ul> -->
 						</li>
 						<li class="list-item">
 							<a class="hover-styles" href="#card">card</a>
-							<ul class="list style-none pad-left-1">
+							<!-- <ul class="list style-none pad-left-1">
 								<li class="list-item-2">
 									<a class="hover-styles" href="#">simple card</a>
 								</li>
@@ -115,7 +135,7 @@
 								<li class="list-item-2">
 									<a class="hover-styles" href="#">horizontal card</a>
 								</li>
-							</ul>
+							</ul> -->
 						</li>
 						<li class="list-item">
 							<a class="hover-styles" href="#image">image</a>
@@ -132,23 +152,33 @@
 						<div class="component-description">
 							<p class="justify">
 								avatars are used to show profile images in headers or profile
-								information sections. They can be in multiple sizes. sm &mdash;
-								for small, md &mdash; for medium and lg &mdash; for large
+								information sections. They can be in multiple sizes. xs &mdash;
+								for extra small, sm &mdash; for small, md &mdash; for medium, lg
+								&mdash; for large, and xl for &mdash; extra large. They can be
+								round or squircle in shape.
 							</p>
 						</div>
-						<div class="component-description">
-							<div class="flex align-base flex-gap-2">
+						<div class="component-example">
+							<div class="flex flex-gap-2 wrap flex-center /">
 								<div class="avatar avatar-border">
 									<img
-										src="../assets/avatar-1.svg"
+										src="../assets/avatars/avatar-1.svg"
 										alt="avatar 1"
 										loading="lazy"
-										class="avatar-round avatar-sm"
+										class="avatar-round avatar-xs"
 									/>
 								</div>
 								<div class="avatar avatar-border">
 									<img
-										src="../assets/avatar-2.svg"
+										src="../assets/avatars/avatar-4.svg"
+										alt="avatar 4"
+										loading="lazy"
+										class="avatar-sq avatar-sm"
+									/>
+								</div>
+								<div class="avatar avatar-border">
+									<img
+										src="../assets/avatars/avatar-2.svg"
 										alt="avatar 2"
 										loading="lazy"
 										class="avatar-round avatar-md"
@@ -156,13 +186,110 @@
 								</div>
 								<div class="avatar avatar-border">
 									<img
-										src="../assets/avatar-3.svg"
+										src="../assets/avatars/avatar-3.svg"
 										alt="avatar 3"
 										loading="lazy"
-										class="avatar-round avatar-lg"
+										class="avatar-sq avatar-lg"
+									/>
+								</div>
+								<div class="avatar avatar-border">
+									<img
+										src="../assets/avatars/avatar-5.svg"
+										alt="avatar 5"
+										loading="lazy"
+										class="avatar-round avatar-xl"
 									/>
 								</div>
 							</div>
+						</div>
+						<div class="code-example">
+							<pre>
+								<code class="html">
+&lt;!--notice the classes avatar-round and avatar-sq being used to create different shapes --&gt;
+&lt;div class="avatar">
+  &lt;img src="replace with url" class="avatar-round avatar-xs" />
+&lt;/div>
+&lt;div class="avatar avatar-border">
+  &lt;img src="replace with url" class="avatar-sq avatar-sm" />
+&lt;/div>
+&lt;div class="avatar">
+  &lt;img src="replace with url" class="avatar-round avatar-md" />
+&lt;/div>
+&lt;div class="avatar avatar-border">
+  &lt;img src="replace with url" class="avatar-sq avatar-lg" />
+&lt;/div>
+&lt;div class="avatar">
+  &lt;img src="replace with url" class="avatar-round avatar-xl" />
+&lt;/div>
+								</code>
+							</pre>
+						</div>
+
+						<div class="component-description">
+							<p class="justify">
+								avatars can also be just letters in case the user has not
+								uploaded any images. The user can chose background color from
+								any of the below available ones
+							</p>
+						</div>
+
+						<div class="component-example">
+							<div class="flex align-base flex-gap-2 flex-center">
+								<div class="avatar avatar-border">
+									<div
+										class="avatar-text avatar-xs avatar-round avatar-bg-blue"
+									>
+										C
+									</div>
+								</div>
+								<div class="avatar avatar-border">
+									<div
+										class="avatar-text avatar-sm avatar-round avatar-bg-grey"
+									>
+										S
+									</div>
+								</div>
+								<div class="avatar avatar-border">
+									<div
+										class="avatar-text avatar-md avatar-round avatar-bg-green"
+									>
+										LH
+									</div>
+								</div>
+								<div class="avatar avatar-border">
+									<div
+										class="avatar-text avatar-lg avatar-round avatar-bg-orange"
+									>
+										TA
+									</div>
+								</div>
+								<div class="avatar avatar-border">
+									<div class="avatar-text avatar-xl avatar-round avatar-bg-red">
+										JD
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="code-example">
+							<pre>
+								<code class="html">
+&lt;div class="avatar">
+  &lt;img src="replace with url" class="avatar-round avatar-xs" />
+&lt;/div>
+&lt;div class="avatar avatar-border">
+  &lt;img src="replace with url" class="avatar-round avatar-sm" />
+&lt;/div>
+&lt;div class="avatar">
+  &lt;img src="replace with url" class="avatar-round avatar-md" />
+&lt;/div>
+&lt;div class="avatar avatar-border">
+  &lt;img src="replace with url" class="avatar-round avatar-lg" />
+&lt;/div>
+&lt;div class="avatar">
+  &lt;img src="replace with url" class="avatar-round avatar-xl" />
+&lt;/div>
+								</code>
+							</pre>
 						</div>
 					</div>
 
@@ -270,7 +397,7 @@
 								<div class="badge">
 									<div class="avatar avatar-border">
 										<img
-											src="../assets/avatar-1.svg"
+											src="../assets/avatars/avatar-1.svg"
 											alt="avatar 1"
 											loading="lazy"
 											class="avatar-round avatar-sm"
@@ -283,7 +410,7 @@
 								<div class="badge">
 									<div class="avatar avatar-border">
 										<img
-											src="../assets/avatar-1.svg"
+											src="../assets/avatars/avatar-1.svg"
 											alt="avatar 1"
 											loading="lazy"
 											class="avatar-round avatar-sm"
@@ -296,7 +423,7 @@
 								<div class="badge">
 									<div class="avatar avatar-border">
 										<img
-											src="../assets/avatar-1.svg"
+											src="../assets/avatars/avatar-1.svg"
 											alt="avatar 1"
 											loading="lazy"
 											class="avatar-round avatar-sm"
@@ -309,7 +436,7 @@
 								<div class="badge badge-red">
 									<div class="avatar">
 										<img
-											src="../assets/avatar-4.svg"
+											src="../assets/avatars/avatar-4.svg"
 											alt="avatar 4"
 											loading="lazy"
 											class="avatar-round avatar-sm"
@@ -319,7 +446,7 @@
 								<div class="badge badge-green">
 									<div class="avatar">
 										<img
-											src="../assets/avatar-4.svg"
+											src="../assets/avatars/avatar-4.svg"
 											alt="avatar 4"
 											loading="lazy"
 											class="avatar-round avatar-sm"
@@ -329,7 +456,7 @@
 								<div class="badge badge-orange">
 									<div class="avatar">
 										<img
-											src="../assets/avatar-4.svg"
+											src="../assets/avatars/avatar-4.svg"
 											alt="avatar 4"
 											loading="lazy"
 											class="avatar-round avatar-sm"
@@ -584,5 +711,14 @@
 				</li>
 			</ul>
 		</footer>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+			integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			hljs.highlightAll();
+		</script>
 	</body>
 </html>

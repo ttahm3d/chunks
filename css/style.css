@@ -5,9 +5,11 @@
 /* color palette */
 
 :root {
-	--primary: hsl(208, 80%, 55%);
-	--primary-light: hsl(208, 100%, 70%);
-	--primary-lighter: hsl(208, 100%, 85%);
+	--primary-darker: hsl(209, 100%, 20%);
+	--primary-dark: hsl(209, 80%, 35%);
+	--primary: hsl(209, 100%, 55%);
+	--primary-light: hsl(209, 100%, 70%);
+	--primary-lighter: hsl(209, 100%, 85%);
 	--bg-700: hsl(0, 0%, 98%);
 	--bg-600: hsl(0, 0%, 90%);
 	--bg-500: hsl(0, 0%, 85%);
@@ -131,16 +133,24 @@ img {
 
 .i-container {
 	width: 90vw;
-	max-width: 70rem;
+	max-width: 65rem;
 	margin: 0 auto;
 }
 
 .hero {
-	padding: 2rem 0;
+	margin: 0 auto;
 }
 
 .hero h1 {
 	font-size: 3.6rem;
+	padding: 2rem 0;
+}
+
+.hero h3 {
+	max-width: 45rem;
+	margin: 0 auto;
+	text-align: center;
+	padding: 1rem 0;
 }
 
 .no-margin {
@@ -152,17 +162,16 @@ div > h3 {
 	scroll-padding-top: 3.1125rem;
 }
 
-div h4 {
-	/* scroll-margin-top: 2.5rem; */
-	scroll-padding-top: 3.0125rem;
-}
-
 .stick-top {
 	position: sticky;
-	/* top: 2.8125rem; */
 	top: 3.25rem;
 	background-color: var(--bg-700);
 	z-index: 8;
+}
+
+.component-example {
+	background-color: hsla(0, 0%, 95%, 0.9);
+	padding: 1rem;
 }
 
 .component-section {
@@ -170,14 +179,41 @@ div h4 {
 	grid-template-columns: 1fr;
 }
 
+.component-container {
+	border-bottom: 1px solid var(--font-400);
+	margin-bottom: 1rem;
+}
+
 .component-list {
 	padding: 0 1rem 0 0;
 }
 
 .component-description {
-	padding: 1.8rem 0;
+	padding: 1.8rem 0 0;
 	scroll-padding-top: 5rem;
 }
+
+/* .code-example { */
+/* width: 100%; */
+/* max-width: 90vw; */
+/* margin: 0 auto; */
+/* border: 1px solid red; */
+/* } */
+
+/* https://alexhooley.com/html-code-blocks-responsive/ */
+
+.code-example pre {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	margin: 0 auto;
+}
+
+/* pre code {
+	padding: 1rem;
+	width: 100%;
+} */
 
 @media screen and (min-width: 48em) {
 	.component-section {

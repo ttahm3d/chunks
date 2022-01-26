@@ -4,9 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="svg" href="/assets/chunks-icon.svg" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+			integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="/css/style.css" />
 		<title>Chunks</title>
@@ -25,7 +33,6 @@
 						<li class="i-navlist-item"><a href="docs">Docs</a></li>
 						<li class="i-navlist-item">
 							<a
-								class="list-icon"
 								rel="noopener noreferrer"
 								href="https://github.com/ttahm3d"
 								target="_blank"
@@ -43,12 +50,27 @@
 					<i class="fas fa-cubes"></i>
 					<span>Chunks</span>
 				</h1>
-				<p class="justify">
+				<h3>
 					A UI Component Library that provides utilty classes for you to create
 					your User Interfaces at Rocket speed🚀
+				</h3>
+				<p class="justify p-lvl-3">
+					Include below import url in your css files and start working on you
+					websites
 				</p>
-				<pre><code>Add CDN Link and way to import image / code here</code></pre>
-				<a href="./docs" class="primary-link">Get Started</a>
+				<div class="code-example">
+					<pre><code class="css">@import url("chunksui.netlify.com/css/style.css")</code></pre>
+				</div>
+				<div class="flex flex-gap-1 justify-center">
+					<a href="./docs" class="link link-primary shadow">Get Started</a>
+					<a
+						rel="noopener noreferrer"
+						href="https://github.com/ttahm3d"
+						target="_blank"
+						class="link link-secondary shadow"
+						>GitHub</a
+					>
+				</div>
 			</section>
 		</main>
 		<footer class="flex flex-center flex-column">
@@ -84,6 +106,15 @@
 				</li>
 			</ul>
 		</footer>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+			integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			hljs.highlightAll();
+		</script>
 		<script src="./js/script.js"></script>
 	</body>
 </html>
