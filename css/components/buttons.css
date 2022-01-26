@@ -14,24 +14,35 @@
 	display: inline-block;
 }
 
+.shadow {
+	box-shadow: 0 4px 9px hsla(0, 0%, 0%, 0.25);
+}
+
 .link-rounded {
 	border-radius: 0.5rem;
 }
 
 .btn-primary,
 .link-primary {
-	background-color: var(--primary-light);
+	color: var(--bg-700);
+	background-color: var(--primary-dark);
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover,
+.link-primary:hover {
+	background-color: var(--primary);
 }
 
 .btn-secondary,
 .link-secondary {
-	border: 1px solid var(--primary-light);
 	background-color: inherit;
+	transition: all 0.3s ease-in-out;
 }
 
 .btn-secondary:hover,
 .link-secondary:hover {
-	background-color: var(--primary-lighter);
+	background-color: var(--bg-400);
 }
 
 .btn-success {

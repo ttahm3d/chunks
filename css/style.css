@@ -5,9 +5,11 @@
 /* color palette */
 
 :root {
-	--primary: hsl(208, 80%, 55%);
-	--primary-light: hsl(208, 100%, 70%);
-	--primary-lighter: hsl(208, 100%, 85%);
+	--primary-darker: hsl(209, 100%, 20%);
+	--primary-dark: hsl(209, 80%, 35%);
+	--primary: hsl(209, 100%, 55%);
+	--primary-light: hsl(209, 100%, 70%);
+	--primary-lighter: hsl(209, 100%, 85%);
 	--bg-700: hsl(0, 0%, 98%);
 	--bg-600: hsl(0, 0%, 90%);
 	--bg-500: hsl(0, 0%, 85%);
@@ -131,20 +133,37 @@ img {
 
 .i-container {
 	width: 90vw;
-	max-width: 70rem;
+	max-width: 65rem;
 	margin: 0 auto;
 }
 
 .hero {
-	padding: 2rem 0;
+	margin: 0 auto;
 }
 
 .hero h1 {
 	font-size: 3.6rem;
+	padding: 2rem 0;
+}
+
+.hero h3 {
+	max-width: 45rem;
+	margin: 0 auto;
+	text-align: center;
+	padding: 1rem 0;
 }
 
 .no-margin {
 	margin: 0;
+}
+
+.code-example {
+	max-width: 90vw;
+}
+
+pre code {
+	padding: 1rem;
+	width: 100%;
 }
 
 div > h3 {
