@@ -59,6 +59,8 @@ body {
 	flex-direction: column;
 	scroll-snap-type: y mandatory;
 	line-height: 1.5;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
 }
 
 button,
@@ -179,11 +181,6 @@ div > h3 {
 	grid-template-columns: 1fr;
 }
 
-.component-container {
-	border-bottom: 1px solid var(--font-400);
-	margin-bottom: 1rem;
-}
-
 .component-list {
 	padding: 0 1rem 0 0;
 }
@@ -191,6 +188,11 @@ div > h3 {
 .component-description {
 	padding: 1.8rem 0 0;
 	scroll-padding-top: 5rem;
+}
+
+.code-example {
+	/* width: 70%; */
+	margin: 0 auto;
 }
 
 /* .code-example { */
@@ -202,18 +204,30 @@ div > h3 {
 
 /* https://alexhooley.com/html-code-blocks-responsive/ */
 
-.code-example pre {
+/* code,
+samp {
+	font: 400 0.8125em/1.4375, "Menlo", "Consolas", "DejaVu Sans Mono" monospace;
 	white-space: pre-wrap;
-	white-space: -moz-pre-wrap;
-	white-space: -pre-wrap;
-	white-space: -o-pre-wrap;
-	margin: 0 auto;
+} */
+
+pre {
+	font: 400 0.8125em/1.4375, "Menlo", "Consolas", "DejaVu Sans Mono" monospace;
+	white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+	white-space: -pre-wrap; /* Opera */
+	white-space: -o-pre-wrap; /* Opera */
+	white-space: pre-wrap; /* CSS3 – Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+	word-wrap: break-word; /* IE 5.5+ */
 }
 
 /* pre code {
 	padding: 1rem;
 	width: 100%;
 } */
+
+pre code.hljs {
+	padding: 1rem;
+	/* overflow-x: scroll; */
+}
 
 @media screen and (min-width: 48em) {
 	.component-section {
