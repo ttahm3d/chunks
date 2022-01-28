@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="svg" href="/assets/chunks-icon.svg" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+			integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="../css/style.css" />
+		<title>Chunks</title>
+	</head>
+	<body>
+		<header class="i-header">
+			<nav class="i-navbar i-container">
+				<div class="nav-item">
+					<h2 class="i-logo">
+						<a href="../index.html">
+							<i class="fas fa-cubes"></i>
+							Chunks
+						</a>
+					</h2>
+				</div>
+				<div class="nav-item">
+					<ul class="i-navlist align-base">
+						<li class="i-navlist-item"><a href="/docs">Docs</a></li>
+						<li class="i-navlist-item">
+							<a
+								rel="noopener noreferrer"
+								href="https://github.com/ttahm3d/chunks"
+								target="_blank"
+							>
+								GitHub
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main class="i-container">
+			<section class="pad-2-tb">
+				<h2 class=".heading-2 head-lvl-3" id="getting-started">
+					Getting Started
+				</h2>
+				<p class="justify">
+					<span>Chunks</span> is a component library with utility classes.
+					Utility classes allow users to develop UI screens at a much faster
+					speed than that is achieved when writing own css. There are few
+					componenets which the user can create by just using few of the utilty
+					classes. This allows the user to focus on creating the functionality
+					rather than worrying about the design
+				</p>
+				<p class="justify">
+					All that one has to do is to add the below import in his / her css
+					file.
+				</p>
+
+				<p class="p-lvl-2">Below is a list of components that user can use.</p>
+
+				<div class="code-example">
+					<pre><code class="css">@import url("chunksui.netlify.app/css/style.css")</code></pre>
+				</div>
+			</section>
+
+			<section class="component-section">
+				<div class="component-list">
+					<h2 class="heading-3 head-lvl-3" id="available-components">
+						Available components
+					</h2>
+					<ul class="list style-none">
+						<li class="list-item">
+							<a class="hover-styles" href="#avatar">avatar</a>
+						</li>
+						<li class="list-item">
+							<a class="hover-styles" href="#alert">alert</a>
+						</li>
+						<li class="list-item">
+							<a class="hover-styles" href="#badge">badges</a>
+							<!-- <ul class="list style-none pad-left-1">
+								<li class="list-item-2">
+									<a class="hover-styles" href="#badge-on-icon"
+										>badge on icon</a
+									>
+								</li>
+								<li class="list-item-2">
+									<a class="hover-styles" href="#badge-on-avatar"
+										>badge on avatar</a
+									>
+								</li>
+							</ul> -->
+						</li>
+						<li class="list-item">
+							<a class="hover-styles" href="#button">button</a>
+							<!-- <ul class="list style-none pad-left-1">
+								<li class="list-item-2">
+									<a class="hover-styles" href="#primary-button"
+										>primary button</a
+									>
+								</li>
+								<li class="list-item-2">
+									<a class="hover-styles" href="#link-button">link button</a>
+								</li>
+								<li class="list-item-2">
+									<a class="hover-styles" href="#icon-button">icon button</a>
+								</li>
+								<li class="list-item-2">
+									<a class="hover-styles" href="#floating-action-button"
+										>floating action button</a
+									>
+								</li>
+							</ul> -->
+						</li>
+						<li class="list-item">
+							<a class="hover-styles" href="#card">card</a>
+							<!-- <ul class="list style-none pad-left-1">
+								<li class="list-item-2">
+									<a class="hover-styles" href="#">simple card</a>
+								</li>
+								<li class="list-item-2">
+									<a class="hover-styles" href="#">basic card</a>
+								</li>
+								<li class="list-item-2">
+									<a class="hover-styles" href="#">card with overlay text</a>
+								</li>
+								<li class="list-item-2">
+									<a class="hover-styles" href="#">horizontal card</a>
+								</li>
+							</ul> -->
+						</li>
+						<li class="list-item">
+							<a class="hover-styles" href="#image">image</a>
+						</li>
+						<li class="list-item">
+							<a class="hover-styles" href="#input">input</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="components">
+					<div class="component-container">
+						<h3 class="heading-3 head-lvl-3 stick-top" id="avatar">avatar</h3>
+						<div class="component-description">
+							<p class="justify">
+								avatars are used to show profile images in headers or profile
+								information sections. They can be in multiple sizes. xs &mdash;
+								for extra small, sm &mdash; for small, md &mdash; for medium, lg
+								&mdash; for large, and xl for &mdash; extra large. They can be
+								round or squircle in shape.
+							</p>
+						</div>
+						<div class="component-example">
+							<div class="flex flex-gap-2 wrap flex-center /">
+								<div class="avatar avatar-border">
+									<img
+										src="../assets/avatars/avatar-1.svg"
+										alt="avatar 1"
+										loading="lazy"
+										class="avatar-round avatar-xs"
+									/>
+								</div>
+								<div class="avatar avatar-border">
+									<img
+										src="../assets/avatars/avatar-4.svg"
+										alt="avatar 4"
+										loading="lazy"
+										class="avatar-sq avatar-sm"
+									/>
+								</div>
+								<div class="avatar avatar-border">
+									<img
+										src="../assets/avatars/avatar-2.svg"
+										alt="avatar 2"
+										loading="lazy"
+										class="avatar-round avatar-md"
+									/>
+								</div>
+								<div class="avatar avatar-border">
+									<img
+										src="../assets/avatars/avatar-3.svg"
+										alt="avatar 3"
+										loading="lazy"
+										class="avatar-sq avatar-lg"
+									/>
+								</div>
+								<div class="avatar avatar-border">
+									<img
+										src="../assets/avatars/avatar-5.svg"
+										alt="avatar 5"
+										loading="lazy"
+										class="avatar-round avatar-xl"
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="code-example">
+							<pre>
+								<code class="html">
+&lt;!--notice the classes avatar-round and 
+avatar-sq being used to create different shapes --&gt;
+&lt;div class="avatar">
+  &lt;img src="replace with url" 
+	class="avatar-round avatar-xs" />
+&lt;/div>
+&lt;div class="avatar avatar-border">
+  &lt;img src="replace with url" 
+	class="avatar-sq avatar-sm" />
+&lt;/div>
+&lt;div class="avatar">
+  &lt;img src="replace with url" 
+	class="avatar-round avatar-md" />
+&lt;/div>
+&lt;div class="avatar avatar-border">
+  &lt;img src="replace with url" 
+	class="avatar-sq avatar-lg" />
+&lt;/div>
+&lt;div class="avatar">
+  &lt;img src="replace with url" 
+	class="avatar-round avatar-xl" />
+&lt;/div>
+								</code>
+							</pre>
+						</div>
+
+						<div class="component-description">
+							<p class="justify">
+								avatars can also be just letters in case the user has not
+								uploaded any images. The user can chose background color from
+								any of the below available ones
+							</p>
+						</div>
+
+						<div class="component-example">
+							<div class="flex align-base flex-gap-2 flex-center wrap">
+								<div class="avatar avatar-border">
+									<div
+										class="avatar-text avatar-xs avatar-round avatar-bg-blue"
+									>
+										C
+									</div>
+								</div>
+								<div class="avatar avatar-border">
+									<div
+										class="avatar-text avatar-sm avatar-round avatar-bg-grey"
+									>
+										S
+									</div>
+								</div>
+								<div class="avatar avatar-border">
+									<div
+										class="avatar-text avatar-md avatar-round avatar-bg-green"
+									>
+										LH
+									</div>
+								</div>
+								<div class="avatar avatar-border">
+									<div
+										class="avatar-text avatar-lg avatar-round avatar-bg-orange"
+									>
+										TA
+									</div>
+								</div>
+								<div class="avatar avatar-border">
+									<div class="avatar-text avatar-xl avatar-round avatar-bg-red">
+										JD
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="code-example">
+							<pre>
+								<code class="html">
+&lt;div class="avatar">
+  &lt;img src="replace with url" class="avatar-round avatar-xs" />
+&lt;/div>
+&lt;div class="avatar avatar-border">
+  &lt;img src="replace with url" class="avatar-round avatar-sm" />
+&lt;/div>
+&lt;div class="avatar">
+  &lt;img src="replace with url" class="avatar-round avatar-md" />
+&lt;/div>
+&lt;div class="avatar avatar-border">
+  &lt;img src="replace with url" class="avatar-round avatar-lg" />
+&lt;/div>
+&lt;div class="avatar">
+  &lt;img src="replace with url" class="avatar-round avatar-xl" />
+&lt;/div>
+								</code>
+							</pre>
+						</div>
+					</div>
+
+					<div class="component-container">
+						<h3 class="heading-3 head-lvl-3 stick-top" id="alert">alert</h3>
+						<div class="component-description">
+							<p class="justify">
+								alerts are very common in most of the applications. To provide
+								feedback to use to any of his / her actions, we make use of
+								alerts. There are multiple types of alerts availale as mentioned
+								below.
+							</p>
+							<div class="alert alert-info">
+								<p class="justify no-margin">
+									This is an example of info alert
+								</p>
+							</div>
+							<div class="alert alert-success">
+								<p class="justify no-margin">
+									This is an example of success alert
+								</p>
+							</div>
+							<div class="alert alert-error">
+								<p class="justify no-margin">
+									This is an example of error alert
+								</p>
+							</div>
+							<div class="alert alert-warning">
+								<p class="justify no-margin">
+									This is an example of warning alert
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="component-container">
+						<h3 class="heading-3 head-lvl-3 stick-top" id="badge">badge</h3>
+						<div class="component-description">
+							<p class="justify">
+								badges are usually seen in social media apps to indicate the
+								status of whether a person is online or offline. They are also
+								used to indicate number of unread notifications. There are
+								multiple variants of these that come with different colors and
+							</p>
+						</div>
+
+						<h4 class="heading-4 head-lvl-4">badge on icon</h4>
+						<div class="component-description">
+							<p class="justify">
+								badge on icon can be used to show number of notifications,
+								unread messages and so on. It usually has a icon with a number
+								representing count on that notification
+							</p>
+						</div>
+						<div class="component-description">
+							<div class="flex flex-gap-2 wrap">
+								<div
+									class="far fa-envelope badge badge-lg badge-icon badge-padding"
+								>
+									<div
+										class="badge-counter badge-top-right badge-clr-blue badge-round"
+									>
+										5
+									</div>
+								</div>
+								<div
+									class="far fa-bell badge badge-lg badge-icon badge-padding"
+								>
+									<div
+										class="badge-counter badge-top-right badge-clr-red badge-round"
+									>
+										8
+									</div>
+								</div>
+								<div
+									class="fas fa-heart badge badge-lg badge-icon badge-padding"
+								>
+									<div
+										class="badge-counter badge-top-right badge-clr-orange badge-round"
+									>
+										4
+									</div>
+								</div>
+								<div
+									class="fas fa-shopping-cart badge badge-lg badge-icon badge-padding"
+								>
+									<div
+										class="badge-counter badge-top-right badge-clr-green badge-round"
+									>
+										2
+									</div>
+								</div>
+							</div>
+						</div>
+						<h4 class="heading-4 head-lvl-4">badge on avatar</h4>
+						<div class="component-description">
+							<p class="justify">
+								badges on avatars can be used to indicate the status of the
+								person - whether he / she is online. They can be as simple as a
+								small dot or a circle with border around the image
+							</p>
+						</div>
+						<div class="component-description">
+							<div class="flex flex-gap-2 wrap align-base">
+								<div class="badge">
+									<div class="avatar avatar-border">
+										<img
+											src="../assets/avatars/avatar-1.svg"
+											alt="avatar 1"
+											loading="lazy"
+											class="avatar-round avatar-sm"
+										/>
+									</div>
+									<div class="badge-white-container">
+										<div class="badge-dot-green"></div>
+									</div>
+								</div>
+								<div class="badge">
+									<div class="avatar avatar-border">
+										<img
+											src="../assets/avatars/avatar-1.svg"
+											alt="avatar 1"
+											loading="lazy"
+											class="avatar-round avatar-sm"
+										/>
+									</div>
+									<div class="badge-white-container">
+										<div class="badge-dot-orange"></div>
+									</div>
+								</div>
+								<div class="badge">
+									<div class="avatar avatar-border">
+										<img
+											src="../assets/avatars/avatar-1.svg"
+											alt="avatar 1"
+											loading="lazy"
+											class="avatar-round avatar-sm"
+										/>
+									</div>
+									<div class="badge-white-container">
+										<div class="badge-dot-red"></div>
+									</div>
+								</div>
+								<div class="badge badge-red">
+									<div class="avatar">
+										<img
+											src="../assets/avatars/avatar-4.svg"
+											alt="avatar 4"
+											loading="lazy"
+											class="avatar-round avatar-sm"
+										/>
+									</div>
+								</div>
+								<div class="badge badge-green">
+									<div class="avatar">
+										<img
+											src="../assets/avatars/avatar-4.svg"
+											alt="avatar 4"
+											loading="lazy"
+											class="avatar-round avatar-sm"
+										/>
+									</div>
+								</div>
+								<div class="badge badge-orange">
+									<div class="avatar">
+										<img
+											src="../assets/avatars/avatar-4.svg"
+											alt="avatar 4"
+											loading="lazy"
+											class="avatar-round avatar-sm"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="component-container">
+						<h3 class="heading-3 head-lvl-3 stick-top" id="button">button</h3>
+						<div class="component-description">
+							<p class="justify">
+								buttons are used in two ways &mdash; buttons and call to action
+								links. Call to actions are used to grab users attention to some
+								specific thing that you want the user to click at. There are
+								various variants of buttons. These classes can be used on both
+								buttons and anchor links
+							</p>
+						</div>
+						<h4 class="heading-4 head-lvl-4">normal button</h4>
+						<div class="component-description">
+							<p class="justify">
+								there are multiple variants of buttons. buttons with background
+								color are usually used as main call to action buttons &mdash;
+								usually with primary background. there are other types also such
+								as secondary, danger &mdash; to indicate things that might cause
+								something to be deleted, and success &mdash; for affirmations.
+								They can also be rounded
+							</p>
+						</div>
+						<div class="component-description">
+							<div class="flex flex-gap-2 wrap">
+								<button class="btn btn-primary">primary button</button>
+								<button class="btn btn-secondary btn-rounded">
+									secondary button
+								</button>
+								<button class="btn btn-danger">danger button</button>
+								<button class="btn btn-success">success button</button>
+							</div>
+						</div>
+						<h4 class="heading-4 head-lvl-4">link button</h4>
+						<div class="component-description">
+							<p class="justify">
+								these are links &mdash; to other parts of the webpage or to
+								other websites. They can be made rounded.
+							</p>
+						</div>
+						<div class="component-description">
+							<div class="flex flex-gap-2 wrap">
+								<a href="##" class="link link-primary">primary link</a>
+								<a href="##" class="link link-secondary link-rounded"
+									>secondary link</a
+								>
+							</div>
+						</div>
+						<h4 class="heading-4 head-lvl-4">icon button</h4>
+						<div class="component-description">
+							<p class="justify">
+								these are generally see in shopping sites. they are just another
+								set of buttons that come with icons. These icons can be added
+								from font-awesome
+							</p>
+						</div>
+						<div class="component-description">
+							<div class="flex flex-gap-2 stick-top">
+								<button class="btn btn-success">
+									<div class="fas fa-shopping-cart"></div>
+									&nbsp;add to cart
+								</button>
+								<button class="btn btn-danger">
+									<div class="fas fa-trash"></div>
+									&nbsp;delete
+								</button>
+							</div>
+						</div>
+						<h4 class="heading-4 head-lvl-4">floating action button</h4>
+						<div class="component-desctiption">
+							<p class="justify">
+								these buttons are fixed to a particular part of the viewport and
+								are stacked on top of all the things. the always appear in the
+								viewport and are usually used to provide a way to allow user to
+								scroll to top or open menus
+							</p>
+						</div>
+						<div class="component-description">
+							<div class="flex flex-gap-2">
+								<button
+									class="btn-float btn-float-action"
+									aria-label="floating-button"
+								>
+									<span><i class="fas fa-plus"></i></span>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="component-container">
+						<h3 class="heading-3 head-lvl-3 stick-top" id="card">card</h3>
+						<div class="component-description">
+							<p class="justify">
+								cards are content containers. They are used to display products
+								in shopping apps or to display items of similar types. There are
+								multiple variants of cards avaialbe as below.
+							</p>
+						</div>
+						<h4 class="heading-4 head-lvl-4">simple card</h4>
+						<div class="component-description">
+							<p class="justify">card to display text content</p>
+							<div class="card-grid card-row">
+								<div class="card card-bg card-p-t-b">
+									<p>This is example of simple card</p>
+								</div>
+							</div>
+						</div>
+						<h4 class="heading-4 head-lvl-4">basic card</h4>
+						<div class="component-description">
+							<div class="card-grid card-row">
+								<div class="card card-bg card-p-eq-1">
+									<div class="card-image">
+										<img
+											loading="lazy"
+											src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+											alt="headphones"
+										/>
+									</div>
+									<div class="card-text card-text-center">
+										<p class="card-title bold">headphones</p>
+									</div>
+								</div>
+								<div class="card card-border card-p-eq-1">
+									<div class="card-image">
+										<img
+											src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+											alt="headphones"
+										/>
+									</div>
+									<div class="card-text card-text-center">
+										<p class="card-title bold">headphones</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h4 class="heading-4 head-lvl-4">card with overlay text</h4>
+						<div class="component-description">
+							<p class="justify">
+								This can be used to display product details horizontally
+							</p>
+							<div class="card-horizontal card-border card-p-eq-1">
+								<div class="card-image image-center">
+									<img
+										src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+										alt="waterbottle"
+									/>
+								</div>
+								<div
+									class="card-text hz-card-text flex flex-column justify-between"
+								>
+									<div>
+										<p class="p-lvl-1 bold heading-3">Water bottle</p>
+										<p class="p-lvl-3">
+											Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+											Illo aliquid esse magni architecto.
+										</p>
+									</div>
+									<button class="btn btn-success">
+										<span><i class="fas fa-shopping-cart"></i></span>&nbsp;add
+										to cart
+									</button>
+								</div>
+							</div>
+						</div>
+						<h4 class="heading-4 head-lvl-4">horizontal card</h4>
+						<div class="component-description">
+							<p class="justify">
+								horizontal cards have image and textual content laid down side
+								by side. They are usually used in e-commerce apps , to include
+								information about the product right next to the image and
+							</p>
+							<div class="card-grid card-row">
+								<div class="card card-border card-p-eq-1">
+									<div class="card-image image-center">
+										<img
+											src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+											alt="waterbottle"
+										/>
+									</div>
+									<div
+										class="card-text hz-card-text flex flex-column justify-between"
+									>
+										<div>
+											<p class="p-lvl-1 bold heading-3">Water bottle</p>
+											<p class="justify">
+												Lorem ipsum dolor sit amet consectetur, adipisicing
+												elit. Illo aliquid esse magni architecto.
+											</p>
+										</div>
+										<button class="btn btn-success">
+											<span><i class="fas fa-shopping-cart"></i></span>&nbsp;add
+											to cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="component-container">
+						<h3 class="heading-3 head-lvl-3 stick-top" id="image">image</h3>
+						<div class="component-description"></div>
+					</div>
+
+					<div class="component-container">
+						<h3 class="heading-3 head-lvl-3 stick-top" id="input">input</h3>
+						<div class="component-description"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="flex flex-center flex-column">
+			<p>Created by Tahir Ahmed T</p>
+
+			<ul class="list style-none horizontal wd-100 justify-center list-gap-1">
+				<li>
+					<a
+						class="list-icon"
+						rel="noopener noreferrer"
+						href="https://github.com/ttahm3d"
+						target="_blank"
+						><i class="fab fa-github"></i
+					></a>
+				</li>
+				<li>
+					<a
+						class="list-icon"
+						rel="noopener noreferrer"
+						href="https://twitter.com/ttahm3d"
+						target="_blank"
+						><i class="fab fa-twitter"></i
+					></a>
+				</li>
+				<li>
+					<a
+						class="list-icon"
+						rel="noopener noreferrer"
+						href="https://www.linkedin.com/in/tahirahmedt"
+						target="_blank"
+						><i class="fab fa-linkedin"></i
+					></a>
+				</li>
+			</ul>
+		</footer>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+			integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			hljs.highlightAll();
+		</script>
+	</body>
+</html>
