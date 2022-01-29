@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Noto+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700&display=swap");
 
 @import url("./components/index.css");
 
@@ -9,13 +10,22 @@
 	--primary-dark: hsl(209, 80%, 35%);
 	--primary: hsl(209, 100%, 55%);
 	--primary-light: hsl(209, 100%, 70%);
-	--primary-lighter: hsl(209, 100%, 85%);
+	--primary-lighter: hsl(209, 25%, 85%);
+	--secondary-darker: hsl(18, 100%, 20%);
+	--secondary-dark: hsl(18, 80%, 35%);
+	--secondary: hsl(18, 98%, 59%);
+	--secondary-light: hsl(18, 100%, 70%);
+	--secondary-lighter: hsl(18, 25%, 85%);
+	--accent-color: hsl(261, 82%, 61%);
+	--accent-color-value: 261, 82%, 61%;
+	--primary-color-value: 209 100%, 55%;
 	--bg-700: hsl(0, 0%, 98%);
 	--bg-600: hsl(0, 0%, 90%);
 	--bg-500: hsl(0, 0%, 85%);
 	--bg-400: hsl(0, 0%, 80%);
+	--bg-300: hsl(0, 0%, 70%);
 	--bg-200: hsl(0, 0%, 70%);
-	--font-700: hsl(0, 0%, 4%);
+	--font-700: hsl(0, 0%, 7%);
 	--font-600: hsl(0, 0%, 14%);
 	--font-500: hsl(0, 0%, 28%);
 	--font-400: hsl(0, 0%, 42%);
@@ -30,9 +40,6 @@
 	--orange-500: hsl(34, 100%, 65%);
 	--orange-300: hsl(34, 100%, 95%);
 	--blue-700: hsl(205, 100%, 35%);
-	/* --blue-500: hsl(205, 100%, 65%); */
-	/* --blue-300: hsl(205, 100%, 95%); */
-	/* --blue-700: hsl(200, 100%, 15%); */
 	--blue-500: hsl(200, 100%, 50%);
 	--blue-300: hsl(200, 100%, 90%);
 }
@@ -76,7 +83,7 @@ h5,
 h6 {
 	font-family: "Noto Sans", sans-serif;
 	margin: 0;
-	padding: 0 0 0.5rem;
+	padding: 0.8rem 0;
 }
 
 footer {
@@ -95,13 +102,14 @@ img {
 }
 
 /* Header styles */
+
 .i-header {
 	background-color: var(--bg-700);
-	border-bottom: 1px solid var(--bg-400);
-	padding: 0.5rem 0 0;
+	padding: 1rem 0;
 	position: sticky;
 	top: 0;
 	z-index: 9;
+	border-bottom: 1px solid var(--bg-300);
 }
 
 .i-navbar {
@@ -160,7 +168,6 @@ img {
 }
 
 div > h3 {
-	/* scroll-margin-top: 2.5rem; */
 	scroll-padding-top: 3.1125rem;
 }
 
@@ -191,24 +198,10 @@ div > h3 {
 }
 
 .code-example {
-	/* width: 70%; */
 	margin: 0 auto;
 }
 
-/* .code-example { */
-/* width: 100%; */
-/* max-width: 90vw; */
-/* margin: 0 auto; */
-/* border: 1px solid red; */
-/* } */
-
 /* https://alexhooley.com/html-code-blocks-responsive/ */
-
-/* code,
-samp {
-	font: 400 0.8125em/1.4375, "Menlo", "Consolas", "DejaVu Sans Mono" monospace;
-	white-space: pre-wrap;
-} */
 
 pre {
 	font: 400 0.8125em/1.4375, "Menlo", "Consolas", "DejaVu Sans Mono" monospace;
@@ -219,14 +212,8 @@ pre {
 	word-wrap: break-word; /* IE 5.5+ */
 }
 
-/* pre code {
-	padding: 1rem;
-	width: 100%;
-} */
-
 pre code.hljs {
 	padding: 1rem;
-	/* overflow-x: scroll; */
 }
 
 @media screen and (min-width: 48em) {
@@ -239,7 +226,7 @@ pre code.hljs {
 		position: sticky;
 		top: 3.5rem;
 		height: calc(100vh - 4rem);
-		overflow-y: scroll;
+		overflow-y: auto;
 		padding-bottom: 2rem;
 	}
 }
