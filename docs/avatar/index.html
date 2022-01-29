@@ -17,8 +17,9 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="../../css/style.css" />
-		<title>Chunks</title>
+		<title>Avatar | Chunks</title>
 	</head>
+
 	<body>
 		<header class="i-header">
 			<nav class="i-navbar i-container">
@@ -76,7 +77,149 @@
 						</li>
 					</ul>
 				</aside>
-				<article>avatar</article>
+				<article>
+					<div class="component-description">
+						<h3 class="heading-3 head-lvl-3 stick-top" id="alert">alert</h3>
+
+						<p class="justify">
+							avatars are used to show profile images in headers or profile
+							information sections. They can be in multiple sizes. xs &mdash;
+							for extra small, sm &mdash; for small, md &mdash; for medium, lg
+							&mdash; for large, and xl for &mdash; extra large. They can be
+							round or squircle in shape.
+						</p>
+					</div>
+					<div class="component-example">
+						<div class="flex flex-gap-2 wrap flex-center /">
+							<div class="avatar avatar-border">
+								<img
+									src="../../assets/avatars/avatar-1.svg"
+									alt="avatar 1"
+									loading="lazy"
+									class="avatar-round avatar-xs"
+								/>
+							</div>
+							<div class="avatar avatar-border">
+								<img
+									src="../../assets/avatars/avatar-4.svg"
+									alt="avatar 4"
+									loading="lazy"
+									class="avatar-sq avatar-sm"
+								/>
+							</div>
+							<div class="avatar avatar-border">
+								<img
+									src="../../assets/avatars/avatar-2.svg"
+									alt="avatar 2"
+									loading="lazy"
+									class="avatar-round avatar-md"
+								/>
+							</div>
+							<div class="avatar avatar-border">
+								<img
+									src="../../assets/avatars/avatar-3.svg"
+									alt="avatar 3"
+									loading="lazy"
+									class="avatar-sq avatar-lg"
+								/>
+							</div>
+							<div class="avatar avatar-border">
+								<img
+									src="../../assets/avatars/avatar-5.svg"
+									alt="avatar 5"
+									loading="lazy"
+									class="avatar-round avatar-xl"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<div class="code-example">
+						<pre><code class="html">
+
+<div class="avatar">
+  <img src="replace with url" class="avatar-round avatar-xs" />
+</div>
+<div class="avatar avatar-border">
+  <img src="replace with url" class="avatar-round avatar-sm" />
+</div>
+<div class="avatar">
+  <img src="replace with url" class="avatar-round avatar-md" />
+</div>
+<div class="avatar avatar-border">
+  <img src="replace with url" class="avatar-round avatar-lg" />
+</div>
+<div class="avatar">
+  <img src="replace with url" class="avatar-round avatar-xl" />
+</div>
+							
+							</code>
+							</pre>
+					</div>
+
+					<div class="component-description">
+						<p class="justify">
+							avatars can also be just letters in case the user has not uploaded
+							any images. The user can chose background color from any of the
+							below available ones
+						</p>
+					</div>
+
+					<div class="component-example">
+						<div class="flex align-base flex-gap-2 flex-center wrap">
+							<div class="avatar avatar-border">
+								<div class="avatar-text avatar-xs avatar-round avatar-bg-blue">
+									C
+								</div>
+							</div>
+							<div class="avatar avatar-border">
+								<div class="avatar-text avatar-sm avatar-round avatar-bg-grey">
+									S
+								</div>
+							</div>
+							<div class="avatar avatar-border">
+								<div class="avatar-text avatar-md avatar-round avatar-bg-green">
+									LH
+								</div>
+							</div>
+							<div class="avatar avatar-border">
+								<div
+									class="avatar-text avatar-lg avatar-round avatar-bg-orange"
+								>
+									TA
+								</div>
+							</div>
+							<div class="avatar avatar-border">
+								<div class="avatar-text avatar-xl avatar-round avatar-bg-red">
+									JD
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="code-example">
+						<pre><code class="html">
+
+<div class="avatar">
+  <img src="replace with url" class="avatar-round avatar-xs" />
+</div>
+<div class="avatar avatar-border">
+  <img src="replace with url" class="avatar-round avatar-sm" />
+</div>
+<div class="avatar">
+  <img src="replace with url" class="avatar-round avatar-md" />
+</div>
+<div class="avatar avatar-border">
+  <img src="replace with url" class="avatar-round avatar-lg" />
+</div>
+<div class="avatar">
+  <img src="replace with url" class="avatar-round avatar-xl" />
+</div>
+							
+							</code>
+							</pre>
+					</div>
+				</article>
 			</section>
 		</main>
 
@@ -122,5 +265,6 @@
 		<script>
 			hljs.highlightAll();
 		</script>
+		<script src="../../js/codeblocks.js"></script>
 	</body>
 </html>
