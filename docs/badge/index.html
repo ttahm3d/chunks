@@ -17,7 +17,7 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="../../css/style.css" />
-		<title>Chunks</title>
+		<title>Badge | Chunks</title>
 	</head>
 	<body>
 		<header class="i-header">
@@ -92,44 +92,65 @@
 						<p class="justify">
 							badge on icon can be used to show number of notifications, unread
 							messages and so on. It usually has a icon with a number
-							representing count on that notification
+							representing count on that notification. The position of badge can
 						</p>
 					</div>
 					<div class="component-example">
 						<div class="flex flex-gap-2 wrap">
-							<div
-								class="far fa-envelope badge badge-lg badge-icon badge-padding"
-							>
+							<div class="badge badge-wrapper">
+								<div class="far fa-envelope"></div>
 								<div
 									class="badge-counter badge-top-right badge-clr-blue badge-round"
 								>
 									5
 								</div>
 							</div>
-							<div class="far fa-bell badge badge-lg badge-icon badge-padding">
+							<div class="badge badge-wrapper">
+								<div class="far fa-bell"></div>
 								<div
-									class="badge-counter badge-top-right badge-clr-red badge-round"
+									class="badge-counter badge-top-left badge-clr-red badge-round"
 								>
 									8
 								</div>
 							</div>
-							<div class="fas fa-heart badge badge-lg badge-icon badge-padding">
-								<div
-									class="badge-counter badge-top-right badge-clr-orange badge-round"
-								>
-									4
-								</div>
-							</div>
-							<div
-								class="fas fa-shopping-cart badge badge-lg badge-icon badge-padding"
-							>
+							<div class="badge badge-wrapper">
+								<div class="far fa-heart"></div>
 								<div
 									class="badge-counter badge-top-right badge-clr-green badge-round"
+								>
+									9+
+								</div>
+							</div>
+							<div class="badge badge-wrapper">
+								<div class="fas fa-shopping-cart"></div>
+								<div
+									class="badge-counter badge-top-left badge-clr-orange badge-round"
 								>
 									2
 								</div>
 							</div>
 						</div>
+					</div>
+					<!-- prettier ignore -->
+					<div class="code-example">
+						<pre><code class="html">
+<div class="badge badge-wrapper">
+  <div class="far fa-envelope"></div>
+  <div class="badge-counter badge-top-right badge-clr-blue badge-round">5</div>
+</div>
+<div class="badge badge-wrapper">
+  <div class="far fa-bell"></div>
+  <div class="badge-counter badge-top-left badge-clr-red badge-round">8</div>
+</div>
+<div class="badge badge-wrapper">
+  <div class="far fa-heart"></div>
+  <div class="badge-counter badge-top-right badge-clr-green badge-round">9+</div>
+</div>
+<div class="badge badge-wrapper">
+  <div class="fas fa-shopping-cart"></div>
+  <div class="badge-counter badge-top-left badge-clr-orange badge-round">2</div>
+</div>
+						</code></pre>
 					</div>
 
 					<h4 class="heading-4 head-lvl-4">badge on avatar</h4>
@@ -259,5 +280,6 @@
 		<script>
 			hljs.highlightAll();
 		</script>
+		<script src="../../js/codeblocks.js"></script>
 	</body>
 </html>
