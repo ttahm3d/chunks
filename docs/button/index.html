@@ -1,126 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="svg" href="/assets/chunks-icon.svg" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
-			integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link rel="stylesheet" href="../../css/style.css" />
-		<title>Chunks</title>
-	</head>
-	<body>
-		<header class="i-header">
-			<nav class="i-navbar i-container">
-				<div class="nav-item">
-					<h2 class="i-logo">
-						<a href="../index.html">
-							<i class="fas fa-cubes"></i>
-							Chunks
-						</a>
-					</h2>
-				</div>
-				<div class="nav-item">
-					<ul class="i-navlist align-base">
-						<li class="i-navlist-item"><a href="/docs">Docs</a></li>
-						<li class="i-navlist-item">
-							<a
-								rel="noopener noreferrer"
-								href="https://github.com/ttahm3d/chunks"
-								target="_blank"
-							>
-								GitHub
-							</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
-		<main class="i-container">
-			<section class="component-section">
-				<aside class="component-list">
-					<h2 class="heading-3 head-lvl-3" id="available-components">
-						Available components
-					</h2>
-					<ul class="list style-none">
-						<li class="list-item">
-							<a class="hover-styles" href="../avatar/">avatar</a>
-						</li>
-						<li class="list-item">
-							<a class="hover-styles" href="../alert/">alert</a>
-						</li>
-						<li class="list-item">
-							<a class="hover-styles" href="../badge">badges</a>
-						</li>
-						<li class="list-item">
-							<a class="hover-styles" href="../button">button</a>
-						</li>
-						<li class="list-item">
-							<a class="hover-styles" href="../card">card</a>
-						</li>
-						<li class="list-item">
-							<a class="hover-styles" href="../image">image</a>
-						</li>
-						<li class="list-item">
-							<a class="hover-styles" href="../input">input</a>
-						</li>
-					</ul>
-				</aside>
-				<article>Button</article>
-			</section>
-		</main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="svg" href="/assets/chunks-icon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+      integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>Chunks</title>
+  </head>
+  <body>
+    <header class="i-header">
+      <nav class="i-navbar i-container">
+        <div class="nav-item">
+          <h2 class="i-logo">
+            <a href="../index.html">
+              <i class="fas fa-cubes"></i>
+              Chunks
+            </a>
+          </h2>
+        </div>
+        <div class="nav-item">
+          <ul class="i-navlist align-base">
+            <li class="i-navlist-item"><a href="/docs">Docs</a></li>
+            <li class="i-navlist-item">
+              <a
+                rel="noopener noreferrer"
+                href="https://github.com/ttahm3d/chunks"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="i-container">
+      <section class="component-section">
+        <aside class="component-list">
+          <h2 class="heading-3 head-lvl-3" id="available-components">
+            Available components
+          </h2>
+          <ul class="list style-none">
+            <li class="list-item">
+              <a class="hover-styles" href="../avatar/">avatar</a>
+            </li>
+            <li class="list-item">
+              <a class="hover-styles" href="../alert/">alert</a>
+            </li>
+            <li class="list-item">
+              <a class="hover-styles" href="../badge">badges</a>
+            </li>
+            <li class="list-item">
+              <a class="hover-styles" href="../button">button</a>
+            </li>
+            <li class="list-item">
+              <a class="hover-styles" href="../card">card</a>
+            </li>
+            <li class="list-item">
+              <a class="hover-styles" href="../image">image</a>
+            </li>
+            <li class="list-item">
+              <a class="hover-styles" href="../input">input</a>
+            </li>
+          </ul>
+        </aside>
+        <article>
+          <h3 class="heading-3 head-lvl-3 stick-top" id="button">button</h3>
+          <div class="component-description">
+            <p class="justify">
+              buttons are used in two ways &mdash; buttons and call to action
+              links. Call to actions are used to grab users attention to some
+              specific thing that you want the user to click at. There are
+              various variants of buttons. These classes can be used on both
+              buttons and anchor links
+            </p>
+          </div>
+          <h4 class="heading-4 head-lvl-4">primary button</h4>
+          <div class="component-description">
+            <p class="justify">
+              there are multiple variants of buttons. buttons with background
+              color are usually used as main call to action buttons &mdash;
+              usually with primary background. there are other types also such
+              as secondary, danger &mdash; to indicate things that might cause
+              something to be deleted, and success &mdash; for affirmations.
+              They can also be rounded.
+            </p>
+          </div>
+          <div class="component-example">
+            <div class="flex flex-gap-2 wrap">
+              <button class="btn btn-primary">primary button</button>
+              <button class="btn btn-secondary">secondary button</button>
+              <button class="btn btn-danger">danger button</button>
+              <button class="btn btn-success">success button</button>
+            </div>
+          </div>
+          <h4 class="heading-4 head-lvl-4">link button</h4>
+          <div class="component-description">
+            <p class="justify">
+              these are links &mdash; to other parts of the webpage or to other
+              websites. They can be made rounded.
+            </p>
+          </div>
+          <div class="component-example">
+            <div class="flex flex-gap-2 wrap">
+              <a href="##" class="link link-primary">primary link</a>
+              <a href="##" class="link link-secondary link-rounded"
+                >secondary link</a
+              >
+            </div>
+          </div>
+          <h4 class="heading-4 head-lvl-4">icon button</h4>
+          <div class="component-description">
+            <p class="justify">
+              these are generally see in shopping sites. they are just another
+              set of buttons that come with icons. These icons can be added from
+              font-awesome
+            </p>
+          </div>
+          <div class="component-example">
+            <div class="flex flex-gap-2">
+              <button class="btn btn-success">
+                <div class="fas fa-shopping-cart"></div>
+                &nbsp;add to cart
+              </button>
+              <button class="btn btn-danger">
+                <div class="fas fa-trash"></div>
+                &nbsp;delete
+              </button>
+            </div>
+          </div>
+          <h4 class="heading-4 head-lvl-4">floating action button</h4>
+          <div class="component-desctiption">
+            <p class="justify">
+              these buttons are fixed to a particular part of the viewport and
+              are stacked on top of all the things. the always appear in the
+              viewport and are usually used to provide a way to allow user to
+              scroll to top or open menus
+            </p>
+          </div>
+          <div class="component-example">
+            <div class="flex flex-gap-2">
+              <button
+                class="btn-float btn-float-action"
+                aria-label="floating-button"
+              >
+                <span><i class="fas fa-plus"></i></span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
 
-		<footer class="flex flex-center flex-column">
-			<p>Created by Tahir Ahmed T</p>
+    <footer class="flex flex-center flex-column">
+      <p>Created by Tahir Ahmed T</p>
 
-			<ul class="list style-none horizontal wd-100 justify-center list-gap-1">
-				<li>
-					<a
-						class="list-icon"
-						rel="noopener noreferrer"
-						href="https://github.com/ttahm3d"
-						target="_blank"
-						><i class="fab fa-github"></i
-					></a>
-				</li>
-				<li>
-					<a
-						class="list-icon"
-						rel="noopener noreferrer"
-						href="https://twitter.com/ttahm3d"
-						target="_blank"
-						><i class="fab fa-twitter"></i
-					></a>
-				</li>
-				<li>
-					<a
-						class="list-icon"
-						rel="noopener noreferrer"
-						href="https://www.linkedin.com/in/tahirahmedt"
-						target="_blank"
-						><i class="fab fa-linkedin"></i
-					></a>
-				</li>
-			</ul>
-		</footer>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
-			integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		></script>
-		<script>
-			hljs.highlightAll();
-		</script>
-	</body>
+      <ul class="list style-none horizontal wd-100 justify-center list-gap-1">
+        <li>
+          <a
+            class="list-icon"
+            rel="noopener noreferrer"
+            href="https://github.com/ttahm3d"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="list-icon"
+            rel="noopener noreferrer"
+            href="https://twitter.com/ttahm3d"
+            target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="list-icon"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/tahirahmedt"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+      integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
 </html>
