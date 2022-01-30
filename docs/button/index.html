@@ -81,31 +81,70 @@
           <div class="component-description">
             <p class="justify">
               buttons are used in two ways &mdash; buttons and call to action
-              links. Call to actions are used to grab users attention to some
-              specific thing that you want the user to click at. There are
-              various variants of buttons. These classes can be used on both
-              buttons and anchor links
+              links. Buttons are always associated with some event &mdash; add
+              an item to cart button in shopping sites. Call to actions are used
+              to grab users attention to some specific thing that you want the
+              user to click at. There are various variants of buttons. These
+              classes can be used on both buttons and anchor links
             </p>
           </div>
-          <h4 class="heading-4 head-lvl-4">primary button</h4>
+          <h4 class="heading-4 head-lvl-4">contained button</h4>
           <div class="component-description">
             <p class="justify">
-              there are multiple variants of buttons. buttons with background
-              color are usually used as main call to action buttons &mdash;
-              usually with primary background. there are other types also such
+              Buttons with background color are usually used known as contained
+              buttons and they are used as call to action buttons &mdash;
+              usually with primary background. There are other types also such
               as secondary, danger &mdash; to indicate things that might cause
               something to be deleted, and success &mdash; for affirmations.
-              They can also be rounded.
             </p>
           </div>
           <div class="component-example">
-            <div class="flex flex-gap-2 wrap">
+            <div class="flex flex-gap-2 wrap flex-center">
               <button class="btn btn-primary">primary button</button>
               <button class="btn btn-secondary">secondary button</button>
               <button class="btn btn-danger">danger button</button>
               <button class="btn btn-success">success button</button>
             </div>
           </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<button class="btn btn-primary">primary button</button>
+<button class="btn btn-secondary">secondary button</button>
+<button class="btn btn-danger">danger button</button>
+<button class="btn btn-success">success button</button>
+            </code></pre>
+          </div>
+
+          <h4 class="heading-4 head-lvl-4">Outline button</h4>
+          <div class="component-description">
+            <p class="justify">
+              These are secondary buttons. They usually have a outline with
+              normal background as the document. They are used to provide a
+              method to invoke an action which the user is likely to do only if
+              he / she doesn't want to do the primary action
+            </p>
+          </div>
+          <div class="component-example">
+            <div class="flex flex-gap-2 wrap flex-center">
+              <button class="btn btn-outline-primary">primary button</button>
+              <button class="btn btn-outline-secondary">
+                secondary button
+              </button>
+              <button class="btn btn-outline-danger">danger button</button>
+              <button class="btn btn-outline-success">success button</button>
+            </div>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<button class="btn btn-outline-primary">primary button</button>
+<button class="btn btn-outline-secondary">secondary button</button>
+<button class="btn btn-outline-danger">danger button</button>
+<button class="btn btn-outline-success">success button</button>
+            </code></pre>
+          </div>
+
           <h4 class="heading-4 head-lvl-4">link button</h4>
           <div class="component-description">
             <p class="justify">
@@ -206,5 +245,6 @@
     <script>
       hljs.highlightAll();
     </script>
+    <script src="../../js/codeblocks.js"></script>
   </body>
 </html>
