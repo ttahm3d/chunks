@@ -33,7 +33,7 @@
   --red-500: 0, 100%, 65%;
   --red-300: 0, 100%, 95%;
   --green-700: 108, 72%, 30%;
-  --green-500: 108, 100%, 65%;
+  --green-500: 108, 80%, 45%;
   --green-300: 108, 100%, 95%;
   --orange-700: 34, 100%, 30%;
   --orange-500: 34, 100%, 65%;
@@ -101,7 +101,7 @@ img {
 }
 
 main {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 
 /* Header styles */
@@ -123,6 +123,7 @@ main {
 
 .i-logo {
   color: hsl(var(--primary));
+  padding: 0;
 }
 
 .i-navlist {
@@ -156,7 +157,7 @@ main {
 
 .hero h1 {
   font-size: 3.6rem;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .hero h3 {
@@ -202,6 +203,12 @@ div > h3 {
 
 .code-example {
   margin: 0 auto;
+}
+
+.inline-code {
+  background-color: hsla(var(--bg-500), 0.8);
+  padding: 0.3rem;
+  border-radius: 0.25rem;
 }
 
 /* https://alexhooley.com/html-code-blocks-responsive/ */
