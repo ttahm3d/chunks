@@ -6,42 +6,41 @@
 /* color palette */
 
 :root {
-	--primary-darker: hsl(209, 100%, 20%);
-	--primary-dark: hsl(209, 80%, 35%);
-	--primary: hsl(209, 100%, 55%);
-	--primary-light: hsl(209, 100%, 70%);
-	--primary-lighter: hsl(209, 25%, 85%);
-	--secondary-darker: hsl(18, 100%, 20%);
-	--secondary-dark: hsl(18, 80%, 35%);
-	--secondary: hsl(18, 98%, 59%);
-	--secondary-light: hsl(18, 100%, 70%);
-	--secondary-lighter: hsl(18, 25%, 85%);
-	--accent-color: hsl(261, 82%, 61%);
-	--accent-color-value: 261, 82%, 61%;
-	--primary-color-value: 209 100%, 55%;
-	--bg-700: hsl(0, 0%, 98%);
-	--bg-600: hsl(0, 0%, 90%);
-	--bg-500: hsl(0, 0%, 85%);
-	--bg-400: hsl(0, 0%, 80%);
-	--bg-300: hsl(0, 0%, 70%);
-	--bg-200: hsl(0, 0%, 70%);
-	--font-700: hsl(0, 0%, 7%);
-	--font-600: hsl(0, 0%, 14%);
-	--font-500: hsl(0, 0%, 28%);
-	--font-400: hsl(0, 0%, 42%);
-	--font-300: hsl(0, 0%, 56%);
-	--red-700: hsl(0, 100%, 42%);
-	--red-500: hsl(0, 100%, 65%);
-	--red-300: hsl(0, 100%, 95%);
-	--green-700: hsl(108, 72%, 30%);
-	--green-500: hsl(108, 100%, 65%);
-	--green-300: hsl(108, 100%, 95%);
-	--orange-700: hsl(34, 100%, 30%);
-	--orange-500: hsl(34, 100%, 65%);
-	--orange-300: hsl(34, 100%, 95%);
-	--blue-700: hsl(205, 100%, 35%);
-	--blue-500: hsl(200, 100%, 50%);
-	--blue-300: hsl(200, 100%, 90%);
+  --primary-darker: 209, 100%, 20%;
+  --primary-dark: 209, 80%, 35%;
+  --primary: 209, 100%, 55%;
+  --primary-light: 209, 100%, 70%;
+  --primary-lighter: 209, 25%, 85%;
+  --secondary-darker: 18, 100%, 20%;
+  --secondary-dark: 18, 80%, 35%;
+  --secondary: 18, 98%, 59%;
+  --secondary-light: 18, 100%, 70%;
+  --secondary-lighter: 18, 25%, 85%;
+  --accent-color: 261, 82%, 61%;
+  --accent-color-value: 261, 82%, 61%;
+  --bg-700: 0, 0%, 98%;
+  --bg-600: 0, 0%, 90%;
+  --bg-500: 0, 0%, 85%;
+  --bg-400: 0, 0%, 80%;
+  --bg-300: 0, 0%, 70%;
+  --bg-200: 0, 0%, 70%;
+  --font-700: 0, 0%, 7%;
+  --font-600: 0, 0%, 14%;
+  --font-500: 0, 0%, 28%;
+  --font-400: 0, 0%, 42%;
+  --font-300: 0, 0%, 56%;
+  --red-700: 0, 100%, 42%;
+  --red-500: 0, 100%, 65%;
+  --red-300: 0, 100%, 95%;
+  --green-700: 108, 72%, 30%;
+  --green-500: 108, 100%, 65%;
+  --green-300: 108, 100%, 95%;
+  --orange-700: 34, 100%, 30%;
+  --orange-500: 34, 100%, 65%;
+  --orange-300: 34, 100%, 95%;
+  --blue-700: 205, 100%, 35%;
+  --blue-500: 200, 100%, 50%;
+  --blue-300: 200, 100%, 90%;
 }
 
 /* CSS Resets begin here */
@@ -49,30 +48,30 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	margin: 0;
-	background-color: var(--bg-700);
-	font-family: "Lato", sans-serif;
-	color: var(--font-600);
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	scroll-snap-type: y mandatory;
-	line-height: 1.5;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
+  margin: 0;
+  background-color: hsl(var(--bg-700));
+  font-family: "Lato", sans-serif;
+  color: hsl(var(--font-600));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-type: y mandatory;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 button,
 input {
-	font-family: inherit;
+  font-family: inherit;
 }
 
 h1,
@@ -81,156 +80,156 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Noto Sans", sans-serif;
-	margin: 0;
-	padding: 0.8rem 0;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0.8rem 0;
 }
 
 footer {
-	margin-top: auto;
-	border-top: 1px solid var(--bg-400);
-	padding: 0 2rem;
+  margin-top: auto;
+  border-top: 1px solid hsl(var(--bg-400));
+  padding: 0 2rem;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 main {
-	padding: 1.5rem 0;
+  padding: 1.5rem 0;
 }
 
 /* Header styles */
 
 .i-header {
-	background-color: var(--bg-700);
-	padding: 1rem 0;
-	position: sticky;
-	top: 0;
-	z-index: 9;
-	border-bottom: 1px solid var(--bg-300);
+  background-color: hsl(var(--bg-700));
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  border-bottom: 1px solid hsl(var(--bg-300));
 }
 
 .i-navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .i-logo {
-	color: var(--primary);
+  color: hsl(var(--primary));
 }
 
 .i-navlist {
-	display: flex;
-	margin: 0;
-	list-style: none;
-	font-size: 1.2rem;
+  display: flex;
+  margin: 0;
+  list-style: none;
+  font-size: 1.2rem;
 }
 
 .i-navlist-item {
-	padding-right: 0.5rem;
-	font-weight: 600;
-	letter-spacing: -0.09rem;
+  padding-right: 0.5rem;
+  font-weight: 600;
+  letter-spacing: -0.09rem;
 }
 
 .i-navbar a:hover {
-	color: var(--primary);
+  color: hsl(var(--primary));
 }
 
 /* styling for hero section */
 
 .i-container {
-	width: 90vw;
-	max-width: 65rem;
-	margin: 0 auto;
+  width: 90vw;
+  max-width: 65rem;
+  margin: 0 auto;
 }
 
 .hero {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 .hero h1 {
-	font-size: 3.6rem;
-	padding: 2rem 0;
+  font-size: 3.6rem;
+  padding: 2rem 0;
 }
 
 .hero h3 {
-	max-width: 45rem;
-	margin: 0 auto;
-	text-align: center;
-	padding: 1rem 0;
+  max-width: 45rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 .no-margin {
-	margin: 0;
+  margin: 0;
 }
 
 div > h3 {
-	scroll-padding-top: 3.1125rem;
+  scroll-padding-top: 3.1125rem;
 }
 
 .stick-top {
-	position: sticky;
-	top: 3.25rem;
-	background-color: var(--bg-700);
-	z-index: 8;
+  position: sticky;
+  top: 3.25rem;
+  background-color: hsl(var(--bg-700));
+  z-index: 8;
 }
 
 .component-example {
-	background-color: hsla(0, 0%, 95%, 0.9);
-	padding: 1rem;
+  background-color: hsla(0, 0%, 95%, 0.9);
+  padding: 1rem;
 }
 
 .component-section {
-	display: grid;
-	grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .component-list {
-	padding: 0 1rem 0 0;
+  padding: 0 1rem 0 0;
 }
 
 .component-description {
-	padding: 1.8rem 0 0;
-	scroll-padding-top: 5rem;
+  padding: 1.8rem 0 0;
+  scroll-padding-top: 5rem;
 }
 
 .code-example {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 /* https://alexhooley.com/html-code-blocks-responsive/ */
 
 pre {
-	font: 400 0.8125em/1.4375, "Menlo", "Consolas", "DejaVu Sans Mono" monospace;
-	white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
-	white-space: -pre-wrap; /* Opera */
-	white-space: -o-pre-wrap; /* Opera */
-	white-space: pre-wrap; /* CSS3 – Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
-	word-wrap: break-word; /* IE 5.5+ */
+  font: 400 0.8125em/1.4375, "Menlo", "Consolas", "DejaVu Sans Mono" monospace;
+  white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+  white-space: -pre-wrap; /* Opera */
+  white-space: -o-pre-wrap; /* Opera */
+  white-space: pre-wrap; /* CSS3 – Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+  word-wrap: break-word; /* IE 5.5+ */
 }
 
 pre code.hljs {
-	padding: 1rem;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 48em) {
-	.component-section {
-		grid-template-columns: 1fr 3fr;
-		gap: 2rem;
-	}
+  .component-section {
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+  }
 
-	.component-list {
-		position: sticky;
-		top: 3.5rem;
-		height: calc(100vh - 4rem);
-		overflow-y: auto;
-		padding-bottom: 2rem;
-	}
+  .component-list {
+    position: sticky;
+    top: 3.5rem;
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+    padding-bottom: 2rem;
+  }
 }

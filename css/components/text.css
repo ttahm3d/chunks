@@ -44,7 +44,7 @@
 .p-normal,
 .p-small strong {
   font-weight: 700;
-  color: var(--font-700);
+  color: hsl(var(--font-700));
 }
 
 .heading-1,
@@ -54,40 +54,40 @@
 .heading-5,
 .heading-6,
 p > span {
-  color: var(--primary);
+  color: hsl(var(--primary));
   font-weight: 600;
 }
 
 .head-lvl-1 {
-  color: var(--font-700);
+  color: hsl(var(--font-700));
 }
 
 .head-lvl-2 {
-  color: var(--font-600);
+  color: hsl(var(--font-600));
 }
 
 .head-lvl-3 {
-  color: var(--font-500);
+  color: hsl(var(--font-500));
 }
 
 .head-lvl-4 {
-  color: var(--font-400);
+  color: hsl(var(--font-400));
 }
 
 .head-lvl-5 {
-  color: var(--font-300);
+  color: hsl(var(--font-300));
 }
 
 .p-lvl-1 {
-  color: var(--font-700);
+  color: hsl(var(--font-700));
 }
 
 .p-lvl-2 {
-  color: var(--font-500);
+  color: hsl(var(--font-500));
 }
 
 .p-lvl-3 {
-  color: var(--font-300);
+  color: hsl(var(--font-300));
 }
 
 .bold {

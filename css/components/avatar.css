@@ -1,74 +1,74 @@
 .avatar {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .avatar-round {
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
 .avatar-sq {
-	border-radius: 0.75rem;
+  border-radius: 0.75rem;
 }
 
 .avatar-xs {
-	min-width: 2.5rem;
-	min-height: 2.5rem;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
 }
 
 .avatar-sm {
-	min-width: 3.125rem;
-	min-height: 3.125rem;
+  min-width: 3.125rem;
+  min-height: 3.125rem;
 }
 
 .avatar-md {
-	min-width: 3.75rem;
-	min-height: 3.75rem;
+  min-width: 3.75rem;
+  min-height: 3.75rem;
 }
 
 .avatar-lg {
-	min-width: 4.375rem;
-	min-height: 4.375rem;
+  min-width: 4.375rem;
+  min-height: 4.375rem;
 }
 
 .avatar-xl {
-	min-width: 5rem;
-	min-height: 5rem;
+  min-width: 5rem;
+  min-height: 5rem;
 }
 
 .avatar-border {
-	border: 2px solid var(--bg-500);
-	border-radius: 50%;
+  border: 2px solid hsl(var(--bg-500));
+  border-radius: 50%;
 }
 
 .avatar-shadow {
-	box-shadow: rgb(90 96 99 / 2%) 0px 0.25rem 0.75rem 0px;
+  box-shadow: rgb(90 96 99 / 2%) 0px 0.25rem 0.75rem 0px;
 }
 
 .avatar-bg-blue {
-	background-color: var(--blue-300);
+  background-color: hsl(var(--blue-300));
 }
 
 .avatar-bg-red {
-	background-color: var(--red-300);
+  background-color: hsl(var(--red-300));
 }
 
 .avatar-bg-orange {
-	background-color: var(--orange-300);
+  background-color: hsl(var(--orange-300));
 }
 
 .avatar-bg-green {
-	background-color: var(--green-300);
+  background-color: hsl(var(--green-300));
 }
 
 .avatar-bg-grey {
-	background-color: hsl(0, 0%, 63%);
+  background-color: hsl(0, 0%, 63%);
 }
 
 .avatar-text {
-	font-size: 1.5rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
