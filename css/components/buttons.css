@@ -11,6 +11,10 @@
   transform: scale(1.09);
 }
 
+.btn-rounded {
+  border-radius: 0.5rem;
+}
+
 .btn-link {
   padding: 0.5rem 0.8rem;
   display: inline-block;
@@ -33,22 +37,19 @@
 .link-primary {
   color: hsl(var(--bg-700));
   background-color: hsl(var(--primary-dark));
-  color: var(--bg-700);
-  background-color: var(--primary-dark);
   transition: all 0.3s ease-in-out;
 }
 
 .btn-primary:hover,
 .link-primary:hover {
   background-color: hsl(var(--primary));
-  background-color: var(--primary);
 }
 
 .btn-secondary,
 .link-secondary {
   background-color: hsl(var(--bg-700));
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 0px 9px hsla(0, 0%, 0%, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .btn-secondary:hover,
