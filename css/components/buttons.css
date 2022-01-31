@@ -54,7 +54,7 @@
 
 .btn-secondary:hover,
 .link-secondary:hover {
-  background-color: hsl(var(--bg-400));
+  background-color: hsla(var(--bg-600), 0.9);
 }
 
 .btn-success {
@@ -97,7 +97,7 @@
 }
 
 .btn-outline-secondary:hover {
-  background-color: hsl(var(--bg-400));
+  background-color: hsla(var(--bg-600), 0.9);
   color: hsl(var(--font-600));
 }
 
