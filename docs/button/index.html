@@ -77,70 +77,147 @@
           </ul>
         </aside>
         <article>
-          <h3 class="heading-3 head-lvl-3 stick-top" id="button">button</h3>
+          <h3 class="heading-3 head-lvl-3">button</h3>
           <div class="component-description">
             <p class="justify">
               buttons are used in two ways &mdash; buttons and call to action
-              links. Call to actions are used to grab users attention to some
-              specific thing that you want the user to click at. There are
-              various variants of buttons. These classes can be used on both
-              buttons and anchor links
+              links. Buttons are always associated with some event &mdash; add
+              an item to cart button in shopping sites. Call to actions are used
+              to grab users attention to some specific thing that you want the
+              user to click at. There are various variants of buttons. These
+              classes can be used on both buttons and anchor links
             </p>
           </div>
-          <h4 class="heading-4 head-lvl-4">primary button</h4>
+          <h4 class="heading-4 head-lvl-4">Contained button</h4>
           <div class="component-description">
             <p class="justify">
-              there are multiple variants of buttons. buttons with background
-              color are usually used as main call to action buttons &mdash;
-              usually with primary background. there are other types also such
+              Buttons with background color are usually used known as contained
+              buttons and they are used as call to action buttons &mdash;
+              usually with primary background. There are other types also such
               as secondary, danger &mdash; to indicate things that might cause
               something to be deleted, and success &mdash; for affirmations.
-              They can also be rounded.
+            </p>
+            <p class="justify">
+              User can create a button by adding class
+              <code class="inline-code">.btn</code> followed by any of
+              <code class="inline-code">.btn-primary</code>,&nbsp;<code
+                class="inline-code"
+                >.btn-secondary</code
+              >,&nbsp;<code class="inline-code">.btn-danger</code
+              >,&nbsp;&amp;&nbsp;<code class="inline-code">.btn-success</code>
+              to create any of the following types of buttons
             </p>
           </div>
           <div class="component-example">
-            <div class="flex flex-gap-2 wrap">
+            <div class="flex flex-gap-2 wrap flex-center">
               <button class="btn btn-primary">primary button</button>
               <button class="btn btn-secondary">secondary button</button>
               <button class="btn btn-danger">danger button</button>
               <button class="btn btn-success">success button</button>
             </div>
           </div>
-          <h4 class="heading-4 head-lvl-4">link button</h4>
+
+          <div class="code-example">
+            <pre><code class="html">
+<button class="btn btn-primary">primary button</button>
+<button class="btn btn-secondary">secondary button</button>
+<button class="btn btn-danger">danger button</button>
+<button class="btn btn-success">success button</button>
+            </code></pre>
+          </div>
+
+          <h4 class="heading-4 head-lvl-4">Outline button</h4>
           <div class="component-description">
             <p class="justify">
-              these are links &mdash; to other parts of the webpage or to other
-              websites. They can be made rounded.
+              These are secondary buttons. They usually have a outline with
+              normal background as the document. They are used to provide a
+              method to invoke an action which the user is likely to do only if
+              he / she doesn't want to do the primary action
+            </p>
+          </div>
+          <div class="component-example">
+            <div class="flex flex-gap-2 wrap flex-center">
+              <button class="btn btn-outline-primary">primary button</button>
+              <button class="btn btn-outline-secondary">
+                secondary button
+              </button>
+              <button class="btn btn-outline-danger">danger button</button>
+              <button class="btn btn-outline-success">success button</button>
+            </div>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<button class="btn btn-outline-primary">primary button</button>
+<button class="btn btn-outline-secondary">secondary button</button>
+<button class="btn btn-outline-danger">danger button</button>
+<button class="btn btn-outline-success">success button</button>
+            </code></pre>
+          </div>
+
+          <h4 class="heading-4 head-lvl-4">Link button</h4>
+          <div class="component-description">
+            <p class="justify">
+              These are links &mdash; to other parts of the webpage or to other
+              websites. They can also be made rounded by adding a class
+              <code class="inline-code">.btn-rounded</code>
             </p>
           </div>
           <div class="component-example">
             <div class="flex flex-gap-2 wrap">
-              <a href="##" class="link link-primary">primary link</a>
-              <a href="##" class="link link-secondary link-rounded"
+              <a href="##" class="btn-link link-primary">primary link</a>
+              <a href="##" class="btn-link link-secondary btn-rounded"
                 >secondary link</a
               >
             </div>
           </div>
-          <h4 class="heading-4 head-lvl-4">icon button</h4>
+
+          <div class="code-example">
+            <pre><code class="html">
+<a href="##" class="btn-link link-primary">primary link</a>
+<a href="##" class="btn-link link-secondary rounded">secondary link</a>
+            </code></pre>
+          </div>
+
+          <h4 class="heading-4 head-lvl-4">Buttons with Icons</h4>
           <div class="component-description">
             <p class="justify">
-              these are generally see in shopping sites. they are just another
-              set of buttons that come with icons. These icons can be added from
-              font-awesome
+              These buttons along with text have icons and are generally seen in
+              shopping sites.
             </p>
           </div>
           <div class="component-example">
             <div class="flex flex-gap-2">
-              <button class="btn btn-success">
+              <button class="btn btn-primary">
                 <div class="fas fa-shopping-cart"></div>
-                &nbsp;add to cart
+                &nbsp;Add to Cart
               </button>
               <button class="btn btn-danger">
                 <div class="fas fa-trash"></div>
-                &nbsp;delete
+                &nbsp;Delete
+              </button>
+              <button class="btn btn-secondary rounded">
+                <div class="fas fa-bookmark"></div>
               </button>
             </div>
           </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<button class="btn btn-primary">
+<div class="fas fa-shopping-cart"></div>
+  Add to Cart
+</button>
+<button class="btn btn-danger">
+  <div class="fas fa-trash"></div>
+  Delete
+</button>
+<button class="btn btn-secondary rounded">
+  <div class="fas fa-bookmark"></div>
+</button>
+            </code></pre>
+          </div>
+
           <h4 class="heading-4 head-lvl-4">floating action button</h4>
           <div class="component-desctiption">
             <p class="justify">
@@ -153,12 +230,20 @@
           <div class="component-example">
             <div class="flex flex-gap-2">
               <button
-                class="btn-float btn-float-action"
+                class="btn btn-float btn-float-action"
                 aria-label="floating-button"
               >
                 <span><i class="fas fa-plus"></i></span>
               </button>
             </div>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<button class="btn btn-float btn-float-action" aria-label="floating-button">
+  <span><i class="fas fa-plus"></i></span>
+</button>
+            </code></pre>
           </div>
         </article>
       </section>
@@ -206,5 +291,6 @@
     <script>
       hljs.highlightAll();
     </script>
+    <script src="../../js/codeblocks.js"></script>
   </body>
 </html>

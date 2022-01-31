@@ -1,99 +1,48 @@
 .heading-1 {
-	font-size: 2.2rem;
-}
-
-.heading-1 {
-	font-size: 2.2rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: hsl(var(--font-700));
 }
 
 .heading-2 {
-	font-size: 1.8rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: hsla(var(--font-700), 0.9);
 }
 
 .heading-3 {
-	font-size: 1.4rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: hsla(var(--font-600), 0.9);
 }
 
 .heading-4 {
-	font-size: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: hsla(var(--font-700), 0.7);
 }
 
 .heading-5 {
-	font-size: 0.9rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: hsla(var(--font-500), 0.7);
 }
 
 .heading-6 {
-	font-size: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: hsla(var(--font-500), 0.6);
 }
 
-.p-large {
-	font-size: 1.2rem;
-}
-
-.p-normal {
-	font-size: 1rem;
-}
-
-.p-small {
-	font-size: 0.75rem;
-}
-
-.heading-1,
-.heading-2,
-.heading-3,
-.heading-4,
-.heading-5,
-.heading-6,
-.p-large,
-.p-normal,
-.p-small strong {
-	font-weight: 700;
-	color: var(--font-700);
-}
-
-.heading-1,
-.heading-2,
-.heading-3,
-.heading-4,
-.heading-5,
-.heading-6,
 p > span {
-	color: var(--primary);
-	font-weight: 600;
+  color: hsl(var(--primary));
+  font-weight: 600;
 }
 
-.head-lvl-1 {
-	color: var(--font-700);
+p.dark {
+  font-weight: 500;
 }
 
-.head-lvl-2 {
-	color: var(--font-600);
-}
-
-.head-lvl-3 {
-	color: var(--font-500);
-}
-
-.head-lvl-4 {
-	color: var(--font-400);
-}
-
-.head-lvl-5 {
-	color: var(--font-300);
-}
-
-.p-lvl-1 {
-	color: var(--font-700);
-}
-
-.p-lvl-2 {
-	color: var(--font-500);
-}
-
-.p-lvl-3 {
-	color: var(--font-300);
-}
-
-.bold {
-	font-weight: 600;
+p.light {
+  font-weight: 300;
 }
