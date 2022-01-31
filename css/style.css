@@ -34,7 +34,7 @@
   --red-500: hsl(0, 100%, 65%);
   --red-300: hsl(0, 100%, 95%);
   --green-700: hsl(108, 72%, 30%);
-  --green-500: hsl(108, 70%, 55%);
+  --green-500: hsl(108, 58%, 43%);
   --green-300: hsl(108, 100%, 95%);
   --orange-700: hsl(34, 100%, 30%);
   --orange-500: hsl(34, 100%, 65%);
@@ -203,6 +203,12 @@ div > h3 {
 
 .code-example {
   margin: 0 auto;
+}
+
+.inline-code {
+  padding: 0.25rem;
+  background-color: var(--bg-500);
+  border-radius: 0.25rem;
 }
 
 /* https://alexhooley.com/html-code-blocks-responsive/ */

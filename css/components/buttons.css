@@ -18,14 +18,19 @@
 .link {
   padding: 0.5rem 0.8rem;
   display: inline-block;
+  border-radius: 0.25rem;
 }
 
 .shadow {
   box-shadow: 0 4px 9px hsla(0, 0%, 0%, 0.25);
 }
 
-.link-rounded {
+.btn-rounded {
   border-radius: 2rem;
+}
+
+.rounded {
+  border-radius: 50%;
 }
 
 .btn-primary,
@@ -67,6 +72,7 @@
 .btn-danger {
   background-color: var(--red-300);
   color: var(--red-700);
+  border: 1px solid var(--red-700);
   transition: all 0.1s ease-in-out;
 }
 
@@ -117,17 +123,16 @@
 
 .btn-float {
   border: 0;
-  padding: 0.5rem 0.6rem;
+  /* padding: 0.5rem 0.6rem; */
+  min-width: 2rem;
+  min-height: 2.2rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-float-action {
   border-radius: 50%;
   color: var(--red-300);
   background-color: var(--red-500);
-}
-
-.btn-right-btm {
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
 }
