@@ -76,7 +76,6 @@
             </li>
           </ul>
         </aside>
-
         <article>
           <h3 class="heading-3">Card</h3>
           <div class="component-description">
@@ -88,93 +87,113 @@
           </div>
           <h4 class="heading-4">Simple card</h4>
           <p class="justify">This card has only heading and text.</p>
-          <div class="component-example"></div>
-          <h4 class="heading-4 head-lvl-4">basic card</h4>
-          <div class="component-description">
-            <div class="card-grid card-row">
-              <div class="card card-bg card-p-eq-1">
-                <div class="card-image">
-                  <img
-                    loading="lazy"
-                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                    alt="headphones"
-                  />
+          <div class="component-example">
+            <div class="card-row">
+              <div class="card card-border">
+                <div class="card-heading-container">
+                  <h3 class="card-heading">Chunks</h3>
                 </div>
-                <div class="card-text card-text-center">
-                  <p class="card-title bold">headphones</p>
-                </div>
-              </div>
-              <div class="card card-border card-p-eq-1">
-                <div class="card-image">
-                  <img
-                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                    alt="headphones"
-                  />
-                </div>
-                <div class="card-text card-text-center">
-                  <p class="card-title bold">headphones</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h4 class="heading-4 head-lvl-4">card with overlay text</h4>
-          <div class="component-description">
-            <p class="justify">
-              This can be used to display product details horizontally
-            </p>
-            <div class="card-horizontal card-border card-p-eq-1">
-              <div class="card-image image-center">
-                <img
-                  src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                  alt="waterbottle"
-                />
-              </div>
-              <div
-                class="card-text hz-card-text flex flex-column justify-between"
-              >
-                <div>
-                  <p class="p-lvl-1 bold heading-3">Water bottle</p>
-                  <p class="p-lvl-3">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Illo aliquid esse magni architecto.
+                <div class="card-text-container">
+                  <p class="justify card-text">
+                    Chunks is a UI component library with utility classes. It
+                    helps you to build User Interfaces at a faster speed
                   </p>
                 </div>
-                <button class="btn btn-success">
-                  <span><i class="fas fa-shopping-cart"></i></span>&nbsp;add to
-                  cart
-                </button>
+              </div>
+              <div class="card card-shadow">
+                <div class="card-heading-container">
+                  <h3 class="card-heading">Chunks</h3>
+                </div>
+                <div class="card-text-container">
+                  <p class="justify card-text">
+                    Chunks is a UI component library with utility classes. It
+                    helps you to build User Interfaces at a faster speed
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <h4 class="heading-4 head-lvl-4">horizontal card</h4>
-          <div class="component-description">
-            <p class="justify">
-              horizontal cards have image and textual content laid down side by
-              side. They are usually used in e-commerce apps , to include
-              information about the product right next to the image and
-            </p>
-            <div class="card-grid card-row">
-              <div class="card card-border card-p-eq-1">
-                <div class="card-image image-center">
-                  <img
-                    src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                    alt="waterbottle"
-                  />
-                </div>
-                <div
-                  class="card-text hz-card-text flex flex-column justify-between"
-                >
-                  <div>
-                    <p class="p-lvl-1 bold heading-3">Water bottle</p>
-                    <p class="justify">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Illo aliquid esse magni architecto.
-                    </p>
+
+          <h4 class="heading-4">Postcard</h4>
+          <p class="justify">
+            This type of card has an image that goes along with the text and
+            heading.
+          </p>
+          <div class="component-example">
+            <div class="card card-border card-w-300">
+              <div class="card-image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+                  alt="Lukasz Szmigiel"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-heading-container">
+                <h3 class="card-heading">Lukasz Szmigiel</h3>
+              </div>
+              <div class="card-text-container">
+                <p class="justify card-text">
+                  This photo was captured by Lukasz Szmigiel and shared on
+                  unsplash.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="heading-4">Product Card</h4>
+          <p class="justify">This card is used in e-commerce apps.</p>
+          <div class="component-example">
+            <div class="card card-border card-w-300">
+              <div class="card-image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                  alt="RayBan Sunglasses"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-desctiption-container">
+                <div class="product-heading">Rayban Sunglasses</div>
+                <div class="product-description">
+                  <div class="product-price">
+                    <div class="selling-price">&#8377; 5999</div>
+                    <div class="original-price">&#8377; 9999</div>
                   </div>
-                  <button class="btn btn-success">
-                    <span><i class="fas fa-shopping-cart"></i></span>&nbsp;add
-                    to cart
-                  </button>
+                  <div class="product-button-container">
+                    <div class="btn btn-primary">
+                      <span><i class="fas fa-shopping-cart"></i></span>&nbsp;Add
+                      to cart
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-badge">New</div>
+            </div>
+          </div>
+
+          <h4 class="heading-4">Horizontal Card</h4>
+          <p class="justify">This card is used in e-commerce apps.</p>
+          <div class="component-example">
+            <div class="h-card card-border">
+              <div class="card-image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                  alt="RayBan Sunglasses"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-desctiption-container h-product-description">
+                <div class="product-heading">Rayban Sunglasses</div>
+                <div class="product-description">
+                  <div class="product-price">
+                    <div class="selling-price">&#8377; 5999</div>
+                    <div class="original-price">&#8377; 9999</div>
+                  </div>
+                  <div class="product-button-container">
+                    <div class="btn btn-primary">
+                      <span><i class="fas fa-shopping-cart"></i></span>&nbsp;Add
+                      to cart
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
