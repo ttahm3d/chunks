@@ -1,0 +1,15 @@
+.image-responsive {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.image-square {
+  width: 200px;
+  height: 200px;
+}
+
+.image-round {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
