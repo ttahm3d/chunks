@@ -84,6 +84,19 @@
               similar types. It can range from as simple as card with only
               Heading and text to a complex card with multiple buttons and icons
             </p>
+            <p class="justify">
+              There are helper classes such as
+              <code class="inline-code">.card-row</code> that allow the user to
+              create cards of equal width next to each other. There are other
+              two classes <code class="inline-code">.card-w-300</code> and
+              <code class="inline-code">.card-w-250</code> that limit the card
+              width to 300px and 250px respectively.
+            </p>
+            <p class="justify">
+              <code class="inline-code">.card-border</code> gives a border to
+              card and <code class="inline-code">.card-shadow</code> gives box
+              shadow to card
+            </p>
           </div>
           <h4 class="heading-4">Simple card</h4>
           <p class="justify">This card has only heading and text.</p>
@@ -114,6 +127,27 @@
             </div>
           </div>
 
+          <div class="code-example">
+            <pre><code class="html">
+<div class="card card-border">
+  <div class="card-heading-container">
+    <h3 class="card-heading">heading</h3>
+  </div>
+  <div class="card-text-container">
+    <p class="justify card-text">description</p>
+  </div>
+</div>
+<div class="card card-shadow">
+  <div class="card-heading-container">
+    <h3 class="card-heading">heading</h3>
+  </div>
+  <div class="card-text-container">
+    <p class="justify card-text">description</p>
+  </div>
+</div>
+            </code></pre>
+          </div>
+
           <h4 class="heading-4">Postcard</h4>
           <p class="justify">
             This type of card has an image that goes along with the text and
@@ -128,16 +162,36 @@
                   loading="lazy"
                 />
               </div>
-              <div class="card-heading-container">
-                <h3 class="card-heading">Lukasz Szmigiel</h3>
-              </div>
-              <div class="card-text-container">
-                <p class="justify card-text">
-                  This photo was captured by Lukasz Szmigiel and shared on
-                  unsplash.
-                </p>
+              <div class="card-description">
+                <div class="card-heading-container">
+                  <h3 class="card-heading">Lukasz Szmigiel</h3>
+                </div>
+                <div class="card-text-container">
+                  <p class="justify card-text">
+                    This photo was captured by Lukasz Szmigiel and shared on
+                    unsplash.
+                  </p>
+                </div>
               </div>
             </div>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<div class="card card-border card-w-300">
+  <div class="card-image-container">
+    <img src="image url">
+  </div>
+  <div class="card-description">
+    <div class="card-heading-container">
+      <h3 class="card-heading">card heading</h3>
+    </div>
+    <div class="card-text-container">
+      <p class="card-text">Card desecription</p>
+    </div>
+  </div>
+</div>
+            </code></pre>
           </div>
 
           <h4 class="heading-4">Product Card</h4>
@@ -159,15 +213,38 @@
                     <div class="original-price">&#8377; 9999</div>
                   </div>
                   <div class="product-button-container">
-                    <div class="btn btn-primary">
+                    <button class="btn btn-primary">
                       <span><i class="fas fa-shopping-cart"></i></span>&nbsp;Add
                       to cart
-                    </div>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="card-badge">New</div>
             </div>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<div class="card card-border card-w-300">
+  <div class="card-image-container">
+    <img src="product image URL comes here" />
+  </div>
+  <div class="product-desctiption-container">
+    <div class="product-heading">Rayban Sunglasses</div>
+    <div class="product-description">
+    <div class="product-price">
+      <div div class="selling-price">&#8377; 5999</div>
+      <div class="original-price">&#8377; 9999</div>
+    </div>
+    <div class="product-button-container">
+      <button class="btn btn-primary">Add to cart</button>
+    </div>
+  </div>
+  </div>
+  <div class="card-badge">New</div>
+</div>
+            </code></pre>
           </div>
 
           <h4 class="heading-4">Horizontal Card</h4>
@@ -182,21 +259,53 @@
                 />
               </div>
               <div class="product-desctiption-container h-product-description">
-                <div class="product-heading">Rayban Sunglasses</div>
-                <div class="product-description">
+                <div class="product-heading-price">
+                  <div class="product-heading">Rayban Sunglasses</div>
                   <div class="product-price">
                     <div class="selling-price">&#8377; 5999</div>
                     <div class="original-price">&#8377; 9999</div>
                   </div>
-                  <div class="product-button-container">
-                    <div class="btn btn-primary">
-                      <span><i class="fas fa-shopping-cart"></i></span>&nbsp;Add
-                      to cart
-                    </div>
-                  </div>
+                  <div class="discount-percentage">41% off</div>
+                </div>
+                <div class="product-description">
+                  <ul>
+                    <li>Protects from UV rays</li>
+                    <li>Protects your eyes from dust</li>
+                  </ul>
+                </div>
+                <div class="product-button-container">
+                  <button class="btn btn-primary">
+                    <span><i class="fas fa-shopping-cart"></i></span>&nbsp;Add
+                    to cart
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<div class="h-card card-border">
+  <div class="card-image-container">
+    <img src="product image"/>
+  </div>
+  <div class="product-desctiption-container h-product-description">
+    <div class="product-heading-price-container">
+      <div class="product-heading">Rayban Sunglasses</div>
+      <div class="product-price">
+        <div class="selling-price">&#8377; 5999</div>
+        <div class="original-price">&#8377; 9999</div>
+      </div>
+      <div class="discount-percentage">41% off</div>
+    </div>
+    <div class="product-description">
+    </div>
+    <div class="product-button-container">
+      <button class="btn btn-primary">Add to cart</button>
+    </div>
+  </div>
+</div>
+            </code></pre>
           </div>
         </article>
       </section>
@@ -244,5 +353,6 @@
     <script>
       hljs.highlightAll();
     </script>
+    <script src="../../js/codeblocks.js"></script>
   </body>
 </html>
