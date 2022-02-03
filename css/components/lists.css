@@ -1,51 +1,51 @@
 .list {
-	margin: 0;
+  margin: 0;
 }
 
 .no-padding {
-	padding: 0;
+  padding: 0;
 }
 
 .pad-left-1 {
-	padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 .style-none {
-	list-style: none;
+  list-style: none;
 }
 
 .horizontal {
-	display: flex;
-	padding: 0;
+  display: flex;
+  padding: 0;
 }
 
 .list-gap-1 {
-	gap: 1rem;
+  gap: 1rem;
 }
 
 .list-gap-2 {
-	gap: 2rem;
+  gap: 2rem;
 }
 
 .list-icon {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .list-item {
-	font-size: 1.2rem;
-	color: var(--font-400);
+  font-size: 1.2rem;
+  color: hsl(var(--font-400));
 }
 
 .list-item-2 {
-	font-size: 1.1rem;
-	color: var(--font-400);
+  font-size: 1.1rem;
+  color: hsl(var(--font-400));
 }
 
 .hover-styles {
-	display: block;
-	padding: 0.25rem;
+  display: block;
+  padding: 0.25rem;
 }
 
 .hover-styles:hover {
-	background-color: var(--bg-500);
+  background-color: var(--bg-500);
 }

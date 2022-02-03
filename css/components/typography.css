@@ -1,0 +1,48 @@
+.heading-1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: hsl(var(--font-700));
+}
+
+.heading-2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: hsla(var(--font-700), 0.9);
+}
+
+.heading-3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: hsla(var(--font-600), 0.9);
+}
+
+.heading-4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: hsla(var(--font-700), 0.7);
+}
+
+.heading-5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: hsla(var(--font-500), 0.7);
+}
+
+.heading-6 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: hsla(var(--font-500), 0.6);
+}
+
+p > span {
+  color: hsl(var(--primary));
+  font-weight: 600;
+}
+
+p.dark {
+  font-weight: 500;
+}
+
+p.light {
+  font-weight: 300;
+}
