@@ -11,21 +11,21 @@
 .badge-counter {
   position: absolute;
   font-size: 0.8rem;
-  min-width: 1.5em;
-  min-height: 1.5em;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .badge-top-right {
-  top: 0.25rem;
-  right: 0.25rem;
+  top: 0.4375rem;
+  right: 0.4375rem;
 }
 
 .badge-top-left {
-  top: 0.25rem;
-  left: 0.25rem;
+  top: 0.4375rem;
+  left: 0.4375rem;
 }
 
 .badge-clr-blue {
