@@ -35,90 +35,90 @@
 
 .btn-primary,
 .link-primary {
-  color: var(--bg-700);
-  background-color: var(--primary-dark);
+  color: hsl(var(--bg-700));
+  background-color: hsl(var(--primary-dark));
   transition: all 0.3s ease-in-out;
 }
 
 .btn-primary:hover,
 .link-primary:hover {
-  background-color: var(--primary);
+  background-color: hsl(var(--primary));
 }
 
 .btn-secondary,
 .link-secondary {
-  background-color: var(--bg-700);
+  background-color: hsl(var(--bg-700));
   transition: all 0.3s ease-in-out;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .btn-secondary:hover,
 .link-secondary:hover {
-  background-color: var(--bg-400);
+  background-color: hsla(var(--bg-600), 0.9);
 }
 
 .btn-success {
-  background-color: var(--green-700);
-  color: var(--bg-700);
+  background-color: hsl(var(--green-700));
+  color: hsl(var(--bg-700));
   transition: all 0.3s ease-in-out;
 }
 
 .btn-success:hover {
-  background-color: var(--green-500);
-  color: var(--bg-700);
+  background-color: hsl(var(--green-500));
+  color: hsl(var(--bg-700));
   transition: all 0.3s ease-in-out;
 }
 
 .btn-danger {
-  background-color: var(--red-300);
-  color: var(--red-700);
-  border: 1px solid var(--red-700);
+  background-color: hsl(var(--red-300));
+  color: hsl(var(--red-700));
+  border: 1px solid hsl(var(--red-700));
   transition: all 0.1s ease-in-out;
 }
 
 .btn-danger:hover {
-  background-color: var(--red-500);
-  color: var(--bg-700);
+  background-color: hsl(var(--red-500));
+  color: hsl(var(--bg-700));
 }
 
 .btn-outline-primary {
-  border: 1px solid var(--blue-700);
-  color: var(--blue-700);
+  border: 1px solid hsl(var(--blue-700));
+  color: hsl(var(--blue-700));
 }
 
 .btn-outline-primary:hover {
-  background-color: var(--primary-dark);
-  color: var(--bg-700);
+  background-color: hsl(var(--primary-dark));
+  color: hsl(var(--bg-700));
 }
 
 .btn-outline-secondary {
-  border: 1px solid var(--font-700);
-  color: var(--font-700);
+  border: 1px solid hsl(var(--font-700));
+  color: hsl(var(--font-700));
 }
 
 .btn-outline-secondary:hover {
-  background-color: var(--bg-400);
-  color: var(--font-600);
+  background-color: hsla(var(--bg-600), 0.9);
+  color: hsl(var(--font-600));
 }
 
 .btn-outline-success {
-  border: 1px solid var(--green-700);
-  color: var(--green-700);
+  border: 1px solid hsl(var(--green-700));
+  color: hsl(var(--green-700));
 }
 
 .btn-outline-success:hover {
-  background-color: var(--green-700);
-  color: var(--bg-700);
+  background-color: hsl(var(--green-700));
+  color: hsl(var(--bg-700));
 }
 
 .btn-outline-danger {
-  border: 1px solid var(--red-700);
-  color: var(--red-700);
+  border: 1px solid hsl(var(--red-700));
+  color: hsl(var(--red-700));
 }
 
 .btn-outline-danger:hover {
-  background-color: var(--red-700);
-  color: var(--bg-700);
+  background-color: hsl(var(--red-700));
+  color: hsl(var(--bg-700));
 }
 
 .btn-float {
@@ -133,6 +133,6 @@
 
 .btn-float-action {
   border-radius: 50%;
-  color: var(--red-300);
-  background-color: var(--red-500);
+  color: hsl(var(--red-300));
+  background-color: hsl(var(--red-500));
 }

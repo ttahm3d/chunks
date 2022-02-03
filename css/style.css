@@ -6,42 +6,41 @@
 /* color palette */
 
 :root {
-  --primary-darker: hsl(209, 100%, 20%);
-  --primary-dark: hsl(209, 80%, 35%);
-  --primary: hsl(209, 100%, 55%);
-  --primary-light: hsl(209, 100%, 70%);
-  --primary-lighter: hsl(209, 25%, 85%);
-  --secondary-darker: hsl(18, 100%, 20%);
-  --secondary-dark: hsl(18, 80%, 35%);
-  --secondary: hsl(18, 98%, 59%);
-  --secondary-light: hsl(18, 100%, 70%);
-  --secondary-lighter: hsl(18, 25%, 85%);
-  --accent-color: hsl(239, 74%, 17%);
-  --accent-color-value: 239, 74%, 17%;
-  --primary-color-value: 209, 100%, 55%;
-  --bg-700: hsl(0, 0%, 98%);
-  --bg-600: hsl(0, 0%, 90%);
-  --bg-500: hsl(0, 0%, 85%);
-  --bg-400: hsl(0, 0%, 80%);
-  --bg-300: hsl(0, 0%, 70%);
-  --bg-200: hsl(0, 0%, 70%);
-  --font-700: hsl(0, 0%, 7%);
-  --font-600: hsl(0, 0%, 14%);
-  --font-500: hsl(0, 0%, 28%);
-  --font-400: hsl(0, 0%, 42%);
-  --font-300: hsl(0, 0%, 56%);
-  --red-700: hsl(0, 100%, 42%);
-  --red-500: hsl(0, 100%, 65%);
-  --red-300: hsl(0, 100%, 95%);
-  --green-700: hsl(108, 72%, 30%);
-  --green-500: hsl(108, 58%, 43%);
-  --green-300: hsl(108, 100%, 95%);
-  --orange-700: hsl(34, 100%, 30%);
-  --orange-500: hsl(34, 100%, 65%);
-  --orange-300: hsl(34, 100%, 95%);
-  --blue-700: hsl(205, 100%, 35%);
-  --blue-500: hsl(200, 100%, 50%);
-  --blue-300: hsl(200, 100%, 90%);
+  --primary-darker: 209, 100%, 20%;
+  --primary-dark: 209, 80%, 35%;
+  --primary: 209, 100%, 55%;
+  --primary-light: 209, 100%, 70%;
+  --primary-lighter: 209, 25%, 85%;
+  --secondary-darker: 18, 100%, 20%;
+  --secondary-dark: 18, 80%, 35%;
+  --secondary: 18, 98%, 59%;
+  --secondary-light: 18, 100%, 70%;
+  --secondary-lighter: 18, 25%, 85%;
+  --accent-color: 261, 82%, 61%;
+  --accent-color-value: 261, 82%, 61%;
+  --bg-700: 0, 0%, 98%;
+  --bg-600: 0, 0%, 90%;
+  --bg-500: 0, 0%, 85%;
+  --bg-400: 0, 0%, 80%;
+  --bg-300: 0, 0%, 70%;
+  --bg-200: 0, 0%, 70%;
+  --font-700: 0, 0%, 7%;
+  --font-600: 0, 0%, 14%;
+  --font-500: 0, 0%, 28%;
+  --font-400: 0, 0%, 42%;
+  --font-300: 0, 0%, 56%;
+  --red-700: 0, 100%, 42%;
+  --red-500: 0, 100%, 65%;
+  --red-300: 0, 100%, 95%;
+  --green-700: 108, 72%, 30%;
+  --green-500: 108, 80%, 45%;
+  --green-300: 108, 100%, 95%;
+  --orange-700: 34, 100%, 30%;
+  --orange-500: 34, 100%, 65%;
+  --orange-300: 34, 100%, 95%;
+  --blue-700: 205, 100%, 35%;
+  --blue-500: 200, 100%, 50%;
+  --blue-300: 200, 100%, 90%;
 }
 
 /* CSS Resets begin here */
@@ -58,9 +57,9 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--bg-700);
+  background-color: hsl(var(--bg-700));
   font-family: "Lato", sans-serif;
-  color: var(--font-600);
+  color: hsl(var(--font-600));
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -83,12 +82,12 @@ h5,
 h6 {
   font-family: "Noto Sans", sans-serif;
   margin: 0;
-  padding: 0.8rem 0;
+  padding-top: 2rem;
 }
 
 footer {
   margin-top: auto;
-  border-top: 1px solid var(--bg-400);
+  border-top: 1px solid hsl(var(--bg-400));
   padding: 0 2rem;
 }
 
@@ -102,18 +101,18 @@ img {
 }
 
 main {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 
 /* Header styles */
 
 .i-header {
-  background-color: var(--bg-700);
+  background-color: hsl(var(--bg-700));
   padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 9;
-  border-bottom: 1px solid var(--bg-300);
+  border-bottom: 1px solid hsl(var(--bg-300));
 }
 
 .i-navbar {
@@ -123,7 +122,8 @@ main {
 }
 
 .i-logo {
-  color: var(--primary);
+  color: hsl(var(--primary));
+  padding: 0;
 }
 
 .i-navlist {
@@ -140,14 +140,14 @@ main {
 }
 
 .i-navbar a:hover {
-  color: var(--primary);
+  color: hsl(var(--primary));
 }
 
 /* styling for hero section */
 
 .i-container {
   width: 90vw;
-  max-width: 65rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
@@ -157,7 +157,7 @@ main {
 
 .hero h1 {
   font-size: 3.6rem;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .hero h3 {
@@ -178,13 +178,14 @@ div > h3 {
 .stick-top {
   position: sticky;
   top: 3.25rem;
-  background-color: var(--bg-700);
+  background-color: hsl(var(--bg-700));
   z-index: 8;
 }
 
 .component-example {
-  background-color: hsla(0, 0%, 95%, 0.9);
+  background-color: hsla(var(--primary-lighter), 0.45);
   padding: 1rem;
+  border-radius: 0.25rem;
 }
 
 .component-section {
@@ -197,8 +198,7 @@ div > h3 {
 }
 
 .component-description {
-  padding: 1.8rem 0 0;
-  scroll-padding-top: 5rem;
+  padding: 1rem 0;
 }
 
 .code-example {
@@ -206,8 +206,8 @@ div > h3 {
 }
 
 .inline-code {
-  padding: 0.25rem;
-  background-color: var(--bg-500);
+  background-color: hsla(var(--bg-500), 0.8);
+  padding: 0.2rem;
   border-radius: 0.25rem;
 }
 
