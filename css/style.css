@@ -207,7 +207,7 @@ div > h3 {
 
 .inline-code {
   background-color: hsla(var(--bg-500), 0.8);
-  padding: 0.3rem;
+  padding: 0.2rem;
   border-radius: 0.25rem;
 }
 
