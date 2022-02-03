@@ -102,7 +102,11 @@
 }
 
 .card-shadow {
-  box-shadow: 0 0.25rem 0.75rem hsla(var(--primary), 0.02);
+  box-shadow: 0 0.25rem 0.75rem hsla(var(--font-700), 0.25);
+}
+
+.card-description {
+  padding: 0.5rem;
 }
 
 .card-heading-container {
@@ -119,7 +123,9 @@
 }
 
 .h-product-description {
-  align-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .product-heading {
@@ -135,12 +141,24 @@
 
 .selling-price {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
+  color: hsl(var(--green-700));
+  letter-spacing: -0.125rem;
 }
 
 .original-price {
+  font-weight: 600;
   text-decoration: line-through;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  color: hsla(var(--font-500), 0.8);
+}
+
+.discount-percentage {
+  background-color: hsla(var(--green-700), 0.3);
+  color: hsla(var(--green-700));
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.5rem;
 }
 
 .product-button-container {
@@ -155,6 +173,7 @@
 
 .h-card {
   display: grid;
+  background-color: hsla(var(--bg-700), 0.8);
   grid-template-columns: repeat(2, 1fr);
 }
 
