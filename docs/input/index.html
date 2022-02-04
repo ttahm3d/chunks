@@ -11,6 +11,12 @@
     />
     <link
       rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
       integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
       crossorigin="anonymous"
@@ -80,10 +86,113 @@
           <h3 class="heading-3">Input</h3>
           <div class="component-description">
             <p class="justify">
-              Cards are content containers. They are used to display items of
-              similar types. It can range from as simple as card with only
-              Heading and text to a complex card with multiple buttons and icons
+              Input is another way the user interacts with websites. They are
+              used to get user&apos; inputs and choices
             </p>
+          </div>
+          <h4 class="heading-4">Input Fields</h4>
+          <div class="component-description">
+            Input fileds usually have a label along with the actual input field.
+          </div>
+          <div class="component-example flex flex-center flex-column">
+            <div class="input-form-wrapper">
+              <div class="input-group">
+                <label for="name" class="input-label-block">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="input-item input-item-block"
+                />
+              </div>
+              <div class="input-group">
+                <label for="password" class="input-label-block">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="input-item input-item-block"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<div class="input-form-wrapper">
+  <div class="input-group">
+    <label for="name" class="input-label-block">name</label>
+    <input type="text" id="name" class="input-item input-item-block" />
+  </div>
+  <div class="input-group">
+    <label for="password" class="input-label-block">Password</label>
+    <input type="password" id="password" class="input-item input-item-block" />
+  </div>
+</div>
+            </code></pre>
+          </div>
+
+          <h4 class="heading-4">Input Fields with Validation styles</h4>
+          <div class="component-description">
+            By adding class <code class="inline-code">.input-success</code> and
+            <code class="inline-code">.input-error</code> on div / form with
+            <code class="inline-code">.input-group</code> class user can style
+            validation messages.
+          </div>
+          <div class="component-example flex flex-center flex-column">
+            <div class="input-form-wrapper">
+              <div class="input-group input-success">
+                <label for="name1" class="input-label-block">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name1"
+                  class="input-item input-item-block"
+                />
+                <div class="input-validation">
+                  <i class="far fa-check-circle"></i>
+                  <small>This username is valid</small>
+                </div>
+              </div>
+              <div class="input-group input-error">
+                <label for="password1" class="input-label-block"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  name="password"
+                  id="password1"
+                  class="input-item input-item-block"
+                />
+                <div class="input-validation">
+                  <i class="far fa-times-circle"></i>
+                  <small>The username and password don't match</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<div class="input-form-wrapper">
+  <div class="input-group">
+    <label class="input-label-block">name</label>
+    <input class="input-item input-item-block" />
+    <div class="input-validation">
+      <i class="far fa-check-circle"></i>
+      <small>This username is valid</small>
+    </div>
+  </div>
+  <div class="input-group">
+    <label class="input-label-block">Password</label>
+    <input class="input-item input-item-block" />
+    <div class="input-validation">
+      <i class="far fa-times-circle"></i>
+      <small>The username and password don't match</small>
+    </div>
+  </div>
+</div>
+            </code></pre>
           </div>
         </article>
       </section>
@@ -131,5 +240,6 @@
     <script>
       hljs.highlightAll();
     </script>
+    <script src="../../js/codeblocks.js"></script>
   </body>
 </html>
