@@ -26,7 +26,6 @@
 
 .input-item {
   padding: 0.5rem;
-  width: 10rem;
   font-size: 1rem;
   outline: 2px solid transparent;
   border-radius: 0.25rem;
@@ -51,9 +50,9 @@
   font-weight: 600;
 }
 
-.input-validation > .far,
-.fas,
-.fab {
+.input-validation .far,
+.input-validation .fas,
+.input-validation .fab {
   position: absolute;
   right: -1.5rem;
   top: 50%;
@@ -84,4 +83,26 @@
 input[type="radio"],
 input[type="checkbox"] {
   accent-color: hsl(var(--accent-color));
+}
+
+.dropdown-wrapper {
+  padding: 0.5rem;
+}
+
+.dropdown {
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: 2px solid transparent;
+  border-radius: 0.25rem;
+  outline-offset: 2px;
+  border: 1px solid hsla(var(--font-300), 0.5);
+}
+
+.dropdown:focus {
+  box-shadow: 0 0 4px hsla(var(--font-300), 0.5);
+}
+
+.dropdown-option {
+  padding: 0.5rem;
+  font-size: 1rem;
 }
