@@ -92,7 +92,10 @@
           </div>
           <h4 class="heading-4">Input Fields</h4>
           <div class="component-description">
-            Input fileds usually have a label along with the actual input field.
+            <p class="justify">
+              Input fileds usually have a label along with the actual input
+              field.
+            </p>
           </div>
           <div class="component-example flex flex-center flex-column">
             <div class="input-form-wrapper">
@@ -134,10 +137,13 @@
 
           <h4 class="heading-4">Input Fields with Validation styles</h4>
           <div class="component-description">
-            By adding class <code class="inline-code">.input-success</code> and
-            <code class="inline-code">.input-error</code> on div / form with
-            <code class="inline-code">.input-group</code> class user can style
-            validation messages.
+            <p class="justify">
+              By adding class
+              <code class="inline-code">.input-success</code> and
+              <code class="inline-code">.input-error</code> on div / form with
+              <code class="inline-code">.input-group</code> class user can style
+              validation messages.
+            </p>
           </div>
           <div class="component-example flex flex-center flex-column">
             <div class="input-form-wrapper">
@@ -190,6 +196,94 @@
       <i class="far fa-times-circle"></i>
       <small>The username and password don't match</small>
     </div>
+  </div>
+</div>
+            </code></pre>
+          </div>
+
+          <h4 class="heading-4">Radio Buttons</h4>
+          <div class="component-description">
+            Radio butons are used to select from a set of given values for a
+            particular field
+          </div>
+          <div class="component-example flex flex-center flex-column">
+            <p>Select your preffered channel to receive OTP:</p>
+            <div class="input-form-wrapper flex justify-center flex-gap-2">
+              <div class="input-group-hz">
+                <input type="radio" name="contact" id="email" />
+                <label for="email">Email</label>
+              </div>
+              <div class="input-group-hz">
+                <input type="radio" name="contact" id="text" />
+                <label for="text">Text</label>
+              </div>
+              <div class="input-group-hz">
+                <input type="radio" name="contact" id="call" />
+                <label for="call">Call</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<div class="input-form-wrapper-hz">
+  <div class="input-group-hz">
+    <input type="radio" name="contact" id="email" />
+    <label for="email">Email</label>
+  </div>
+  <div class="input-group-hz">
+    <input type="radio" name="contact" id="text" />
+    <label for="text">Text</label>
+  </div>
+  <div class="input-group-hz">
+    <input type="radio" name="contact" id="call" />
+    <label for="call">Call</label>
+  </div>
+</div>
+            </code></pre>
+          </div>
+
+          <h4 class="heading-4">Checkbox</h4>
+          <div class="component-description">
+            Checkbox is used to take multiple inputs for a same field.
+          </div>
+          <div class="component-example flex flex-center flex-column">
+            <p>Show laptops from below brands:</p>
+            <div class="input-form-wrapper flex justify-center flex-gap-2">
+              <div class="input-group-hz">
+                <input
+                  type="checkbox"
+                  name="brand"
+                  id="Lenovo"
+                  value="Lenovo"
+                />
+                <label for="Lenovo">Lenovo</label>
+              </div>
+              <div class="input-group-hz">
+                <input type="checkbox" name="brand" id="HP" value="HP" />
+                <label for="HP">HP</label>
+              </div>
+              <div class="input-group-hz">
+                <input type="checkbox" name="brand" id="Asus" value="Asus" />
+                <label for="Asus">Asus</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<div class="input-form-wrapper-hz">
+  <div class="input-group-hz">
+    <input type="checkbox" name="brand"  id="Lenovo" />
+    <label for="Lenovo">Lenovo</label>
+  </div>
+  <div class="input-group-hz">
+    <input type="checkbox" name="brand" id="HP" />
+    <label for="HP">HP</label>
+  </div>
+  <div class="input-group-hz">
+    <input type="checkbox" name="brand" id="Asus" />
+    <label for="Asus">Asus</label>
   </div>
 </div>
             </code></pre>
