@@ -1,11 +1,11 @@
 .input-form-wrapper {
   padding: 1rem;
-  width: 60%;
+  width: 80%;
 }
 
 .input-form-wrapper-hz {
   padding: 1rem;
-  width: 60%;
+  width: 80%;
   display: flex;
   gap: 1rem;
 }
