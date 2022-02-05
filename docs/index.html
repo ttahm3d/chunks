@@ -101,7 +101,56 @@
             </li>
           </ul>
         </aside>
-        <article>Kuch nahi ayega</article>
+        <article>
+          <h4 class="heading-3">Font Family</h4>
+          <div class="component-description">
+            <p class="justify">
+              <span>Lato</span> is the primary font-family and
+              <span>Noto Sans</span> is the font-family for headings. Both of
+              these can be added using the below imports.
+            </p>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="css">
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700,800&display=swap");
+
+            </code></pre>
+          </div>
+
+          <div class="alert alert-info">
+            <strong>Note:</strong>
+            <p class="justify">
+              User need not explicitly import the font files. They are imported
+              along with stylesheet
+            </p>
+          </div>
+
+          <h4>Typography</h4>
+          <div class="component-description"></div>
+
+          <div class="component-example">
+            <h1>The quick brown fox jumps over the lazy dog</h1>
+            <h2>The quick brown fox jumps over the lazy dog</h2>
+            <h3>The quick brown fox jumps over the lazy dog</h3>
+            <h4>The quick brown fox jumps over the lazy dog</h4>
+            <h5>The quick brown fox jumps over the lazy dog</h5>
+            <h6>The quick brown fox jumps over the lazy dog</h6>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<h1>The quick brown fox jumps over the lazy dog</h1>
+<h2>The quick brown fox jumps over the lazy dog</h2>
+<h3>The quick brown fox jumps over the lazy dog</h3>
+<h4>The quick brown fox jumps over the lazy dog</h4>
+<h5>The quick brown fox jumps over the lazy dog</h5>
+<h6>The quick brown fox jumps over the lazy dog</h6>
+            </code></pre>
+          </div>
+        </article>
       </section>
     </main>
 
@@ -147,5 +196,6 @@
     <script>
       hljs.highlightAll();
     </script>
+    <script src="../js/codeblocks.js"></script>
   </body>
 </html>
