@@ -45,10 +45,22 @@ p > span {
   font-weight: 600;
 }
 
-p.dark {
-  font-weight: 500;
+p.bold {
+  font-weight: 600;
 }
 
 p.light {
   font-weight: 300;
+}
+
+.black {
+  color: hsl(var(--font-700));
+}
+
+.off-black {
+  color: hsla(var(--font-700), 0.8);
+}
+
+.gray {
+  color: hsla(var(--font-600), 0.7);
 }
