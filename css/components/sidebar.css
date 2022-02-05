@@ -26,6 +26,7 @@
 .sidebar-item:hover {
   background-color: hsla(var(--secondary), 0.2);
   transform: translateX(1rem);
+  color: hsl(var(--secondary-darker));
 }
 
 .sidebar-item.active {
