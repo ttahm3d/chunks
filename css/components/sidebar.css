@@ -24,13 +24,13 @@
 }
 
 .sidebar-item:hover {
-  background-color: hsla(var(--secondary), 0.2);
+  background-color: hsla(var(--accent), 0.2);
   transform: translateX(1rem);
-  color: hsl(var(--secondary-darker));
+  color: hsl(var(--accent-darker));
 }
 
 .sidebar-item.active {
-  background-color: hsla(var(--secondary), 0.2);
+  background-color: hsla(var(--accent), 0.2);
   font-weight: 700;
-  color: hsl(var(--secondary-darker));
+  color: hsl(var(--accent-darker));
 }
