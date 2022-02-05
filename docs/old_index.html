@@ -48,58 +48,56 @@
     </header>
 
     <main class="i-container">
-      <section class="pad-2-tb">
-        <h2 class="heading-2 head-lvl-3" id="getting-started">
-          Getting Started
-        </h2>
-        <p class="justify">
-          <span>Chunks</span> is a component library with utility classes.
-          Utility classes allow users to develop UI screens at a much faster
-          speed than that is achieved when writing own css. There are few
-          componenets which the user can create by just using few of the utilty
-          classes. This allows the user to focus on creating the functionality
-          rather than worrying about the design
-        </p>
-        <p class="justify">
-          All that one has to do is to add the below import in his / her css
-          file.
-        </p>
-
-        <div class="code-example">
-          <pre><code class="css">@import url("chunksui.netlify.app/css/style.css")</code></pre>
-        </div>
-
-        <p>Below is a list of components that user can use.</p>
-      </section>
-
       <section class="component-section">
         <aside class="component-list">
-          <h3>Components</h3>
-          <ul class="list style-none">
-            <li class="list-item">
-              <a class="hover-styles" href="./avatar/">avatar</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="./alert/">alert</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="./badge">badges</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="./button">button</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="./card">card</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="./image">image</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="./input">input</a>
-            </li>
-          </ul>
+          <div class="sidebar">
+            <div class="sidebar-section">
+              <div class="sidebar-section-heading">Getting Started</div>
+              <ul class="sidebar-items">
+                <li class="sidebar-item">
+                  <a href="./introduction/">Introduction</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="./typography/">Typography</a>
+                </li>
+                <li class="sidebar-item"><a href="./colors/">Colors</a></li>
+              </ul>
+            </div>
+            <div class="sidebar-section">
+              <div class="sidebar-section-heading">Components</div>
+              <ul class="sidebar-items">
+                <li class="sidebar-item"><a href="./alert/">Alert</a></li>
+                <li class="sidebar-item"><a href="./avatar/">Avatar</a></li>
+                <li class="sidebar-item"><a href="./badge/">Badge</a></li>
+                <li class="sidebar-item"><a href="./button/">Button</a></li>
+                <li class="sidebar-item"><a href="./card/">Card</a></li>
+                <li class="sidebar-item"><a href="./image/">Image</a></li>
+                <li class="sidebar-item"><a href="./input/">Input</a></li>
+              </ul>
+            </div>
+          </div>
         </aside>
         <article>
+          <h3>Getting Started</h3>
+          <div class="component-description">
+            <p class="justify">
+              <span>Chunks</span> is a component library with utility classes.
+              Utility classes allow users to develop UI screens at a much faster
+              speed than that is achieved when writing own css. There are few
+              componenets which the user can create by just using few of the
+              utilty classes. This allows the user to focus on creating the
+              functionality rather than worrying about the design
+            </p>
+            <p class="justify">
+              To use these classes, all that one has to do is to add the below
+              import in his / her css file.
+            </p>
+
+            <div class="code-example">
+              <pre><code class="css">@import url("chunksui.netlify.app/css/style.css")</code></pre>
+            </div>
+          </div>
+
           <h4>Font Family</h4>
           <div class="component-description">
             <p class="justify">
@@ -109,17 +107,8 @@
             </p>
           </div>
 
-          <div class="code-example">
-            <pre><code class="css">
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;500;600;700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700,800&display=swap");
-
-            </code></pre>
-          </div>
-
           <div class="alert alert-info">
-            <strong>Note:</strong>
+            <p class="bold">Note:</p>
             <p class="justify">
               User need not explicitly import the font files. They are imported
               along with stylesheet
