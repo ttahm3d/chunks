@@ -21,12 +21,14 @@
   display: block;
   cursor: pointer;
   transition: all 0.2s linear;
+  border-radius: 0.25rem;
 }
 
 .sidebar-item:hover {
   background-color: hsla(var(--accent), 0.2);
   transform: translateX(1rem);
   color: hsl(var(--accent-darker));
+  font-weight: 700;
 }
 
 .sidebar-item.active {
