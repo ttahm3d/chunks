@@ -67,6 +67,7 @@ body {
   line-height: 1.5;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  transition: all 0.3s ease-in-out;
 }
 
 button,
@@ -94,6 +95,7 @@ footer {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 img {
@@ -230,10 +232,13 @@ pre code.hljs {
 
   .component-list {
     position: sticky;
-    top: 4.6rem;
+    margin-top: 1.5rem;
+    top: 6rem;
+    scroll-padding-top: 6rem;
     height: calc(100vh - 11.4rem);
     overflow-y: auto;
     padding-bottom: 2rem;
+    overflow-x: hidden;
   }
 
   .component-list::-webkit-scrollbar {
@@ -241,14 +246,14 @@ pre code.hljs {
   }
 
   .component-list::-webkit-scrollbar-track {
-    background: hsl(var(--primary));
+    background: hsla(var(--secondary), 0.2);
   }
 
   .component-list::-webkit-scrollbar-thumb {
-    background: hsl(var(--primary-dark));
+    background: hsla(var(--secondary), 0.7);
   }
 
   .component-list::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: hsl(var(--secondary-dark));
   }
 }
