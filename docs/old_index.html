@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="svg" href="/assets/chunks-icon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+      integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Chunks</title>
+  </head>
+  <body>
+    <header class="i-header">
+      <nav class="i-navbar i-container">
+        <div class="nav-item">
+          <h2 class="i-logo">
+            <a href="../docs/">
+              <i class="fas fa-cubes"></i>
+              Chunks
+            </a>
+          </h2>
+        </div>
+        <div class="nav-item">
+          <ul class="i-navlist align-base">
+            <li class="i-navlist-item"><a href="/docs">Docs</a></li>
+            <li class="i-navlist-item">
+              <a
+                rel="noopener noreferrer"
+                href="https://github.com/ttahm3d/chunks"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="i-container">
+      <section class="component-section">
+        <aside class="component-list">
+          <div class="sidebar">
+            <div class="sidebar-section">
+              <div class="sidebar-section-heading">Getting Started</div>
+              <ul class="sidebar-items">
+                <li class="sidebar-item">
+                  <a href="./introduction/">Introduction</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="./typography/">Typography</a>
+                </li>
+                <li class="sidebar-item"><a href="./colors/">Colors</a></li>
+              </ul>
+            </div>
+            <div class="sidebar-section">
+              <div class="sidebar-section-heading">Components</div>
+              <ul class="sidebar-items">
+                <li class="sidebar-item"><a href="./alert/">Alert</a></li>
+                <li class="sidebar-item"><a href="./avatar/">Avatar</a></li>
+                <li class="sidebar-item"><a href="./badge/">Badge</a></li>
+                <li class="sidebar-item"><a href="./button/">Button</a></li>
+                <li class="sidebar-item"><a href="./card/">Card</a></li>
+                <li class="sidebar-item"><a href="./image/">Image</a></li>
+                <li class="sidebar-item"><a href="./input/">Input</a></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <article>
+          <h3>Getting Started</h3>
+          <div class="component-description">
+            <p class="justify">
+              <span>Chunks</span> is a component library with utility classes.
+              Utility classes allow users to develop UI screens at a much faster
+              speed than that is achieved when writing own css. There are few
+              componenets which the user can create by just using few of the
+              utilty classes. This allows the user to focus on creating the
+              functionality rather than worrying about the design
+            </p>
+            <p class="justify">
+              To use these classes, all that one has to do is to add the below
+              import in his / her css file.
+            </p>
+
+            <div class="code-example">
+              <pre><code class="css">@import url("chunksui.netlify.app/css/style.css")</code></pre>
+            </div>
+          </div>
+
+          <h4>Font Family</h4>
+          <div class="component-description">
+            <p class="justify">
+              <span>Lato</span> is the primary font-family and
+              <span>Noto Sans</span> is the font-family for headings. Both of
+              these can be added using the below imports.
+            </p>
+          </div>
+
+          <div class="alert alert-info">
+            <p class="bold">Note:</p>
+            <p class="justify">
+              User need not explicitly import the font files. They are imported
+              along with stylesheet
+            </p>
+          </div>
+
+          <h4>Typography</h4>
+          <div class="component-description">
+            <p class="justify">
+              <span>Chunks</span> has the below headings from h1 through to h6
+            </p>
+          </div>
+
+          <div class="component-example">
+            <h1>The quick brown fox jumps over the lazy dog</h1>
+            <h2>The quick brown fox jumps over the lazy dog</h2>
+            <h3>The quick brown fox jumps over the lazy dog</h3>
+            <h4>The quick brown fox jumps over the lazy dog</h4>
+            <h5>The quick brown fox jumps over the lazy dog</h5>
+            <h6>The quick brown fox jumps over the lazy dog</h6>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<h1>The quick brown fox jumps over the lazy dog</h1>
+<h2>The quick brown fox jumps over the lazy dog</h2>
+<h3>The quick brown fox jumps over the lazy dog</h3>
+<h4>The quick brown fox jumps over the lazy dog</h4>
+<h5>The quick brown fox jumps over the lazy dog</h5>
+<h6>The quick brown fox jumps over the lazy dog</h6>
+            </code></pre>
+          </div>
+
+          <div class="component-description">
+            <p class="justify">
+              <span>Chunks</span> has below pragraphy styles. Adding a class
+              <code class="inline-code">.bold</code> makes the paragraph bolder
+              and <code class="inline-code">.light</code> makes it lighter. And
+              for normal font, dont use any class.
+            </p>
+          </div>
+
+          <div class="component-example">
+            <p class="bold">The quick brown fox jumps over the lazy dog</p>
+            <p>The quick brown fox jumps over the lazy dog</p>
+            <p class="light">The quick brown fox jumps over the lazy dog</p>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<p class="bold">The quick brown fox jumps over the lazy dog</p>
+<p>The quick brown fox jumps over the lazy dog</p>
+<p class="light">The quick brown fox jumps over the lazy dog</p>
+            </code></pre>
+          </div>
+
+          <div class="component-description">
+            <p class="justify">
+              <span>Chunks</span> also provides classes such as
+              <code class="inline-code">.black</code>,
+              <code class="inline-code">.off-black</code>, and
+              <code class="inline-code">gray</code> to give color to text
+            </p>
+          </div>
+
+          <div class="component-example">
+            <p class="black">The quick brown fox jumps over the lazy dog</p>
+            <p class="off-black">The quick brown fox jumps over the lazy dog</p>
+            <p class="gray">The quick brown fox jumps over the lazy dog</p>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<p class="black">The quick brown fox jumps over the lazy dog</p>
+<p class="off-black">The quick brown fox jumps over the lazy dog</p>
+<p class="gray">The quick brown fox jumps over the lazy dog</p>
+            </code></pre>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="flex flex-center flex-column">
+      <p>Created by Tahir Ahmed T</p>
+
+      <ul class="list style-none horizontal wd-100 justify-center list-gap-1">
+        <li>
+          <a
+            class="list-icon"
+            rel="noopener noreferrer"
+            href="https://github.com/ttahm3d"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="list-icon"
+            rel="noopener noreferrer"
+            href="https://twitter.com/ttahm3d"
+            target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="list-icon"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/tahirahmedt"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+      integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../js/codeblocks.js"></script>
+  </body>
+</html>

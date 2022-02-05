@@ -1,0 +1,150 @@
+.colors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  gap: 1rem;
+  justify-content: center;
+}
+
+.color-grid-item {
+  box-shadow: 0 0 0.25rem hsla(var(--font-700), 0.4),
+    0 0 0.25rem hsla(var(--font-700), 0.2);
+  min-height: 7rem;
+  padding: 0.5rem;
+  transition: 0.2s all ease-in;
+  font-size: 0.9rem;
+}
+
+.color-grid-item:hover {
+  transform: scale(1.09);
+}
+
+.primary-darker {
+  background-color: hsl(var(--primary-darker));
+  color: #fff;
+}
+
+.primary-dark {
+  background-color: hsl(var(--primary-dark));
+  color: #fff;
+}
+
+.primary {
+  background-color: hsl(var(--primary));
+  color: #fff;
+}
+
+.primary-light {
+  background-color: hsl(var(--primary-light));
+}
+
+.primary-lighter {
+  background-color: hsl(var(--primary-lighter));
+}
+
+.accent-darker {
+  background-color: hsl(var(--accent-darker));
+  color: #fff;
+}
+
+.accent-dark {
+  background-color: hsl(var(--accent-dark));
+  color: #fff;
+}
+
+.accent {
+  background-color: hsl(var(--accent));
+  color: #fff;
+}
+
+.accent-light {
+  background-color: hsl(var(--accent-light));
+}
+
+.accent-lighter {
+  background-color: hsl(var(--accent-lighter));
+}
+
+.bg-700 {
+  background-color: hsl(var(--bg-700));
+}
+
+.bg-600 {
+  background-color: hsl(var(--bg-600));
+}
+
+.bg-500 {
+  background-color: hsl(var(--bg-500));
+}
+
+.bg-400 {
+  background-color: hsl(var(--bg-400));
+}
+
+.bg-300 {
+  background-color: hsl(var(--bg-300));
+}
+
+.font-700 {
+  background-color: hsl(var(--font-700));
+  color: #fff;
+}
+
+.font-600 {
+  background-color: hsl(var(--font-600));
+  color: #fff;
+}
+
+.font-500 {
+  background-color: hsl(var(--font-500));
+  color: #fff;
+}
+
+.font-400 {
+  background-color: hsl(var(--font-400));
+}
+
+.font-300 {
+  background-color: hsl(var(--font-300));
+}
+
+.red-700 {
+  background-color: hsl(var(--red-700));
+  color: #fff;
+}
+
+.red-500 {
+  background-color: hsl(var(--red-500));
+  color: #fff;
+}
+
+.red-300 {
+  background-color: hsl(var(--red-300));
+}
+
+.orange-700 {
+  background-color: hsl(var(--orange-700));
+  color: #fff;
+}
+
+.orange-500 {
+  background-color: hsl(var(--orange-500));
+  color: #fff;
+}
+
+.orange-300 {
+  background-color: hsl(var(--orange-300));
+}
+
+.green-700 {
+  background-color: hsl(var(--green-700));
+  color: #fff;
+}
+
+.green-500 {
+  background-color: hsl(var(--green-500));
+  color: #fff;
+}
+
+.green-300 {
+  background-color: hsl(var(--green-300));
+}

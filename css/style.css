@@ -10,14 +10,12 @@
   --primary-dark: 209, 80%, 35%;
   --primary: 209, 100%, 55%;
   --primary-light: 209, 100%, 70%;
-  --primary-lighter: 209, 25%, 85%;
-  --secondary-darker: 18, 100%, 20%;
-  --secondary-dark: 18, 80%, 35%;
-  --secondary: 18, 98%, 59%;
-  --secondary-light: 18, 100%, 70%;
-  --secondary-lighter: 18, 25%, 85%;
-  --accent-color: 261, 82%, 61%;
-  --accent-color-value: 261, 82%, 61%;
+  --primary-lighter: 209, 65%, 85%;
+  --accent-darker: 18, 100%, 20%;
+  --accent-dark: 18, 80%, 35%;
+  --accent: 18, 98%, 59%;
+  --accent-light: 18, 100%, 70%;
+  --accent-lighter: 18, 45%, 85%;
   --bg-700: 0, 0%, 98%;
   --bg-600: 0, 0%, 90%;
   --bg-500: 0, 0%, 85%;
@@ -67,6 +65,7 @@ body {
   line-height: 1.5;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  transition: all 0.3s ease-in-out;
 }
 
 button,
@@ -94,6 +93,7 @@ footer {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 img {
@@ -101,7 +101,7 @@ img {
 }
 
 main {
-  padding: 1rem 0;
+  padding-bottom: 1rem;
 }
 
 /* Header styles */
@@ -157,14 +157,14 @@ main {
 
 .hero h1 {
   font-size: 3.6rem;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .hero h3 {
-  max-width: 45rem;
+  max-width: 60rem;
   margin: 0 auto;
   text-align: center;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .no-margin {
@@ -193,11 +193,6 @@ div > h3 {
   display: grid;
   grid-template-columns: 1fr;
 }
-
-.component-list {
-  padding: 0 1rem 0 0;
-}
-
 .component-description {
   padding: 1rem 0;
 }
@@ -230,14 +225,33 @@ pre code.hljs {
 @media screen and (min-width: 48em) {
   .component-section {
     grid-template-columns: 1fr 3fr;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .component-list {
     position: sticky;
-    top: 3.5rem;
-    height: calc(100vh - 4rem);
+    margin-top: 1.5rem;
+    top: 6rem;
+    scroll-padding-top: 6rem;
+    height: calc(100vh - 5rem);
     overflow-y: auto;
     padding-bottom: 2rem;
+    overflow-x: hidden;
+  }
+
+  .component-list::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+
+  .component-list::-webkit-scrollbar-track {
+    background: hsla(var(--accent), 0.2);
+  }
+
+  .component-list::-webkit-scrollbar-thumb {
+    background: hsla(var(--accent), 0.7);
+  }
+
+  .component-list::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--accent-dark));
   }
 }
