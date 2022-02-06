@@ -24,6 +24,10 @@
   border-radius: 0.25rem;
 }
 
+.sidebar-item > a {
+  display: block;
+}
+
 .sidebar-item:hover {
   background-color: hsla(var(--primary), 0.2);
   transform: scale(1.05);

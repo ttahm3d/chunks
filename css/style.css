@@ -11,11 +11,11 @@
   --primary: 209, 100%, 55%;
   --primary-light: 209, 100%, 70%;
   --primary-lighter: 209, 65%, 85%;
-  --accent-darker: 333, 93%, 20%;
-  --accent-dark: 333, 93%, 35%;
-  --accent: 333, 93%, 51%;
-  --accent-light: 333, 93%, 70%;
-  --accent-lighter: 333, 93%, 85%;
+  --accent-darker: 11, 100%, 20%;
+  --accent-dark: 11, 100%, 35%;
+  --accent: 11, 100%, 51%;
+  --accent-light: 11, 100%, 70%;
+  --accent-lighter: 11, 100%, 85%;
   --bg-700: 0, 0%, 98%;
   --bg-600: 0, 0%, 90%;
   --bg-500: 0, 0%, 85%;
@@ -87,7 +87,7 @@ h6 {
 footer {
   margin-top: auto;
   border-top: 1px solid hsl(var(--bg-400));
-  padding: 0 2rem;
+  padding: 1rem 2rem;
 }
 
 a {
