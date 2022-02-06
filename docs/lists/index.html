@@ -17,7 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../../css/style.css" />
-    <title>Images | Chunks</title>
+    <title>Chunks</title>
   </head>
   <body>
     <header class="i-header">
@@ -70,69 +70,154 @@
                 <li class="sidebar-item"><a href="../badge/">Badge</a></li>
                 <li class="sidebar-item"><a href="../button/">Button</a></li>
                 <li class="sidebar-item"><a href="../card/">Card</a></li>
-                <li class="sidebar-item active">
-                  <a href="../image/">Image</a>
-                </li>
+                <li class="sidebar-item"><a href="../image/">Image</a></li>
                 <li class="sidebar-item"><a href="../input/">Input</a></li>
-                <li class="sidebar-item"><a href="../lists/">Lists</a></li>
+                <li class="sidebar-item active">
+                  <a href="../lists/">Lists</a>
+                </li>
               </ul>
             </div>
           </div>
         </aside>
         <article>
-          <h3>Images</h3>
+          <h3>Lists</h3>
           <div class="component-description">
             <p class="justify">
-              Images are inseparable part of Websites. You can use the class
-              <code class="inline-code">.image-responsive</code> for responsive
-              images, <code class="inline-code">.image-square</code> for square
-              type image, and <code class="inline-code">.image-round</code> for
-              a circular image.
+              Lists as they indicate themselves, are used to display list of
+              similar items. They can be normal lists with bullet points,
+              without any bullet points or stacked lists as seen in
+              notifications tabs across many social media apps.
             </p>
           </div>
-          <h4>Responsive Image</h4>
-          <div class="component-example flex flex-center">
-            <img
-              src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              loading="lazy"
-              class="image-responsive"
-              alt="Otago, New-Zealand"
-            />
-          </div>
-          <div class="code-example">
-            <pre><code class="html">
-<img src="url comes here" class="image-responsive" alt="alt text" />
-						</code></pre>
-          </div>
-
-          <h4>Square Image</h4>
-          <div class="component-example flex flex-center">
-            <img
-              src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              loading="lazy"
-              class="image-square"
-              alt="Otago, New-Zealand"
-            />
-          </div>
-          <div class="code-example">
-            <pre><code class="html">
-<img src="url comes here" class="image-square" alt="alt text" />
-						</code></pre>
+          <h4>Normal Lists</h4>
+          <p class="justify">
+            To use the normal list, use
+            <code class="inline-code">.list</code> class on the list and
+            <code class="inline-code">.list-item</code> on the list items
+          </p>
+          <div class="component-example">
+            <ul class="list">
+              <li class="list-item">
+                <div>
+                  <p class="justify">This is a list item</p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div>
+                  <p class="justify">This is a list item</p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div>
+                  <p class="justify">This is a list item</p>
+                </div>
+              </li>
+            </ul>
           </div>
 
-          <h4>Circular Image</h4>
-          <div class="component-example flex flex-center">
-            <img
-              src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              loading="lazy"
-              class="image-round"
-              alt="Otago, New-Zealand"
-            />
-          </div>
           <div class="code-example">
             <pre><code class="html">
-<img src="url comes here" class="image-round" alt="alt text" />
-						</code></pre>
+<ul class="list">
+  <li class="list-item">This is a list item</li>
+  <li class="list-item">This is a list item</li>
+  <li class="list-item">This is a list item</li>            
+</ul>
+          </code></pre>
+          </div>
+
+          <h4>Bullet-less Lists</h4>
+          <p class="justify">
+            These lists don't have any bullet points. They are used for wide
+            range of things, like displaying list of todos in a todolist app or
+            news articles in a news website. To use
+            <code class="inline-code">.list</code> and
+            <code class="inline-code">.style-none</code> class on the list and
+            <code class="inline-code">.list-item</code> on the list items
+          </p>
+          <div class="component-example">
+            <ul class="list style-none">
+              <li class="list-item">
+                <div>
+                  <p class="justify">This is a list item</p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div>
+                  <p class="justify">This is a list item</p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div>
+                  <p class="justify">This is a list item</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<ul class="list style-none">
+  <li class="list-item">This is a list item</li>
+  <li class="list-item">This is a list item</li>
+  <li class="list-item">This is a list item</li>            
+</ul>
+          </code></pre>
+          </div>
+
+          <h4>Stacked Lists</h4>
+          <p class="justify">
+            Best example of these lists is a notifications tab in any app. To
+            use
+            <code class="inline-code">.list</code> and
+            <code class="inline-code">.style-none</code> class on the list and
+            <code class="inline-code">.list-item</code> on the list items
+          </p>
+          <div class="component-example">
+            <ul class="list style-none no-padding">
+              <li class="list-item">
+                <div class="list-item-container">
+                  <p class="justify">
+                    Dummy notification lorem ipsum do el set
+                  </p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="list-item-container">
+                  <p class="justify">
+                    Dummy notification lorem ipsum do el set
+                  </p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="list-item-container">
+                  <p class="justify">
+                    Dummy notification lorem ipsum do el set
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<ul class="list style-none">
+  <li class="list-item">
+    <div class="list-item-container">
+      Dummy notification lorem ipsum do el set
+    </div>
+  </li>
+  <li class="list-item">
+    <div class="list-item-container">
+      Dummy notification lorem ipsum do el set
+    </div>
+  </li>
+  <li class="list-item">
+    <div class="list-item-container">
+      Dummy notification lorem ipsum do el set
+    </div>
+  </li>         
+</ul>
+          </code></pre>
           </div>
         </article>
       </section>
