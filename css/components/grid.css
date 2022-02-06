@@ -3,7 +3,7 @@
 }
 
 .grid-eq-2 {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
 }
 
 .grid-item {
@@ -15,9 +15,21 @@
 }
 
 .grid-eq-3 {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
 }
 
 .grid-eq-auto {
   grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+}
+
+@media screen and (min-width: 48em) {
+  .grid-eq-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .grid-eq-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
