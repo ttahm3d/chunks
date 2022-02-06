@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+}
+
+.grid-eq-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-item {
+  padding: 2rem;
+}
+
+.grid-gap {
+  gap: 1rem;
+}
+
+.grid-eq-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-eq-auto {
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+}
