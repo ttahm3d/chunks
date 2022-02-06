@@ -1,0 +1,31 @@
+.toast {
+  padding: 0.5rem 1rem;
+  background-color: hsla(var(--accent), 0.2);
+  color: hsl(var(--accent-darker));
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.toast-message span {
+  font-weight: 600;
+}
+
+.toast-dismiss {
+  background-color: hsl(var(--accent-darker));
+  color: hsla(var(--bg-700), 0.7);
+  padding: 0.25rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.toast-bottom {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
