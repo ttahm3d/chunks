@@ -31,12 +31,12 @@
 .sidebar-item:hover {
   background-color: hsla(var(--primary), 0.2);
   transform: scale(1.05);
-  color: hsl(var(--primary-darker));
+  color: hsl(var(--primary));
   font-weight: 700;
 }
 
 .sidebar-item.active {
   background-color: hsla(var(--primary), 0.2);
   font-weight: 700;
-  color: hsl(var(--primary-darker));
+  color: hsl(var(--primary));
 }
