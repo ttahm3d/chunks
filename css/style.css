@@ -200,6 +200,24 @@ main {
   margin: 0;
 }
 
+.i-sidebar-btn {
+  outline: 1px solid transparent;
+  outline-offset: 2px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  margin: 0.75rem 0;
+}
+
+.i-sidebar-btn:hover {
+  border-bottom: 1px solid hsl(var(--font-600));
+}
+
+.i-sidebar-btn i {
+  margin-left: 1rem;
+}
+
 div > h3 {
   scroll-padding-top: 3.1125rem;
 }
@@ -216,6 +234,34 @@ div > h3 {
   padding: 1rem;
   margin: 0.5rem 0;
   border-radius: 0.25rem;
+}
+
+.component-list {
+  background-color: hsl(var(--bg-700));
+  height: 45vh;
+  position: sticky;
+  margin-top: 1.5rem;
+  top: 5.6rem;
+  scroll-padding-top: 6rem;
+  overflow-y: auto;
+  display: none;
+  transition: all 0.3s linear;
+}
+
+.component-list::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.component-list::-webkit-scrollbar-track {
+  background: hsla(var(--accent), 0.2);
+}
+
+.component-list::-webkit-scrollbar-thumb {
+  background: hsla(var(--accent), 0.7);
+}
+
+.component-list::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent-dark));
 }
 
 .component-section {
@@ -262,24 +308,11 @@ pre code.hljs {
     margin-top: 1.5rem;
     top: 6rem;
     scroll-padding-top: 6rem;
-    height: calc(100vh - 9rem);
     overflow-y: auto;
-    overflow-x: hidden;
+    height: calc(100vh - 9rem);
   }
 
-  .component-list::-webkit-scrollbar {
-    width: 0.25rem;
-  }
-
-  .component-list::-webkit-scrollbar-track {
-    background: hsla(var(--accent), 0.2);
-  }
-
-  .component-list::-webkit-scrollbar-thumb {
-    background: hsla(var(--accent), 0.7);
-  }
-
-  .component-list::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--accent-dark));
+  .i-sidebar-nav {
+    display: none;
   }
 }
