@@ -22,7 +22,7 @@
   <body>
     <header class="i-header">
       <nav class="i-navbar i-container">
-        <div class="nav-item">
+        <div class="i-nav-item">
           <h2 class="i-logo">
             <a href="../../index.html">
               <i class="fas fa-cubes"></i>
@@ -30,7 +30,7 @@
             </a>
           </h2>
         </div>
-        <div class="nav-item">
+        <div class="i-nav-item">
           <ul class="i-navlist align-base">
             <li class="i-navlist-item"><a href="../introduction/">Docs</a></li>
             <li class="i-navlist-item">
@@ -86,6 +86,44 @@
         </aside>
         <article>
           <h3>Navbar</h3>
+          <div class="component-description">
+            <p class="justify">
+              Navbar is sometimes the very first component that gets created in
+              a website. Looks simple from outside, but is time consuming in
+              creating. <span>Chunks</span> provides simple navbar which user
+              can use as described below.
+            </p>
+          </div>
+          <h4>Simple Navbar</h4>
+          <div class="component-example">
+            <nav class="navbar">
+              <div class="nav-logo">Logo</div>
+              <div class="nav-list">
+                <ul class="i-nav-item">
+                  Home
+                </ul>
+                <ul class="nav-item">
+                  About
+                </ul>
+                <ul class="nav-item">
+                  Blogs
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<nav class="navbar">
+  <div class="nav-logo">Logo</div>  
+  <div class="nav-list">
+    <ul class="i-nav-item">Home</ul>
+    <ul class="nav-item">About</ul>
+    <ul class="nav-item">Blogs</ul>
+  </div>
+</nav>
+            </code></pre>
+          </div>
         </article>
       </section>
     </main>
