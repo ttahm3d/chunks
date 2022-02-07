@@ -37,8 +37,8 @@
 
 .modal-close-btn {
   position: absolute;
-  top: 0.25rem;
-  right: 0.25rem;
+  top: 0.5rem;
+  right: 0.75rem;
   font-size: 1.5rem;
 }
 
