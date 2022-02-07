@@ -79,6 +79,24 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: hsla(var(--accent), 0.2);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsla(var(--accent), 0.7);
+  background-clip: content-box;
+  border-radius: 100vw;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent-dark));
+}
+
 button,
 input {
   font-family: inherit;
@@ -158,7 +176,7 @@ main {
 
 .i-container {
   width: 90vw;
-  max-width: 60rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
@@ -244,9 +262,8 @@ pre code.hljs {
     margin-top: 1.5rem;
     top: 6rem;
     scroll-padding-top: 6rem;
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 9rem);
     overflow-y: auto;
-    padding-bottom: 2rem;
     overflow-x: hidden;
   }
 
