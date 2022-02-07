@@ -1,4 +1,4 @@
-.sidebar-section {
+.sidebar-section:not(:last-child) {
   padding-bottom: 1rem;
 }
 
