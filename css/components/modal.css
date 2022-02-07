@@ -31,6 +31,7 @@
 
 .modal-links {
   display: flex;
+  flex-direction: column-reverse;
   gap: 0.5rem;
 }
 
@@ -39,4 +40,10 @@
   top: 0.25rem;
   right: 0.25rem;
   font-size: 1.5rem;
+}
+
+@media screen and (min-width: 48em) {
+  .modal-links {
+    flex-direction: row;
+  }
 }
