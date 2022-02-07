@@ -30,9 +30,9 @@
 
 .sidebar-item:hover {
   background-color: hsla(var(--primary), 0.05);
-  padding-left: 3px;
   color: hsl(var(--primary));
   transform: none;
+  border-left: 0.25rem solid hsla(var(--primary), 0.5);
 }
 
 .sidebar-item.active {
