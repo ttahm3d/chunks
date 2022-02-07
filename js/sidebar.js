@@ -1,13 +1,13 @@
 const sidebarBtn = document.querySelector(".i-sidebar-btn");
-const sidebarContainer = document.querySelector(".component-list");
+const componentList = document.querySelector(".component-list");
 let isSidebarShown = false;
 
 sidebarBtn.addEventListener("click", () => {
   if (!isSidebarShown) {
-    sidebarContainer.style.display = "block";
-    isSidebarShown = true;
+    componentList.style.height = "45vh";
+    isSidebarShown = !isSidebarShown;
   } else {
-    sidebarContainer.style.display = "none";
-    isSidebarShown = false;
+    componentList.style.height = null;
+    isSidebarShown = !isSidebarShown;
   }
 });

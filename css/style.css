@@ -144,6 +144,10 @@ main {
   border-bottom: 1px solid hsl(var(--bg-300));
 }
 
+.i-header i.logo {
+  letter-spacing: -4px;
+}
+
 .i-navbar {
   display: flex;
   justify-content: space-between;
@@ -207,7 +211,8 @@ main {
   border: none;
   background: none;
   font-size: 1rem;
-  margin: 0.75rem 0;
+  position: sticky;
+  margin: 0.75rem 0 0;
 }
 
 .i-sidebar-btn:hover {
@@ -238,13 +243,13 @@ div > h3 {
 
 .component-list {
   background-color: hsl(var(--bg-700));
-  height: 45vh;
+  height: 0rem;
   position: sticky;
-  margin-top: 1.5rem;
   top: 5.6rem;
+  margin-top: 0.75rem;
   scroll-padding-top: 6rem;
   overflow-y: auto;
-  display: none;
+  overflow-x: hidden;
   transition: all 0.3s linear;
 }
 
@@ -267,6 +272,7 @@ div > h3 {
 .component-section {
   display: grid;
   grid-template-columns: 1fr;
+  transition: 0.4s all linear;
 }
 .component-description {
   padding: 1rem 0;
@@ -297,6 +303,25 @@ pre code.hljs {
   padding: 1rem;
 }
 
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  color: hsl(var(--accent));
+}
+
+.prev-page,
+.next-page {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
 @media screen and (min-width: 48em) {
   .component-section {
     grid-template-columns: 1fr 3fr;
@@ -304,15 +329,13 @@ pre code.hljs {
   }
 
   .component-list {
-    position: sticky;
     margin-top: 1.5rem;
-    top: 6rem;
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 5.6rem;
     overflow-y: auto;
     height: calc(100vh - 9rem);
   }
 
-  .i-sidebar-nav {
+  .i-sidebar-btn {
     display: none;
   }
 }
