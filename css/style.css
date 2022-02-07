@@ -157,6 +157,7 @@ main {
 .i-logo {
   color: hsl(var(--primary));
   padding: 0;
+  letter-spacing: -2px;
 }
 
 .i-navlist {
@@ -198,6 +199,8 @@ main {
   margin: 0 auto;
   text-align: center;
   padding: 0.5rem 0;
+  font-size: 2rem;
+  letter-spacing: -2px;
 }
 
 .no-margin {
