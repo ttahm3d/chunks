@@ -160,7 +160,7 @@
             This type of card has an image that goes along with the text and
             heading.
           </p>
-          <div class="component-example">
+          <div class="component-example flex flex-center">
             <div class="card card-border card-w-300">
               <div class="card-image-container">
                 <img
@@ -203,13 +203,14 @@
 
           <h4>Product Card</h4>
           <p class="justify">This card is used in e-commerce apps.</p>
-          <div class="component-example">
+          <div class="component-example flex flex-center">
             <div class="card card-border card-w-300">
               <div class="card-image-container">
                 <img
                   src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
                   alt="RayBan Sunglasses"
                   loading="lazy"
+                  class="product-image"
                 />
               </div>
               <div class="product-desctiption-container">
@@ -221,9 +222,10 @@
                   </div>
                   <div class="product-button-container">
                     <button class="btn btn-primary">
-                      <span><i class="fas fa-shopping-cart"></i></span>&nbsp;Add
-                      to cart
+                      <span><i class="fas fa-shopping-cart"></i></span>&nbsp;
+                      ADD TO CART
                     </button>
+                    <button class="btn btn-accent">BUY NOW</button>
                   </div>
                 </div>
               </div>
@@ -245,7 +247,72 @@
       <div class="original-price">&#8377; 9999</div>
     </div>
     <div class="product-button-container">
-      <button class="btn btn-primary">Add to cart</button>
+      <button class="btn btn-primary">
+        <span><i class="fas fa-shopping-cart"></i></span>&nbsp;
+        ADD TO CART
+      </button>
+      <button class="btn btn-accent">BUY NOW</button>
+    </div>
+  </div>
+  </div>
+  <div class="card-badge">New</div>
+</div>
+            </code></pre>
+          </div>
+
+          <h4>Overlay Card</h4>
+          <p class="justify">Card with overlay text.</p>
+          <div class="component-example flex flex-center">
+            <div class="card card-border card-w-300">
+              <div class="card-image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                  alt="RayBan Sunglasses"
+                  loading="lazy"
+                  class="product-image"
+                />
+              </div>
+              <div class="product-desctiption-container">
+                <div class="product-heading">Rayban Sunglasses</div>
+                <div class="product-description">
+                  <div class="product-price">
+                    <div class="selling-price">&#8377; 5999</div>
+                    <div class="original-price">&#8377; 9999</div>
+                  </div>
+                  <div class="product-button-container">
+                    <button class="btn btn-primary">
+                      <span><i class="fas fa-shopping-cart"></i></span>&nbsp;
+                      ADD TO CART
+                    </button>
+                    <button class="btn btn-accent">BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-overlay">
+                <div class="out-of-stock-text">OUT OF STOCK</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<div class="card card-border card-w-300">
+  <div class="card-image-container">
+    <img src="product image URL comes here" />
+  </div>
+  <div class="product-desctiption-container">
+    <div class="product-heading">Rayban Sunglasses</div>
+    <div class="product-description">
+    <div class="product-price">
+      <div class="selling-price">&#8377; 5999</div>
+      <div class="original-price">&#8377; 9999</div>
+    </div>
+    <div class="product-button-container">
+      <button class="btn btn-primary">
+        <span><i class="fas fa-shopping-cart"></i></span>&nbsp;
+        ADD TO CART
+      </button>
+      <button class="btn btn-accent">BUY NOW</button>
     </div>
   </div>
   </div>
@@ -256,7 +323,7 @@
 
           <h4>Horizontal Card</h4>
           <p class="justify">This card is used in e-commerce apps.</p>
-          <div class="component-example">
+          <div class="component-example flex flex-center">
             <div class="h-card card-border">
               <div class="card-image-container">
                 <img
@@ -275,16 +342,17 @@
                   <div class="discount-percentage">41% off</div>
                 </div>
                 <div class="product-description">
-                  <ul>
+                  <ul class="list style-none">
                     <li>Protects from UV rays</li>
                     <li>Protects your eyes from dust</li>
                   </ul>
                 </div>
                 <div class="product-button-container">
                   <button class="btn btn-primary">
-                    <span><i class="fas fa-shopping-cart"></i></span>&nbsp;Add
-                    to cart
+                    <span><i class="fas fa-shopping-cart"></i></span>&nbsp; ADD
+                    TO CART
                   </button>
+                  <button class="btn btn-accent">BUY NOW</button>
                 </div>
               </div>
             </div>
@@ -308,7 +376,11 @@
     <div class="product-description">
     </div>
     <div class="product-button-container">
-      <button class="btn btn-primary">Add to cart</button>
+      <button class="btn btn-primary">
+        <span><i class="fas fa-shopping-cart"></i></span>&nbsp;
+        ADD TO CART
+      </button>
+      <button class="btn btn-accent">BUY NOW</button>
     </div>
   </div>
 </div>
