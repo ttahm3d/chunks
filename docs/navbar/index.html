@@ -17,7 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../../css/style.css" />
-    <title>Images | Chunks</title>
+    <title>Navbar | Chunks</title>
   </head>
   <body>
     <header class="i-header">
@@ -72,13 +72,13 @@
                 <li class="sidebar-item"><a href="../button/">Button</a></li>
                 <li class="sidebar-item"><a href="../card/">Card</a></li>
                 <li class="sidebar-item"><a href="../grid/">Grid</a></li>
-                <li class="sidebar-item active">
-                  <a href="../image/">Image</a>
-                </li>
+                <li class="sidebar-item"><a href="../image/">Image</a></li>
                 <li class="sidebar-item"><a href="../input/">Input</a></li>
                 <li class="sidebar-item"><a href="../lists/">Lists</a></li>
                 <li class="sidebar-item"><a href="../modal/">Modal</a></li>
-                <li class="sidebar-item"><a href="../navbar/">Navbar</a></li>
+                <li class="sidebar-item active">
+                  <a href="../navbar/">Navbar</a>
+                </li>
                 <li class="sidebar-item"><a href="../rating/">Rating</a></li>
                 <li class="sidebar-item"><a href="../toast/">Toast</a></li>
               </ul>
@@ -86,69 +86,54 @@
           </div>
         </aside>
         <article>
-          <h3>Images</h3>
+          <h3>Navbar</h3>
           <div class="component-description">
             <p class="justify">
-              Images are inseparable part of Websites. You can use the class
-              <code class="inline-code">.image-responsive</code> for responsive
-              images, <code class="inline-code">.image-square</code> for square
-              type image, and <code class="inline-code">.image-round</code> for
-              a circular image.
+              Navbar is sometimes the very first component that gets created in
+              a website. Looks simple from outside, but is time consuming in
+              creating. <span>Chunks</span> provides simple navbar which user
+              can use as described below.
             </p>
           </div>
-          <h4>Responsive Image</h4>
-          <div class="component-example flex flex-center">
-            <img
-              src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              loading="lazy"
-              class="image-responsive"
-              alt="Otago, New-Zealand"
-            />
-          </div>
-          <div class="code-example">
-            <pre><code class="html">
-<img src="url comes here" class="image-responsive" alt="alt text" />
-						</code></pre>
-          </div>
-
-          <h4>Square Image</h4>
-          <div class="component-example flex flex-center">
-            <img
-              src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              loading="lazy"
-              class="image-square"
-              alt="Otago, New-Zealand"
-            />
-          </div>
-          <div class="code-example">
-            <pre><code class="html">
-<img src="url comes here" class="image-square" alt="alt text" />
-						</code></pre>
+          <h4>Simple Navbar</h4>
+          <div class="component-example">
+            <nav class="navbar">
+              <div class="nav-logo">Logo</div>
+              <div class="nav-list">
+                <ul class="i-nav-item">
+                  Home
+                </ul>
+                <ul class="nav-item">
+                  About
+                </ul>
+                <ul class="nav-item">
+                  Blogs
+                </ul>
+              </div>
+            </nav>
           </div>
 
-          <h4>Circular Image</h4>
-          <div class="component-example flex flex-center">
-            <img
-              src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              loading="lazy"
-              class="image-round"
-              alt="Otago, New-Zealand"
-            />
-          </div>
           <div class="code-example">
             <pre><code class="html">
-<img src="url comes here" class="image-round" alt="alt text" />
-						</code></pre>
+<nav class="navbar">
+  <div class="nav-logo">Logo</div>  
+  <div class="nav-list">
+    <ul class="nav-item">Home</ul>
+    <ul class="nav-item">About</ul>
+    <ul class="nav-item">Blogs</ul>
+  </div>
+</nav>
+            </code></pre>
           </div>
           <div class="navigation-footer-links">
             <div class="prev-page">
-              <a href="../image/"
-                ><i class="fas fa-chevron-left"></i>&nbsp;Grid</a
+              <a href="../modal/"
+                ><i class="fas fa-chevron-left"></i>&nbsp;Modal</a
               >
             </div>
             <div class="next-page">
-              <a href="../input/"
-                >Input&nbsp;<i class="fas fa-chevron-right"></i
+              <a href="../rating/"
+                >Rating&nbsp;<i class="fas fa-chevron-right"></i
               ></a>
             </div>
           </div>

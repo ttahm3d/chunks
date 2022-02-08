@@ -10,14 +10,12 @@
   --primary-dark: 209, 80%, 35%;
   --primary: 209, 100%, 55%;
   --primary-light: 209, 100%, 70%;
-  --primary-lighter: 209, 25%, 85%;
-  --secondary-darker: 18, 100%, 20%;
-  --secondary-dark: 18, 80%, 35%;
-  --secondary: 18, 98%, 59%;
-  --secondary-light: 18, 100%, 70%;
-  --secondary-lighter: 18, 25%, 85%;
-  --accent-color: 261, 82%, 61%;
-  --accent-color-value: 261, 82%, 61%;
+  --primary-lighter: 209, 65%, 85%;
+  --accent-darker: 11, 100%, 20%;
+  --accent-dark: 11, 100%, 35%;
+  --accent: 11, 100%, 51%;
+  --accent-light: 11, 100%, 70%;
+  --accent-lighter: 11, 100%, 85%;
   --bg-700: 0, 0%, 98%;
   --bg-600: 0, 0%, 90%;
   --bg-500: 0, 0%, 85%;
@@ -29,18 +27,29 @@
   --font-500: 0, 0%, 28%;
   --font-400: 0, 0%, 42%;
   --font-300: 0, 0%, 56%;
-  --red-700: 0, 100%, 42%;
+  /* --font-700: 0, 0%, 98%;
+  --font-600: 0, 0%, 90%;
+  --font-500: 0, 0%, 85%;
+  --font-400: 0, 0%, 80%;
+  --font-300: 0, 0%, 70%;
+  --font-200: 0, 0%, 70%;
+  --bg-700: 0, 0%, 7%;
+  --bg-600: 0, 0%, 14%;
+  --bg-500: 0, 0%, 28%;
+  --bg-400: 0, 0%, 42%;
+  --bg-300: 0, 0%, 56%; */
+  --red-700: 0, 65%, 42%;
   --red-500: 0, 100%, 65%;
-  --red-300: 0, 100%, 95%;
-  --green-700: 108, 72%, 30%;
+  --red-300: 0, 90%, 95%;
+  --green-700: 108, 68%, 27%;
   --green-500: 108, 80%, 45%;
   --green-300: 108, 100%, 95%;
   --orange-700: 34, 100%, 30%;
   --orange-500: 34, 100%, 65%;
   --orange-300: 34, 100%, 95%;
-  --blue-700: 205, 100%, 35%;
-  --blue-500: 200, 100%, 50%;
-  --blue-300: 200, 100%, 90%;
+  --blue-700: 219, 100%, 35%;
+  --blue-500: 219, 85%, 62%;
+  --blue-300: 219, 86%, 92%;
 }
 
 /* CSS Resets begin here */
@@ -67,6 +76,25 @@ body {
   line-height: 1.5;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  transition: all 0.3s ease-in-out;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: hsla(var(--accent), 0.2);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsla(var(--accent), 0.7);
+  background-clip: content-box;
+  border-radius: 100vw;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent-dark));
 }
 
 button,
@@ -88,31 +116,38 @@ h6 {
 footer {
   margin-top: auto;
   border-top: 1px solid hsl(var(--bg-400));
-  padding: 0 2rem;
+  padding: 1rem 2rem;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 img {
   max-width: 100%;
+  height: 100%;
 }
 
 main {
-  padding: 1rem 0;
+  padding-bottom: 1rem;
 }
 
 /* Header styles */
 
 .i-header {
-  background-color: hsl(var(--bg-700));
+  background-color: hsl(var(--font-700));
+  color: hsl(var(--bg-700));
   padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 9;
   border-bottom: 1px solid hsl(var(--bg-300));
+}
+
+.i-header i.logo {
+  letter-spacing: -4px;
 }
 
 .i-navbar {
@@ -121,9 +156,23 @@ main {
   align-items: baseline;
 }
 
+.i-header.i-logo {
+  font-size: 2rem;
+}
+
 .i-logo {
   color: hsl(var(--primary));
   padding: 0;
+  letter-spacing: -2px;
+}
+
+.header-logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.header-logo fas {
+  font-weight: 500;
 }
 
 .i-navlist {
@@ -139,15 +188,11 @@ main {
   letter-spacing: -0.09rem;
 }
 
-.i-navbar a:hover {
-  color: hsl(var(--primary));
-}
-
 /* styling for hero section */
 
 .i-container {
   width: 90vw;
-  max-width: 60rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
@@ -157,18 +202,35 @@ main {
 
 .hero h1 {
   font-size: 3.6rem;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .hero h3 {
-  max-width: 45rem;
+  max-width: 60rem;
   margin: 0 auto;
   text-align: center;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  letter-spacing: -2px;
 }
 
 .no-margin {
   margin: 0;
+}
+
+.i-sidebar-btn {
+  outline: 1px solid transparent;
+  outline-offset: 2px;
+  cursor: pointer;
+  border: none;
+  background: hsl(var(--bg-700));
+  font-size: 1rem;
+  margin: 0.75rem 0 0;
+  border-bottom: 1px solid hsl(var(--font-600));
+}
+
+.i-sidebar-btn i {
+  margin-left: 1rem;
 }
 
 div > h3 {
@@ -189,25 +251,49 @@ div > h3 {
   border-radius: 0.25rem;
 }
 
+.component-list {
+  background-color: hsl(var(--bg-700));
+  height: 0rem;
+  position: sticky;
+  top: 5.6rem;
+  margin-top: 0.75rem;
+  scroll-padding-top: 6rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.3s linear;
+}
+
+.component-list::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.component-list::-webkit-scrollbar-track {
+  background: hsla(var(--accent), 0.2);
+}
+
+.component-list::-webkit-scrollbar-thumb {
+  background: hsla(var(--accent), 0.7);
+}
+
+.component-list::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent-dark));
+}
+
 .component-section {
   display: grid;
   grid-template-columns: 1fr;
+  transition: 0.4s all linear;
 }
-
-.component-list {
-  padding: 0 1rem 0 0;
-}
-
 .component-description {
   padding: 1rem 0;
 }
 
 .code-example {
-  margin: 0 auto;
+  margin: 1rem 0;
 }
 
 .inline-code {
-  background-color: hsla(var(--bg-500), 0.8);
+  background-color: hsla(var(--primary-light), 0.8);
   padding: 0.2rem;
   border-radius: 0.25rem;
 }
@@ -227,17 +313,32 @@ pre code.hljs {
   padding: 1rem;
 }
 
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  color: hsl(var(--accent));
+}
+
 @media screen and (min-width: 48em) {
   .component-section {
     grid-template-columns: 1fr 3fr;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .component-list {
-    position: sticky;
-    top: 3.5rem;
-    height: calc(100vh - 4rem);
+    margin-top: 1.5rem;
+    scroll-padding-top: 5.6rem;
     overflow-y: auto;
-    padding-bottom: 2rem;
+    height: calc(100vh - 9rem);
+  }
+
+  .i-sidebar-btn {
+    display: none;
   }
 }

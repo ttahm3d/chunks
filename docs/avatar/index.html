@@ -23,17 +23,17 @@
   <body>
     <header class="i-header">
       <nav class="i-navbar i-container">
-        <div class="nav-item">
-          <h2 class="i-logo">
-            <a href="../index.html">
+        <div class="i-nav-item">
+          <div class="header-logo">
+            <a href="../../index.html">
               <i class="fas fa-cubes"></i>
               Chunks
             </a>
-          </h2>
+          </div>
         </div>
-        <div class="nav-item">
+        <div class="i-nav-item">
           <ul class="i-navlist align-base">
-            <li class="i-navlist-item"><a href="/docs">Docs</a></li>
+            <li class="i-navlist-item"><a href="../introduction/">Docs</a></li>
             <li class="i-navlist-item">
               <a
                 rel="noopener noreferrer"
@@ -48,52 +48,66 @@
       </nav>
     </header>
     <main class="i-container">
+      <button class="i-sidebar-btn">Navigation Menu</button>
       <section class="component-section">
         <aside class="component-list">
-          <h2 class="heading-3 head-lvl-3" id="available-components">
-            Components
-          </h2>
-          <ul class="list style-none">
-            <li class="list-item">
-              <a class="hover-styles" href="../avatar/">avatar</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../alert/">alert</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../badge">badges</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../button">button</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../card">card</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../image">image</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../input">input</a>
-            </li>
-          </ul>
+          <div class="sidebar sidebar-nav">
+            <div class="sidebar-section">
+              <div class="sidebar-section-heading">Getting Started</div>
+              <ul class="sidebar-items">
+                <li class="sidebar-item">
+                  <a href="../introduction/">Introduction</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="../typography/">Typography</a>
+                </li>
+                <li class="sidebar-item"><a href="../colors/">Colors</a></li>
+              </ul>
+            </div>
+            <div class="sidebar-section">
+              <div class="sidebar-section-heading">Components</div>
+              <ul class="sidebar-items">
+                <li class="sidebar-item"><a href="../alert/">Alert</a></li>
+                <li class="sidebar-item active">
+                  <a href="../avatar/">Avatar</a>
+                </li>
+                <li class="sidebar-item"><a href="../badge/">Badge</a></li>
+                <li class="sidebar-item"><a href="../button/">Button</a></li>
+                <li class="sidebar-item"><a href="../card/">Card</a></li>
+                <li class="sidebar-item"><a href="../grid/">Grid</a></li>
+                <li class="sidebar-item"><a href="../image/">Image</a></li>
+                <li class="sidebar-item"><a href="../input/">Input</a></li>
+                <li class="sidebar-item"><a href="../lists/">Lists</a></li>
+                <li class="sidebar-item"><a href="../modal/">Modal</a></li>
+                <li class="sidebar-item"><a href="../navbar/">Navbar</a></li>
+                <li class="sidebar-item"><a href="../rating/">Rating</a></li>
+                <li class="sidebar-item"><a href="../toast/">Toast</a></li>
+              </ul>
+            </div>
+          </div>
         </aside>
         <article>
-          <h3 class="heading-3 head-lvl-3">Avatar</h3>
+          <h3>Avatar</h3>
+          <h4>Avatars with Images</h4>
           <div class="component-description">
             <p class="justify">
               Avatars are used to show profile images in headers or profile
               information sections. They can be in multiple sizes. xs &mdash;
               for extra small, sm &mdash; for small, md &mdash; for medium, lg
-              &mdash; for large, and xl for &mdash; extra large. They can be
-              round or squircle in shape.
+              &mdash; for large, and xl for &mdash; extra large.
             </p>
           </div>
+          <h5>Round Avatars</h5>
+          <p class="justify">
+            Use the class <code class="inline-code">.avatar-round</code> to
+            create circular avatars
+          </p>
           <div class="component-example">
             <div class="flex flex-gap-2 wrap flex-center /">
               <div class="avatar avatar-border">
                 <img
-                  src="../../assets/avatars/avatar-1.svg"
-                  alt="avatar 1"
+                  src="../../assets/avatars/avatar-4.svg"
+                  alt="avatar 4"
                   loading="lazy"
                   class="avatar-round avatar-xs"
                 />
@@ -103,29 +117,29 @@
                   src="../../assets/avatars/avatar-4.svg"
                   alt="avatar 4"
                   loading="lazy"
-                  class="avatar-sq avatar-sm"
+                  class="avatar-round avatar-sm"
                 />
               </div>
               <div class="avatar avatar-border">
                 <img
-                  src="../../assets/avatars/avatar-2.svg"
-                  alt="avatar 2"
+                  src="../../assets/avatars/avatar-4.svg"
+                  alt="avatar 4"
                   loading="lazy"
                   class="avatar-round avatar-md"
                 />
               </div>
               <div class="avatar avatar-border">
                 <img
-                  src="../../assets/avatars/avatar-3.svg"
-                  alt="avatar 3"
+                  src="../../assets/avatars/avatar-4.svg"
+                  alt="avatar 4"
                   loading="lazy"
-                  class="avatar-sq avatar-lg"
+                  class="avatar-round avatar-lg"
                 />
               </div>
               <div class="avatar avatar-border">
                 <img
-                  src="../../assets/avatars/avatar-5.svg"
-                  alt="avatar 5"
+                  src="../../assets/avatars/avatar-4.svg"
+                  alt="avatar 4"
                   loading="lazy"
                   class="avatar-round avatar-xl"
                 />
@@ -140,13 +154,13 @@
   <img src="replace with url" class="avatar-round avatar-xs" />
 </div>
 <div class="avatar avatar-border">
-  <img src="replace with url" class="avatar-sq avatar-sm" />
+  <img src="replace with url" class="avatar-round avatar-sm" />
 </div>
 <div class="avatar">
   <img src="replace with url" class="avatar-round avatar-md" />
 </div>
 <div class="avatar avatar-border">
-  <img src="replace with url" class="avatar-sq avatar-lg" />
+  <img src="replace with url" class="avatar-round avatar-lg" />
 </div>
 <div class="avatar">
   <img src="replace with url" class="avatar-round avatar-xl" />
@@ -156,6 +170,80 @@
 							</pre>
           </div>
 
+          <h5>Round Avatars</h5>
+          <p class="justify">
+            Use the class <code class="inline-code">.avatar-sq</code> to create
+            circular avatars
+          </p>
+          <div class="component-example">
+            <div class="flex flex-gap-2 wrap flex-center /">
+              <div class="avatar avatar-border">
+                <img
+                  src="../../assets/avatars/avatar-5.svg"
+                  alt="avatar 5"
+                  loading="lazy"
+                  class="avatar-sq avatar-xs"
+                />
+              </div>
+              <div class="avatar avatar-border">
+                <img
+                  src="../../assets/avatars/avatar-5.svg"
+                  alt="avatar 5"
+                  loading="lazy"
+                  class="avatar-sq avatar-sm"
+                />
+              </div>
+              <div class="avatar avatar-border">
+                <img
+                  src="../../assets/avatars/avatar-5.svg"
+                  alt="avatar 5"
+                  loading="lazy"
+                  class="avatar-sq avatar-md"
+                />
+              </div>
+              <div class="avatar avatar-border">
+                <img
+                  src="../../assets/avatars/avatar-5.svg"
+                  alt="avatar 5"
+                  loading="lazy"
+                  class="avatar-sq avatar-lg"
+                />
+              </div>
+              <div class="avatar avatar-border">
+                <img
+                  src="../../assets/avatars/avatar-5.svg"
+                  alt="avatar 5"
+                  loading="lazy"
+                  class="avatar-sq avatar-xl"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+
+<div class="avatar">
+  <img src="replace with url" class="avatar-sq avatar-xs" />
+</div>
+<div class="avatar avatar-border">
+  <img src="replace with url" class="avatar-sq avatar-sm" />
+</div>
+<div class="avatar">
+  <img src="replace with url" class="avatar-sq avatar-md" />
+</div>
+<div class="avatar avatar-border">
+  <img src="replace with url" class="avatar-sq avatar-lg" />
+</div>
+<div class="avatar">
+  <img src="replace with url" class="avatar-sq avatar-xl" />
+</div>
+							
+							</code>
+							</pre>
+          </div>
+
+          <h4>Avatars with Letters</h4>
           <div class="component-description">
             <p class="justify">
               Avatars can also be just letters in case the user has not uploaded
@@ -218,6 +306,19 @@
 							</code>
 							</pre>
           </div>
+
+          <div class="navigation-footer-links">
+            <div class="prev-page">
+              <a href="../alert/"
+                ><i class="fas fa-chevron-left"></i>&nbsp;Alerts</a
+              >
+            </div>
+            <div class="next-page">
+              <a href="../badge/"
+                >Badge&nbsp;<i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
         </article>
       </section>
     </main>
@@ -265,5 +366,6 @@
       hljs.highlightAll();
     </script>
     <script src="../../js/codeblocks.js"></script>
+    <script src="../../js/sidebar.js"></script>
   </body>
 </html>

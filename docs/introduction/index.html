@@ -17,7 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../../css/style.css" />
-    <title>Images | Chunks</title>
+    <title>Introduction | Chunks</title>
   </head>
   <body>
     <header class="i-header">
@@ -46,6 +46,7 @@
         </div>
       </nav>
     </header>
+
     <main class="i-container">
       <button class="i-sidebar-btn">Navigation Menu</button>
       <section class="component-section">
@@ -54,7 +55,7 @@
             <div class="sidebar-section">
               <div class="sidebar-section-heading">Getting Started</div>
               <ul class="sidebar-items">
-                <li class="sidebar-item">
+                <li class="sidebar-item active">
                   <a href="../introduction/">Introduction</a>
                 </li>
                 <li class="sidebar-item">
@@ -72,9 +73,7 @@
                 <li class="sidebar-item"><a href="../button/">Button</a></li>
                 <li class="sidebar-item"><a href="../card/">Card</a></li>
                 <li class="sidebar-item"><a href="../grid/">Grid</a></li>
-                <li class="sidebar-item active">
-                  <a href="../image/">Image</a>
-                </li>
+                <li class="sidebar-item"><a href="../image/">Image</a></li>
                 <li class="sidebar-item"><a href="../input/">Input</a></li>
                 <li class="sidebar-item"><a href="../lists/">Lists</a></li>
                 <li class="sidebar-item"><a href="../modal/">Modal</a></li>
@@ -86,69 +85,30 @@
           </div>
         </aside>
         <article>
-          <h3>Images</h3>
+          <h2>Introduction</h2>
           <div class="component-description">
             <p class="justify">
-              Images are inseparable part of Websites. You can use the class
-              <code class="inline-code">.image-responsive</code> for responsive
-              images, <code class="inline-code">.image-square</code> for square
-              type image, and <code class="inline-code">.image-round</code> for
-              a circular image.
+              <span>Chunks</span> is a component library with utility classes.
+              Utility classes allow users to develop UI screens at a much faster
+              speed than that is achieved when writing own css. There are few
+              componenets which the user can create by just using few of the
+              utilty classes. This allows the user to focus on creating the
+              functionality rather than worrying about the design
             </p>
-          </div>
-          <h4>Responsive Image</h4>
-          <div class="component-example flex flex-center">
-            <img
-              src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              loading="lazy"
-              class="image-responsive"
-              alt="Otago, New-Zealand"
-            />
-          </div>
-          <div class="code-example">
-            <pre><code class="html">
-<img src="url comes here" class="image-responsive" alt="alt text" />
-						</code></pre>
-          </div>
+            <p class="justify">
+              To use these classes, all that one has to do is to add the below
+              import in his / her css file.
+            </p>
 
-          <h4>Square Image</h4>
-          <div class="component-example flex flex-center">
-            <img
-              src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              loading="lazy"
-              class="image-square"
-              alt="Otago, New-Zealand"
-            />
-          </div>
-          <div class="code-example">
-            <pre><code class="html">
-<img src="url comes here" class="image-square" alt="alt text" />
-						</code></pre>
-          </div>
-
-          <h4>Circular Image</h4>
-          <div class="component-example flex flex-center">
-            <img
-              src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              loading="lazy"
-              class="image-round"
-              alt="Otago, New-Zealand"
-            />
-          </div>
-          <div class="code-example">
-            <pre><code class="html">
-<img src="url comes here" class="image-round" alt="alt text" />
-						</code></pre>
+            <div class="code-example">
+              <pre><code class="css">@import url("chunksui.netlify.app/css/style.css")</code></pre>
+            </div>
           </div>
           <div class="navigation-footer-links">
-            <div class="prev-page">
-              <a href="../image/"
-                ><i class="fas fa-chevron-left"></i>&nbsp;Grid</a
-              >
-            </div>
+            <div class="prev-page"></div>
             <div class="next-page">
-              <a href="../input/"
-                >Input&nbsp;<i class="fas fa-chevron-right"></i
+              <a href="../typography/"
+                >Typography&nbsp;<i class="fas fa-chevron-right"></i
               ></a>
             </div>
           </div>
@@ -198,7 +158,7 @@
     <script>
       hljs.highlightAll();
     </script>
-    <script src="../../js/sidebar.js"></script>
     <script src="../../js/codeblocks.js"></script>
+    <script src="../../js/sidebar.js"></script>
   </body>
 </html>

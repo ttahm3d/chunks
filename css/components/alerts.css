@@ -2,6 +2,8 @@
   margin: 0.5rem 0;
   padding: 0.75rem;
   border-radius: 0.5rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .alert-info {
@@ -26,4 +28,28 @@
   border: 1px solid hsl(var(--orange-500));
   background-color: hsl(var(--orange-300));
   color: hsl(var(--orange-700));
+}
+
+.alert-outline-success {
+  color: hsl(var(--green-700));
+  border: 1px solid hsl(var(--green-500));
+  background-color: hsl(var(--bg-700));
+}
+
+.alert-outline-info {
+  color: hsl(var(--blue-700));
+  border: 1px solid hsl(var(--blue-500));
+  background-color: hsl(var(--bg-700));
+}
+
+.alert-outline-error {
+  color: hsl(var(--red-700));
+  border: 1px solid hsl(var(--red-500));
+  background-color: hsl(var(--bg-700));
+}
+
+.alert-outline-warning {
+  color: hsl(var(--orange-700));
+  border: 1px solid hsl(var(--orange-500));
+  background-color: hsl(var(--bg-700));
 }

@@ -8,17 +8,29 @@
 }
 
 .btn:active {
-  transform: scale(1.09);
+  transform: scale(1.01);
+}
+
+.btn:hover {
+  box-shadow: 0 2px 9px hsla(var(--font-700), 0.25);
 }
 
 .btn-rounded {
   border-radius: 0.5rem;
 }
 
-.btn-link {
-  padding: 0.5rem 0.8rem;
+.link {
+  padding: 0.5rem 0.8rem 0.25rem;
   display: inline-block;
   border-radius: 0.25rem;
+}
+
+.link-primary {
+  border-bottom: 2px solid hsl(var(--primary));
+}
+
+.link-secondary {
+  border-bottom: 2px solid hsl(var(--font-600));
 }
 
 .shadow {
@@ -33,27 +45,32 @@
   border-radius: 50%;
 }
 
-.btn-primary,
-.link-primary {
+.btn-primary {
   color: hsl(var(--bg-700));
   background-color: hsl(var(--primary-dark));
   transition: all 0.3s ease-in-out;
 }
 
-.btn-primary:hover,
-.link-primary:hover {
+.btn-primary:hover {
   background-color: hsl(var(--primary));
 }
 
-.btn-secondary,
-.link-secondary {
+.btn-accent {
+  background-color: hsla(var(--accent), 0.8);
+  color: #fff;
+}
+
+.btn-accent:hover {
+  background-color: hsl(var(--accent));
+}
+
+.btn-secondary {
   background-color: hsl(var(--bg-700));
   transition: all 0.3s ease-in-out;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-.btn-secondary:hover,
-.link-secondary:hover {
+.btn-secondary:hover {
   background-color: hsla(var(--bg-600), 0.9);
 }
 

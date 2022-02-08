@@ -1,0 +1,22 @@
+.rating {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.rating-icon {
+  font-size: 1.5rem;
+}
+
+.filled {
+  color: hsla(var(--accent), 0.7);
+}
+
+/* unicode from font-awesome */
+
+.fas.half-filled::before {
+  content: "\f5c0";
+  color: hsla(var(--accent), 0.7);
+}

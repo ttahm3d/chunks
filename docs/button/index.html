@@ -17,22 +17,22 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../../css/style.css" />
-    <title>Chunks</title>
+    <title>Button | Chunks</title>
   </head>
   <body>
     <header class="i-header">
       <nav class="i-navbar i-container">
-        <div class="nav-item">
-          <h2 class="i-logo">
-            <a href="../index.html">
+        <div class="i-nav-item">
+          <div class="header-logo">
+            <a href="../../index.html">
               <i class="fas fa-cubes"></i>
               Chunks
             </a>
-          </h2>
+          </div>
         </div>
-        <div class="nav-item">
+        <div class="i-nav-item">
           <ul class="i-navlist align-base">
-            <li class="i-navlist-item"><a href="/docs">Docs</a></li>
+            <li class="i-navlist-item"><a href="../introduction/">Docs</a></li>
             <li class="i-navlist-item">
               <a
                 rel="noopener noreferrer"
@@ -47,40 +47,49 @@
       </nav>
     </header>
     <main class="i-container">
+      <button class="i-sidebar-btn">Navigation Menu</button>
       <section class="component-section">
         <aside class="component-list">
-          <h2 class="heading-3 head-lvl-3" id="available-components">
-            Components
-          </h2>
-          <ul class="list style-none">
-            <li class="list-item">
-              <a class="hover-styles" href="../avatar/">avatar</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../alert/">alert</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../badge">badges</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../button">button</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../card">card</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../image">image</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../input">input</a>
-            </li>
-          </ul>
+          <div class="sidebar sidebar-nav">
+            <div class="sidebar-section">
+              <div class="sidebar-section-heading">Getting Started</div>
+              <ul class="sidebar-items">
+                <li class="sidebar-item">
+                  <a href="../introduction/">Introduction</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="../typography/">Typography</a>
+                </li>
+                <li class="sidebar-item"><a href="../colors/">Colors</a></li>
+              </ul>
+            </div>
+            <div class="sidebar-section">
+              <div class="sidebar-section-heading">Components</div>
+              <ul class="sidebar-items">
+                <li class="sidebar-item"><a href="../alert/">Alert</a></li>
+                <li class="sidebar-item"><a href="../avatar/">Avatar</a></li>
+                <li class="sidebar-item"><a href="../badge/">Badge</a></li>
+                <li class="sidebar-item active">
+                  <a href="../button/">Button</a>
+                </li>
+                <li class="sidebar-item"><a href="../card/">Card</a></li>
+                <li class="sidebar-item"><a href="../grid/">Grid</a></li>
+                <li class="sidebar-item"><a href="../image/">Image</a></li>
+                <li class="sidebar-item"><a href="../input/">Input</a></li>
+                <li class="sidebar-item"><a href="../lists/">Lists</a></li>
+                <li class="sidebar-item"><a href="../modal/">Modal</a></li>
+                <li class="sidebar-item"><a href="../navbar/">Navbar</a></li>
+                <li class="sidebar-item"><a href="../rating/">Rating</a></li>
+                <li class="sidebar-item"><a href="../toast/">Toast</a></li>
+              </ul>
+            </div>
+          </div>
         </aside>
         <article>
-          <h3 class="heading-3 head-lvl-3">button</h3>
+          <h3>Button</h3>
           <div class="component-description">
             <p class="justify">
-              buttons are used in two ways &mdash; buttons and call to action
+              Buttons are used in two ways &mdash; buttons and call to action
               links. Buttons are always associated with some event &mdash; add
               an item to cart button in shopping sites. Call to actions are used
               to grab users attention to some specific thing that you want the
@@ -88,7 +97,7 @@
               classes can be used on both buttons and anchor links
             </p>
           </div>
-          <h4 class="heading-4 head-lvl-4">Contained button</h4>
+          <h4>Contained button</h4>
           <div class="component-description">
             <p class="justify">
               Buttons with background color are usually used known as contained
@@ -126,7 +135,7 @@
             </code></pre>
           </div>
 
-          <h4 class="heading-4 head-lvl-4">Outline button</h4>
+          <h4>Outline button</h4>
           <div class="component-description">
             <p class="justify">
               These are secondary buttons. They usually have a outline with
@@ -155,7 +164,7 @@
             </code></pre>
           </div>
 
-          <h4 class="heading-4 head-lvl-4">Link button</h4>
+          <h4>Link button</h4>
           <div class="component-description">
             <p class="justify">
               These are links &mdash; to other parts of the webpage or to other
@@ -165,21 +174,19 @@
           </div>
           <div class="component-example">
             <div class="flex flex-gap-2 wrap">
-              <a href="##" class="btn-link link-primary">primary link</a>
-              <a href="##" class="btn-link link-secondary btn-rounded"
-                >secondary link</a
-              >
+              <a href="##" class="link link-primary">primary link</a>
+              <a href="##" class="link link-secondary">secondary link</a>
             </div>
           </div>
 
           <div class="code-example">
             <pre><code class="html">
-<a href="##" class="btn-link link-primary">primary link</a>
-<a href="##" class="btn-link link-secondary rounded">secondary link</a>
+<a href="#" class="link link-primary">primary link</a>
+<a href="#" class="link link-secondary rounded">secondary link</a>
             </code></pre>
           </div>
 
-          <h4 class="heading-4 head-lvl-4">Buttons with Icons</h4>
+          <h4>Buttons with Icons</h4>
           <div class="component-description">
             <p class="justify">
               These buttons along with text have icons and are generally seen in
@@ -218,7 +225,7 @@
             </code></pre>
           </div>
 
-          <h4 class="heading-4 head-lvl-4">floating action button</h4>
+          <h4>Floating action button</h4>
           <div class="component-desctiption">
             <p class="justify">
               these buttons are fixed to a particular part of the viewport and
@@ -244,6 +251,19 @@
   <span><i class="fas fa-plus"></i></span>
 </button>
             </code></pre>
+          </div>
+
+          <div class="navigation-footer-links">
+            <div class="prev-page">
+              <a href="../badge/"
+                ><i class="fas fa-chevron-left"></i>&nbsp;Button</a
+              >
+            </div>
+            <div class="next-page">
+              <a href="../card/"
+                >Card&nbsp;<i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
           </div>
         </article>
       </section>
@@ -291,6 +311,7 @@
     <script>
       hljs.highlightAll();
     </script>
+    <script src="../../js/sidebar.js"></script>
     <script src="../../js/codeblocks.js"></script>
   </body>
 </html>

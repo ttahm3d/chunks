@@ -22,17 +22,17 @@
   <body>
     <header class="i-header">
       <nav class="i-navbar i-container">
-        <div class="nav-item">
-          <h2 class="i-logo">
-            <a href="../index.html">
+        <div class="i-nav-item">
+          <div class="header-logo">
+            <a href="../../index.html">
               <i class="fas fa-cubes"></i>
               Chunks
             </a>
-          </h2>
+          </div>
         </div>
-        <div class="nav-item">
+        <div class="i-nav-item">
           <ul class="i-navlist align-base">
-            <li class="i-navlist-item"><a href="/docs">Docs</a></li>
+            <li class="i-navlist-item"><a href="../introduction/">Docs</a></li>
             <li class="i-navlist-item">
               <a
                 rel="noopener noreferrer"
@@ -47,46 +47,65 @@
       </nav>
     </header>
     <main class="i-container">
+      <button class="i-sidebar-btn">Navigation Menu</button>
       <section class="component-section">
         <aside class="component-list">
-          <h2 class="heading-3 head-lvl-3" id="available-components">
-            Components
-          </h2>
-          <ul class="list style-none">
-            <li class="list-item">
-              <a class="hover-styles" href="../avatar/">avatar</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../alert/">alert</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../badge">badges</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../button">button</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../card">card</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../image">image</a>
-            </li>
-            <li class="list-item">
-              <a class="hover-styles" href="../input">input</a>
-            </li>
-          </ul>
+          <div class="sidebar sidebar-nav">
+            <div class="sidebar-section">
+              <div class="sidebar-section-heading">Getting Started</div>
+              <ul class="sidebar-items">
+                <li class="sidebar-item">
+                  <a href="../introduction/">Introduction</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="../typography/">Typography</a>
+                </li>
+                <li class="sidebar-item"><a href="../colors/">Colors</a></li>
+              </ul>
+            </div>
+            <div class="sidebar-section">
+              <div class="sidebar-section-heading">Components</div>
+              <ul class="sidebar-items">
+                <li class="sidebar-item active">
+                  <a href="../alert/">Alert</a>
+                </li>
+                <li class="sidebar-item"><a href="../avatar/">Avatar</a></li>
+                <li class="sidebar-item"><a href="../badge/">Badge</a></li>
+                <li class="sidebar-item"><a href="../button/">Button</a></li>
+                <li class="sidebar-item"><a href="../card/">Card</a></li>
+                <li class="sidebar-item"><a href="../grid/">Grid</a></li>
+                <li class="sidebar-item"><a href="../image/">Image</a></li>
+                <li class="sidebar-item"><a href="../input/">Input</a></li>
+                <li class="sidebar-item"><a href="../lists/">Lists</a></li>
+                <li class="sidebar-item"><a href="../modal/">Modal</a></li>
+                <li class="sidebar-item"><a href="../navbar/">Navbar</a></li>
+                <li class="sidebar-item"><a href="../rating/">Rating</a></li>
+                <li class="sidebar-item"><a href="../toast/">Toast</a></li>
+              </ul>
+            </div>
+          </div>
         </aside>
         <article class="component-container">
-          <h3 class="heading-3 head-lvl-3">Alert</h3>
+          <h3>Alert</h3>
           <div class="component-description">
             <p class="justify">
               Alerts are very common in most of the applications. To provide
               feedback to use to any of his / her actions, we make use of
-              alerts. There are multiple types of alerts availale as mentioned
+              alerts. There are multiple types of alerts available as mentioned
               below.
             </p>
           </div>
-
+          <h4>Simple Alert</h4>
+          <p class="justify">
+            As the name indicates, they are simple alerts &mdash; they give a
+            specific message to user. Use the class
+            <code class="inline-code">.alert</code> and use any of the classes
+            <code class="inline-code">.alert-info</code>,
+            <code class="inline-code">.alert-error</code>,
+            <code class="inline-code">.alert-success</code> or
+            <code class="inline-code">.alert-warning</code> to create different
+            kinds of alerts.
+          </p>
           <div class="component-example">
             <div class="alert alert-info">
               <p class="justify no-margin">This is an example of info alert</p>
@@ -121,6 +140,123 @@
   add your warning message here
 </div>
 						</code></pre>
+          </div>
+
+          <h4>Outline Alert</h4>
+          <p class="justify">
+            As the name indicates, they are simple alerts &mdash; they give a
+            specific message to user. Use the class
+            <code class="inline-code">.alert</code> and use any of the classes
+            <code class="inline-code">.alert-outline-info</code>,
+            <code class="inline-code">.alert-outline-error</code>,
+            <code class="inline-code">.alert-outline-success</code> or
+            <code class="inline-code">.alert-outline-warning</code> to create
+            different kinds of alerts.
+          </p>
+          <div class="component-example">
+            <div class="alert alert-info">
+              <div class="alert-icon"><i class="fas fa-info"></i></div>
+              <div class="alert-message">Information alert with icon</div>
+            </div>
+            <div class="alert alert-success">
+              <div class="alert-icon"><i class="fas fa-check"></i></div>
+              <div class="alert-message">Success alert with icon</div>
+            </div>
+            <div class="alert alert-error">
+              <div class="alert-icon"><i class="fas fa-times"></i></div>
+              <div class="alert-message">Error alert with icon</div>
+            </div>
+            <div class="alert alert-warning">
+              <div class="alert-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+              </div>
+              <div class="alert-message">Warning alert with icon</div>
+            </div>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<div class="alert alert-outline-info">
+  <div class="alert-icon"><i class="fas fa-info"></i></div>
+  <div class="alert-message">Information alert with icon</div>
+</div>
+<div class="alert alert-outline-success">
+  <div class="alert-icon"><i class="fas fa-info"></i></div>
+  <div class="alert-message">success alert with icon</div>
+</div>
+<div class="alert alert-outline-error">
+  <div class="alert-icon"><i class="fas fa-info"></i></div>
+  <div class="alert-message">error alert with icon</div>
+</div>
+<div class="alert alert-outline-warning">
+  <div class="alert-icon"><i class="fas fa-info"></i></div>
+  <div class="alert-message">warning alert with icon</div>
+</div>
+						</code></pre>
+          </div>
+
+          <h4>Outline Alert</h4>
+          <p class="justify">
+            As the name indicates, they are simple alerts &mdash; they give a
+            specific message to user. Use the class
+            <code class="inline-code">.alert</code> and use any of the classes
+            <code class="inline-code">.alert-outline-info</code>,
+            <code class="inline-code">.alert-outline-error</code>,
+            <code class="inline-code">.alert-outline-success</code> or
+            <code class="inline-code">.alert-outline-warning</code> to create
+            different kinds of alerts.
+          </p>
+          <div class="component-example">
+            <div class="alert alert-outline-info">
+              <p class="justify no-margin">
+                This is an example of info alert with outline.
+              </p>
+            </div>
+            <div class="alert alert-outline-success">
+              <p class="justify no-margin">
+                This is an example of success alert with outline.
+              </p>
+            </div>
+            <div class="alert alert-outline-error">
+              <p class="justify no-margin">
+                This is an example of error alert with outline.
+              </p>
+            </div>
+            <div class="alert alert-outline-warning">
+              <p class="justify no-margin">
+                This is an example of warning alert with outline.
+              </p>
+            </div>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<div class="alert alert-outline-info">
+  add your info message here
+</div>
+<div class="alert alert-outline-success">
+  add your success message here
+</div>
+<div class="alert alert-outline-error">
+  add your error message here
+</div>
+<div class="alert alert-outline-warning">
+  add your warning message here
+</div>
+						</code></pre>
+          </div>
+
+          <div class="navigation-footer-links">
+            <div class="prev-page">
+              <a href="../colors/"
+                ><i class="fas fa-chevron-left"></i>&nbsp;Colors</a
+              >
+            </div>
+            <div class="next-page">
+              <a href="../avatar/"
+                >Avatar&nbsp;<i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
           </div>
         </article>
       </section>
@@ -169,5 +305,6 @@
       hljs.highlightAll();
     </script>
     <script src="../../js/codeblocks.js"></script>
+    <script src="../../js/sidebar.js"></script>
   </body>
 </html>

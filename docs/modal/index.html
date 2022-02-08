@@ -17,7 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../../css/style.css" />
-    <title>Images | Chunks</title>
+    <title>Modal | Chunks</title>
   </head>
   <body>
     <header class="i-header">
@@ -72,12 +72,12 @@
                 <li class="sidebar-item"><a href="../button/">Button</a></li>
                 <li class="sidebar-item"><a href="../card/">Card</a></li>
                 <li class="sidebar-item"><a href="../grid/">Grid</a></li>
-                <li class="sidebar-item active">
-                  <a href="../image/">Image</a>
-                </li>
+                <li class="sidebar-item"><a href="../image/">Image</a></li>
                 <li class="sidebar-item"><a href="../input/">Input</a></li>
                 <li class="sidebar-item"><a href="../lists/">Lists</a></li>
-                <li class="sidebar-item"><a href="../modal/">Modal</a></li>
+                <li class="sidebar-item active">
+                  <a href="../modal/">Modal</a>
+                </li>
                 <li class="sidebar-item"><a href="../navbar/">Navbar</a></li>
                 <li class="sidebar-item"><a href="../rating/">Rating</a></li>
                 <li class="sidebar-item"><a href="../toast/">Toast</a></li>
@@ -86,69 +86,63 @@
           </div>
         </aside>
         <article>
-          <h3>Images</h3>
+          <h3>Modal</h3>
           <div class="component-description">
             <p class="justify">
-              Images are inseparable part of Websites. You can use the class
-              <code class="inline-code">.image-responsive</code> for responsive
-              images, <code class="inline-code">.image-square</code> for square
-              type image, and <code class="inline-code">.image-round</code> for
-              a circular image.
+              Modals are the pop-ups that come up in application to provide
+              feedback to the user or intimate the user of his / her actions.
+              The user needs to interact with the pop-up to proceed further in
+              the app flow as modal draws over the main content of the
+              application.
             </p>
           </div>
-          <h4>Responsive Image</h4>
-          <div class="component-example flex flex-center">
-            <img
-              src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              loading="lazy"
-              class="image-responsive"
-              alt="Otago, New-Zealand"
-            />
-          </div>
-          <div class="code-example">
-            <pre><code class="html">
-<img src="url comes here" class="image-responsive" alt="alt text" />
-						</code></pre>
-          </div>
-
-          <h4>Square Image</h4>
-          <div class="component-example flex flex-center">
-            <img
-              src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              loading="lazy"
-              class="image-square"
-              alt="Otago, New-Zealand"
-            />
-          </div>
-          <div class="code-example">
-            <pre><code class="html">
-<img src="url comes here" class="image-square" alt="alt text" />
-						</code></pre>
+          <div class="component-example">
+            <div class="modal-container">
+              <div class="modal">
+                <div class="modal-heading">Save</div>
+                <div class="modal-text">
+                  Are you sure that you want to save changes?
+                </div>
+                <div class="modal-links justify-end">
+                  <button class="btn btn-secondary">Cancel</button>
+                  <button class="btn btn-primary">Save Changes</button>
+                </div>
+                <div class="modal-close-btn">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <h4>Circular Image</h4>
-          <div class="component-example flex flex-center">
-            <img
-              src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              loading="lazy"
-              class="image-round"
-              alt="Otago, New-Zealand"
-            />
-          </div>
           <div class="code-example">
             <pre><code class="html">
-<img src="url comes here" class="image-round" alt="alt text" />
-						</code></pre>
+<div class="modal-container">
+  <div class="modal">
+    <div class="modal-heading">Save</div>
+    <div class="modal-text">
+      Are you sure that you want to save changes?
+    </div>
+    <div class="modal-links justify-end">
+      <button class="btn btn-secondary">Cancel</button>
+      <button class="btn btn-primary">Save Changes</button>
+    </div>
+    <div class="modal-close-btn">
+      <i class="fas fa-times"></i>
+    </div>
+  </div>
+</div>
+          </code></pre>
           </div>
+
           <div class="navigation-footer-links">
             <div class="prev-page">
-              <a href="../image/"
-                ><i class="fas fa-chevron-left"></i>&nbsp;Grid</a
+              <a href="../lists/"
+                ><i class="fas fa-chevron-left"></i>&nbsp;Lists</a
               >
             </div>
             <div class="next-page">
-              <a href="../input/"
-                >Input&nbsp;<i class="fas fa-chevron-right"></i
+              <a href="../navbar/"
+                >Navbar&nbsp;<i class="fas fa-chevron-right"></i
               ></a>
             </div>
           </div>

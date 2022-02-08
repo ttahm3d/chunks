@@ -17,7 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../../css/style.css" />
-    <title>Images | Chunks</title>
+    <title>Rating | Chunks</title>
   </head>
   <body>
     <header class="i-header">
@@ -72,83 +72,67 @@
                 <li class="sidebar-item"><a href="../button/">Button</a></li>
                 <li class="sidebar-item"><a href="../card/">Card</a></li>
                 <li class="sidebar-item"><a href="../grid/">Grid</a></li>
-                <li class="sidebar-item active">
-                  <a href="../image/">Image</a>
-                </li>
+                <li class="sidebar-item"><a href="../image/">Image</a></li>
                 <li class="sidebar-item"><a href="../input/">Input</a></li>
                 <li class="sidebar-item"><a href="../lists/">Lists</a></li>
                 <li class="sidebar-item"><a href="../modal/">Modal</a></li>
                 <li class="sidebar-item"><a href="../navbar/">Navbar</a></li>
-                <li class="sidebar-item"><a href="../rating/">Rating</a></li>
+                <li class="sidebar-item active">
+                  <a href="../rating/">Rating</a>
+                </li>
                 <li class="sidebar-item"><a href="../toast/">Toast</a></li>
               </ul>
             </div>
           </div>
         </aside>
         <article>
-          <h3>Images</h3>
+          <h3>Rating</h3>
           <div class="component-description">
             <p class="justify">
-              Images are inseparable part of Websites. You can use the class
-              <code class="inline-code">.image-responsive</code> for responsive
-              images, <code class="inline-code">.image-square</code> for square
-              type image, and <code class="inline-code">.image-round</code> for
-              a circular image.
+              Usually seen in E-commerce websites and in e-ticket booking
+              systems, ratings act as an indicator of how good a product / movie
+              / show or per say any form of art is.
+            </p>
+            <p class="justify">
+              Use the class <code class="inline-code">.filled</code> to indicate
+              a full star and class
+              <code class="inline-code">.half-filled</code> to indicate half
+              filled star.
             </p>
           </div>
-          <h4>Responsive Image</h4>
           <div class="component-example flex flex-center">
-            <img
-              src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              loading="lazy"
-              class="image-responsive"
-              alt="Otago, New-Zealand"
-            />
-          </div>
-          <div class="code-example">
-            <pre><code class="html">
-<img src="url comes here" class="image-responsive" alt="alt text" />
-						</code></pre>
+            <ul class="rating">
+              <li class="rating-icon"><i class="fas fa-star filled"></i></li>
+              <li class="rating-icon"><i class="fas fa-star filled"></i></li>
+              <li class="rating-icon"><i class="fas fa-star filled"></i></li>
+              <li class="rating-icon"><i class="fas fa-star filled"></i></li>
+              <li class="rating-icon">
+                <i class="fas fa-star half-filled"></i>
+              </li>
+            </ul>
           </div>
 
-          <h4>Square Image</h4>
-          <div class="component-example flex flex-center">
-            <img
-              src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              loading="lazy"
-              class="image-square"
-              alt="Otago, New-Zealand"
-            />
-          </div>
           <div class="code-example">
             <pre><code class="html">
-<img src="url comes here" class="image-square" alt="alt text" />
-						</code></pre>
+<ul class="rating">
+  <li class="rating-icon"><i class="fas fa-star filled"></i></li>
+  <li class="rating-icon"><i class="fas fa-star filled"></i></li>
+  <li class="rating-icon"><i class="fas fa-star filled"></i></li>
+  <li class="rating-icon"><i class="fas fa-star filled"></i></li>
+  <li class="rating-icon"><i class="fas fa-star half-filled"></i></li>
+</ul>
+            </code></pre>
           </div>
 
-          <h4>Circular Image</h4>
-          <div class="component-example flex flex-center">
-            <img
-              src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              loading="lazy"
-              class="image-round"
-              alt="Otago, New-Zealand"
-            />
-          </div>
-          <div class="code-example">
-            <pre><code class="html">
-<img src="url comes here" class="image-round" alt="alt text" />
-						</code></pre>
-          </div>
           <div class="navigation-footer-links">
             <div class="prev-page">
-              <a href="../image/"
-                ><i class="fas fa-chevron-left"></i>&nbsp;Grid</a
+              <a href="../navbar/"
+                ><i class="fas fa-chevron-left"></i>&nbsp;Navbar</a
               >
             </div>
             <div class="next-page">
-              <a href="../input/"
-                >Input&nbsp;<i class="fas fa-chevron-right"></i
+              <a href="../toast/"
+                >Toast&nbsp;<i class="fas fa-chevron-right"></i
               ></a>
             </div>
           </div>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="svg" href="/assets/chunks-icon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+      integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>Lists | Chunks</title>
+  </head>
+  <body>
+    <header class="i-header">
+      <nav class="i-navbar i-container">
+        <div class="i-nav-item">
+          <div class="header-logo">
+            <a href="../../index.html">
+              <i class="fas fa-cubes"></i>
+              Chunks
+            </a>
+          </div>
+        </div>
+        <div class="i-nav-item">
+          <ul class="i-navlist align-base">
+            <li class="i-navlist-item"><a href="../introduction/">Docs</a></li>
+            <li class="i-navlist-item">
+              <a
+                rel="noopener noreferrer"
+                href="https://github.com/ttahm3d/chunks"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="i-container">
+      <button class="i-sidebar-btn">Navigation Menu</button>
+      <section class="component-section">
+        <aside class="component-list">
+          <div class="sidebar sidebar-nav">
+            <div class="sidebar-section">
+              <div class="sidebar-section-heading">Getting Started</div>
+              <ul class="sidebar-items">
+                <li class="sidebar-item">
+                  <a href="../introduction/">Introduction</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="../typography/">Typography</a>
+                </li>
+                <li class="sidebar-item"><a href="../colors/">Colors</a></li>
+              </ul>
+            </div>
+            <div class="sidebar-section">
+              <div class="sidebar-section-heading">Components</div>
+              <ul class="sidebar-items">
+                <li class="sidebar-item"><a href="../alert/">Alert</a></li>
+                <li class="sidebar-item"><a href="../avatar/">Avatar</a></li>
+                <li class="sidebar-item"><a href="../badge/">Badge</a></li>
+                <li class="sidebar-item"><a href="../button/">Button</a></li>
+                <li class="sidebar-item"><a href="../card/">Card</a></li>
+                <li class="sidebar-item"><a href="../grid/">Grid</a></li>
+                <li class="sidebar-item"><a href="../image/">Image</a></li>
+                <li class="sidebar-item"><a href="../input/">Input</a></li>
+                <li class="sidebar-item active">
+                  <a href="../lists/">Lists</a>
+                </li>
+                <li class="sidebar-item"><a href="../modal/">Modal</a></li>
+                <li class="sidebar-item"><a href="../navbar/">Navbar</a></li>
+                <li class="sidebar-item"><a href="../rating/">Rating</a></li>
+                <li class="sidebar-item"><a href="../toast/">Toast</a></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <article>
+          <h3>Lists</h3>
+          <div class="component-description">
+            <p class="justify">
+              Lists as they indicate themselves, are used to display list of
+              similar items. They can be normal lists with bullet points,
+              without any bullet points or stacked lists as seen in
+              notifications tabs across many social media apps.
+            </p>
+          </div>
+          <h4>Normal Lists</h4>
+          <p class="justify">
+            To use the normal list, use
+            <code class="inline-code">.list</code> class on the list and
+            <code class="inline-code">.list-item</code> on the list items
+          </p>
+          <div class="component-example">
+            <ul class="list">
+              <li class="list-item">
+                <div>
+                  <p class="justify">This is a list item</p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div>
+                  <p class="justify">This is a list item</p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div>
+                  <p class="justify">This is a list item</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<ul class="list">
+  <li class="list-item">This is a list item</li>
+  <li class="list-item">This is a list item</li>
+  <li class="list-item">This is a list item</li>            
+</ul>
+          </code></pre>
+          </div>
+
+          <h4>Bullet-less Lists</h4>
+          <p class="justify">
+            These lists don't have any bullet points. They are used for wide
+            range of things, like displaying list of todos in a todolist app or
+            news articles in a news website. To use
+            <code class="inline-code">.list</code> and
+            <code class="inline-code">.style-none</code> class on the list and
+            <code class="inline-code">.list-item</code> on the list items
+          </p>
+          <div class="component-example">
+            <ul class="list style-none">
+              <li class="list-item">
+                <div>
+                  <p class="justify">This is a list item</p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div>
+                  <p class="justify">This is a list item</p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div>
+                  <p class="justify">This is a list item</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<ul class="list style-none">
+  <li class="list-item">This is a list item</li>
+  <li class="list-item">This is a list item</li>
+  <li class="list-item">This is a list item</li>            
+</ul>
+          </code></pre>
+          </div>
+
+          <h4>Spaced Horizontal Lists</h4>
+          <p class="justify">
+            These lists are flexed horizontally and don't have bullet points for
+            list items. Use the class
+            <code class="inline-code">.list-hz</code> and
+            <code class="inline-code">.style-none</code> class on the list and
+            <code class="inline-code">.list-item</code> on the list items
+          </p>
+          <div class="component-example">
+            <ul class="list-hz style-none">
+              <li class="list-item">
+                <div>
+                  <p class="justify">This is a list item</p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div>
+                  <p class="justify">This is a list item</p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div>
+                  <p class="justify">This is a list item</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<ul class="list-hz style-none">
+  <li class="list-item">This is a list item</li>
+  <li class="list-item">This is a list item</li>
+  <li class="list-item">This is a list item</li>            
+</ul>
+          </code></pre>
+          </div>
+
+          <h4>Stacked Lists</h4>
+          <p class="justify">
+            Best example of these lists is a notifications tab in any app. To
+            use
+            <code class="inline-code">.list</code> and
+            <code class="inline-code">.style-none</code> class on the list and
+            <code class="inline-code">.list-item</code> on the list items
+          </p>
+          <div class="component-example">
+            <ul class="list style-none no-padding">
+              <li class="list-item">
+                <div class="list-item-container">
+                  <p class="justify">
+                    Dummy notification lorem ipsum do el set
+                  </p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="list-item-container">
+                  <p class="justify">
+                    Dummy notification lorem ipsum do el set
+                  </p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="list-item-container">
+                  <p class="justify">
+                    Dummy notification lorem ipsum do el set
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<ul class="list style-none">
+  <li class="list-item">
+    <div class="list-item-container">
+      Dummy notification lorem ipsum do el set
+    </div>
+  </li>
+  <li class="list-item">
+    <div class="list-item-container">
+      Dummy notification lorem ipsum do el set
+    </div>
+  </li>
+  <li class="list-item">
+    <div class="list-item-container">
+      Dummy notification lorem ipsum do el set
+    </div>
+  </li>         
+</ul>
+          </code></pre>
+          </div>
+
+          <div class="navigation-footer-links">
+            <div class="prev-page">
+              <a href="../input/"
+                ><i class="fas fa-chevron-left"></i>&nbsp;Input</a
+              >
+            </div>
+            <div class="next-page">
+              <a href="../modal/"
+                >Modal&nbsp;<i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="flex flex-center flex-column">
+      <p>Created by Tahir Ahmed T</p>
+
+      <ul class="list style-none horizontal wd-100 justify-center list-gap-1">
+        <li>
+          <a
+            class="list-icon"
+            rel="noopener noreferrer"
+            href="https://github.com/ttahm3d"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="list-icon"
+            rel="noopener noreferrer"
+            href="https://twitter.com/ttahm3d"
+            target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="list-icon"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/tahirahmedt"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+      integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../../js/sidebar.js"></script>
+    <script src="../../js/codeblocks.js"></script>
+  </body>
+</html>

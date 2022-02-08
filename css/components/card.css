@@ -40,6 +40,23 @@
   line-height: 1.3;
 }
 
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(var(--bg-400), 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.out-of-stock-text {
+  background-color: hsla(var(--red-500), 0.6);
+  padding: 0.5rem;
+}
+
 .product-desctiption-container {
   padding: 0.5rem;
 }
@@ -51,7 +68,7 @@
 }
 
 .product-heading {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 
@@ -61,17 +78,21 @@
   gap: 0.5rem;
 }
 
+.product-image {
+  height: 100%;
+}
+
 .selling-price {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  color: hsl(var(--green-700));
+  color: hsl(var(--font-700));
   letter-spacing: -0.125rem;
 }
 
 .original-price {
   font-weight: 600;
   text-decoration: line-through;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: hsla(var(--font-500), 0.8);
 }
 
@@ -85,6 +106,8 @@
 
 .product-button-container {
   padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .card-badge {

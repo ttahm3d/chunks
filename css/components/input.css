@@ -82,7 +82,7 @@
 
 input[type="radio"],
 input[type="checkbox"] {
-  accent-color: hsl(var(--accent-color));
+  accent-color: hsl(var(--accent));
 }
 
 .dropdown-wrapper {
