@@ -154,6 +154,10 @@ main {
   align-items: baseline;
 }
 
+.i-header.i-logo {
+  font-size: 2rem;
+}
+
 .i-logo {
   color: hsl(var(--primary));
   padding: 0;
@@ -199,7 +203,7 @@ main {
   margin: 0 auto;
   text-align: center;
   padding: 0.5rem 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: -2px;
 }
 
@@ -212,13 +216,9 @@ main {
   outline-offset: 2px;
   cursor: pointer;
   border: none;
-  background: none;
+  background: hsl(var(--bg-700));
   font-size: 1rem;
-  position: sticky;
   margin: 0.75rem 0 0;
-}
-
-.i-sidebar-btn:hover {
   border-bottom: 1px solid hsl(var(--font-600));
 }
 
@@ -282,7 +282,7 @@ div > h3 {
 }
 
 .code-example {
-  margin: 0 auto;
+  margin: 1rem 0;
 }
 
 .inline-code {
@@ -316,13 +316,6 @@ article {
   justify-content: space-between;
   margin-top: auto;
   color: hsl(var(--accent));
-}
-
-.prev-page,
-.next-page {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
 }
 
 @media screen and (min-width: 48em) {
