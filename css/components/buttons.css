@@ -8,7 +8,11 @@
 }
 
 .btn:active {
-  transform: scale(1.09);
+  transform: scale(1.01);
+}
+
+.btn:hover {
+  box-shadow: 0 2px 9px hsla(var(--font-700), 0.25);
 }
 
 .btn-rounded {
@@ -43,6 +47,15 @@
 .btn-primary:hover,
 .link-primary:hover {
   background-color: hsl(var(--primary));
+}
+
+.btn-accent {
+  background-color: hsla(var(--accent), 0.8);
+  color: #fff;
+}
+
+.btn-accent:hover {
+  background-color: hsl(var(--accent));
 }
 
 .btn-secondary,
