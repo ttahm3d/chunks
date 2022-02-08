@@ -38,10 +38,10 @@
   --bg-500: 0, 0%, 28%;
   --bg-400: 0, 0%, 42%;
   --bg-300: 0, 0%, 56%; */
-  --red-700: 0, 100%, 42%;
+  --red-700: 0, 65%, 42%;
   --red-500: 0, 100%, 65%;
-  --red-300: 0, 100%, 95%;
-  --green-700: 108, 72%, 30%;
+  --red-300: 0, 90%, 95%;
+  --green-700: 108, 68%, 27%;
   --green-500: 108, 80%, 45%;
   --green-300: 108, 100%, 95%;
   --orange-700: 34, 100%, 30%;
@@ -286,7 +286,7 @@ div > h3 {
 }
 
 .inline-code {
-  background-color: hsla(var(--bg-500), 0.8);
+  background-color: hsla(var(--primary-light), 0.8);
   padding: 0.2rem;
   border-radius: 0.25rem;
 }
