@@ -137,7 +137,8 @@ main {
 /* Header styles */
 
 .i-header {
-  background-color: hsl(var(--bg-700));
+  background-color: hsl(var(--font-700));
+  color: hsl(var(--bg-700));
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -165,6 +166,15 @@ main {
   letter-spacing: -2px;
 }
 
+.header-logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.header-logo fas {
+  font-weight: 500;
+}
+
 .i-navlist {
   display: flex;
   margin: 0;
@@ -176,10 +186,6 @@ main {
   padding-right: 0.5rem;
   font-weight: 600;
   letter-spacing: -0.09rem;
-}
-
-.i-navbar a:hover {
-  color: hsl(var(--primary));
 }
 
 /* styling for hero section */
