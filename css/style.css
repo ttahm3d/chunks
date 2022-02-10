@@ -150,14 +150,14 @@ main {
   border-bottom: 1px solid hsl(var(--bg-300));
 }
 
-.i-header i.logo {
-  letter-spacing: -4px;
+.i-header .header-logo {
+  letter-spacing: -2px;
 }
 
 .i-navbar {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
 .i-header.i-logo {
