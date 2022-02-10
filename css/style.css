@@ -102,6 +102,10 @@ input {
   font-family: inherit;
 }
 
+button {
+  cursor: pointer;
+}
+
 h1,
 h2,
 h3,
@@ -113,7 +117,7 @@ h6 {
   padding-top: 2rem;
 }
 
-footer {
+.i-footer {
   margin-top: auto;
   border-top: 1px solid hsl(var(--bg-400));
   padding: 1rem 2rem;
@@ -138,7 +142,7 @@ main {
 
 .i-header {
   background-color: hsl(var(--font-700));
-  color: hsl(var(--bg-700));
+  color: hsl(var(--primary));
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -146,14 +150,14 @@ main {
   border-bottom: 1px solid hsl(var(--bg-300));
 }
 
-.i-header i.logo {
-  letter-spacing: -4px;
+.i-header .header-logo {
+  letter-spacing: -2px;
 }
 
 .i-navbar {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
 .i-header.i-logo {
@@ -183,12 +187,14 @@ main {
 }
 
 .i-navlist-item {
-  padding-right: 0.5rem;
+  padding-right: 1rem;
   font-weight: 600;
   letter-spacing: -0.09rem;
 }
 
-/* styling for hero section */
+.i-navlist-item:hover {
+  color: hsl(var(--accent));
+}
 
 .i-container {
   width: 90vw;
@@ -196,17 +202,20 @@ main {
   margin: 0 auto;
 }
 
-.hero {
+.i-hero {
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero h1 {
+.i-hero h1 {
   font-size: 3.6rem;
   padding: 0.5rem 0;
 }
 
-.hero h3 {
-  max-width: 60rem;
+.i-hero h2 {
+  max-width: 50rem;
   margin: 0 auto;
   text-align: center;
   padding: 0.5rem 0;
