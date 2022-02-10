@@ -5,7 +5,7 @@
   <h1 style="color: #1890ff; font-size: 5rem;border: none">Chunks</h1>
 </div>
 
-A UI Component Library that provides utilty classes for you to create your User Interfaces at Rocket speed 🚀.
+A UI Component Library that provides utility classes for you to create your User Interfaces at Rocket speed 🚀.
 
 Latest Build Status
 
