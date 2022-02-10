@@ -299,6 +299,7 @@ div > h3 {
 
 .code-example {
   margin: 1rem 0;
+  max-width: 90vw;
 }
 
 .inline-code {
