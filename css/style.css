@@ -190,6 +190,7 @@ main {
   padding-right: 1rem;
   font-weight: 600;
   letter-spacing: -0.09rem;
+  transition: 0.3s color linear;
 }
 
 .i-navlist-item:hover {
