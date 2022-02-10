@@ -18,7 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../../css/style.css" />
-    <title>Toast | Chunks</title>
+    <title>Slider | Chunks</title>
   </head>
   <body>
     <header class="i-header">
@@ -88,37 +88,45 @@
           </div>
         </aside>
         <article>
-          <h3>Toast</h3>
+          <h3>Slider</h3>
           <div class="component-description">
             <p class="justify">
-              Toast&apos;s are the small pop-ups that we get once in a while
-              when we perform any action. They get displayed for a second or two
-              and are taken off of the viewport right after that. It is usually
-              displayed at bottom of the screen
+              Slider&apos;s are another way to get Users input on a property
+              which can take up a range of values. These are usually seen in
+              E-Commerce apps to filter products based on price ranges and in
+              Multimedia apps to control playback volume.
             </p>
           </div>
-          <div
-            class="component-example flex flex-column flex-center flex-gap-2"
-          >
-            <div class="toast">
-              <div class="toast-message">
-                Failed to send message!!! <span>Retry in 4 seconds.</span>
-              </div>
-              <div class="toast-dismiss">
-                Dismiss<i class="fas fa-times-circle"></i>
-              </div>
+          <div class="component-example flex flex-center">
+            <div class="slider-container">
+              <label for="priceRange">Price Range:</label>
+              <input
+                type="range"
+                name="price-range"
+                min="0"
+                max="50000"
+                id="price-range-slider"
+                list="tickmarks"
+              />
+
+              <datalist id="tickmarks">
+                <option value="0" label="0"></option>
+                <option value="5000" label="5000"></option>
+                <option value="10000" label="10000"></option>
+                <option value="15000" label="15000"></option>
+                <option value="20000" label="20000"></option>
+                <option value="25000" label="25000"></option>
+                <option value="30000" label="30000"></option>
+                <option value="35000" label="35000"></option>
+                <option value="40000" label="40000"></option>
+                <option value="45000" label="45000"></option>
+                <option value="50000" label="50000"></option>
+              </datalist>
             </div>
           </div>
           <div class="code-example">
             <pre><code class="html">
-<div class="toast toast-bottom">
-  <div class="toast-message">
-    Failed to send message!!! <span>Retry in 4 seconds.</span>
-  </div>
-  <div class="toast-dismiss">
-    Dismiss<i class="fas fa-times-circle"></i>
-  </div>
-</div>
+ <input type="range" name="price-range" id="price-range-slider" />
             </code></pre>
           </div>
           <div class="navigation-footer-links">
@@ -127,7 +135,11 @@
                 ><i class="fas fa-chevron-left"></i>&nbsp;Rating</a
               >
             </div>
-            <div class="next-page"></div>
+            <div class="next-page">
+              <a href="../toast/"
+                >Toast&nbsp;<i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
           </div>
         </article>
       </section>

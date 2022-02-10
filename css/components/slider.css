@@ -1,0 +1,20 @@
+.slider-container {
+  padding: 2rem 0;
+  width: 100%;
+}
+
+input[type="range"] {
+  accent-color: hsl(var(--accent));
+  display: block;
+  outline: 1px solid transparent;
+  outline-offset: 2px;
+  width: 100%;
+}
+
+::-webkit-slider-runnable-track {
+  border-radius: 10rem;
+}
+
+::-webkit-slider-thumb {
+  box-shadow: 0 0 0 hsl(var(--accent));
+}
