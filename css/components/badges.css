@@ -1,6 +1,5 @@
 .badge-wrapper {
   min-width: 2rem;
-  padding: 1rem;
   font-size: 1.5rem;
 }
 
@@ -10,22 +9,23 @@
 
 .badge-counter {
   position: absolute;
-  font-size: 0.8rem;
-  min-width: 1.5rem;
-  min-height: 1.5rem;
+  font-size: 0.75rem;
+  min-width: 1.1rem;
+  min-height: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2%;
 }
 
 .badge-top-right {
-  top: 0.4375rem;
-  right: 0.4375rem;
+  top: -0.25rem;
+  right: -0.25rem;
 }
 
 .badge-top-left {
-  top: 0.4375rem;
-  left: 0.4375rem;
+  top: -0.25rem;
+  left: -0.25rem;
 }
 
 .badge-clr-blue {
