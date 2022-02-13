@@ -58,7 +58,7 @@
 }
 
 .product-description-container {
-  padding: 0.5rem;
+  padding: 0.75rem;
 }
 
 .h-product-description {
@@ -107,7 +107,7 @@
 .product-button-container {
   padding-top: 1rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .card-badge {

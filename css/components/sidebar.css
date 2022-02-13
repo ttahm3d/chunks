@@ -29,7 +29,7 @@
 }
 
 .sidebar-item:hover {
-  background-color: hsla(var(--primary), 0.05);
+  background-color: hsla(var(--primary-lighter), 0.1);
   color: hsl(var(--primary));
   transform: none;
   border-left: 0.25rem solid hsla(var(--primary), 0.5);
@@ -37,7 +37,7 @@
 
 .sidebar-item.active {
   border-left: 0.25rem solid hsla(var(--primary), 0.9);
-  background-color: hsla(var(--primary), 0.05);
+  background-color: hsla(var(--primary-lighter), 0.1);
   font-weight: 700;
   color: hsl(var(--primary));
 }
