@@ -119,8 +119,8 @@ h6 {
 
 .i-footer {
   margin-top: auto;
-  border-top: 1px solid hsl(var(--bg-400));
   padding: 1rem 2rem;
+  box-shadow: 0 0 2px hsl(var(--bg-400));
 }
 
 a {
@@ -141,15 +141,13 @@ main {
 /* Header styles */
 
 .i-header {
-  /* background-color: hsl(var(--font-700)); */
   background-color: hsl(var(--bg-700));
   color: hsl(var(--primary));
   padding: 1rem 0;
   position: sticky;
   top: 0;
-  box-shadow: 0 0 4px hsl(var(--bg-400));
+  box-shadow: 0 0 2px hsl(var(--bg-400));
   z-index: 9;
-  /* border-bottom: 1px solid hsl(var(--bg-300)); */
 }
 
 .i-header .header-logo {
@@ -193,10 +191,6 @@ main {
   font-weight: 600;
   letter-spacing: -0.09rem;
   transition: 0.3s color linear;
-}
-
-.i-navlist-item:hover {
-  color: hsl(var(--accent));
 }
 
 .i-container {
@@ -245,10 +239,6 @@ main {
   margin-left: 1rem;
 }
 
-div > h3 {
-  scroll-padding-top: 3.1125rem;
-}
-
 .stick-top {
   position: sticky;
   top: 3.25rem;
@@ -257,7 +247,7 @@ div > h3 {
 }
 
 .component-example {
-  background-color: hsla(var(--primary-lighter), 0.45);
+  background-color: hsla(var(--primary-lighter), 0.35);
   padding: 1rem;
   margin: 0.5rem 0;
   border-radius: 0.25rem;
