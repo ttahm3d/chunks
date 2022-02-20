@@ -2,6 +2,7 @@
   background-color: hsl(var(--primary-darker));
   padding: 0.5rem;
   color: var(--pure-white);
+  z-index: 8;
 }
 
 .navbar-simple {
@@ -72,6 +73,7 @@
     right: 0;
     z-index: 5;
     transform: translateY(-150%);
+    transition: transform 350ms ease-out;
     background-color: hsla(var(--primary-darker), 1);
   }
 
