@@ -39,9 +39,9 @@
   --red-700: 0, 65%, 42%;
   --red-500: 0, 100%, 65%;
   --red-300: 0, 90%, 95%;
-  --green-700: 108, 68%, 27%;
-  --green-500: 108, 80%, 45%;
-  --green-300: 108, 100%, 95%;
+  --green-700: 135, 68%, 27%;
+  --green-500: 135, 72%, 34%;
+  --green-300: 135, 100%, 95%;
   --orange-700: 34, 100%, 30%;
   --orange-500: 34, 100%, 65%;
   --orange-300: 34, 100%, 95%;
@@ -50,6 +50,8 @@
   --blue-300: 219, 86%, 92%;
   --font-Open-Sans: "Open Sans", sans-serif;
   --font-Lato: "Lato", sans-serif;
+  --pure-white: #fff;
+  --pure-black: #000;
 }
 
 /* CSS Resets begin here */
@@ -217,7 +219,6 @@ main {
   text-align: center;
   padding: 0.5rem 0;
   font-size: 1.5rem;
-  /* letter-spacing: -2px; */
 }
 
 .no-margin {
