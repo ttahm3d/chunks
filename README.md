@@ -44,7 +44,7 @@ Below is list of components available in <span style="color: #1890ff">Chunks</sp
 ### Typography
 
 - Normal text: [Lato](https://fonts.google.com/specimen/Lato)
-- Headings: [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans)
+- Headings: [Open Sans](https://fonts.google.com/noto/specimen/Open+Sans)
 
 [Visit this page](https://chunksui.netlify.app/docs/typography) for more detals
 
