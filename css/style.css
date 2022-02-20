@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
 @import url("./components/index.css");
+@import url("./reset.css");
 
 /* color palette */
 
@@ -54,18 +55,6 @@
   --pure-black: #000;
 }
 
-/* CSS Resets begin here */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   background-color: hsl(var(--bg-700));
@@ -99,45 +88,10 @@ body {
   background: hsl(var(--accent-dark));
 }
 
-button,
-input {
-  font-family: inherit;
-}
-
-button {
-  cursor: pointer;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-Open-Sans);
-  margin: 0;
-  padding-top: 2rem;
-}
-
 .i-footer {
   margin-top: auto;
   padding: 1rem 2rem;
   box-shadow: 0 0 2px hsl(var(--bg-400));
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
-img {
-  max-width: 100%;
-  height: 100%;
-}
-
-main {
-  padding-bottom: 1rem;
 }
 
 /* Header styles */
@@ -287,6 +241,7 @@ main {
   grid-template-columns: 1fr;
   transition: 0.4s all linear;
 }
+
 .component-description {
   padding: 1rem 0;
 }

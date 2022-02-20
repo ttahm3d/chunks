@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-Open-Sans);
+  margin: 0;
+  padding-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+main {
+  padding-bottom: 1rem;
+}
+
+input,
+button {
+  outline: 1px solid transparent;
+  outline-offset: 2px;
+  font-family: inherit;
+}
