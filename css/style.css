@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
 @import url("./components/index.css");
 
 /* color palette */
@@ -50,6 +48,8 @@
   --blue-700: 219, 100%, 35%;
   --blue-500: 219, 85%, 62%;
   --blue-300: 219, 86%, 92%;
+  --font-Open-Sans: "Open Sans", sans-serif;
+  --font-Lato: "Lato", sans-serif;
 }
 
 /* CSS Resets begin here */
@@ -67,7 +67,7 @@ html {
 body {
   margin: 0;
   background-color: hsl(var(--bg-700));
-  font-family: "Lato", sans-serif;
+  font-family: var(--font-Lato);
   color: hsl(var(--font-600));
   min-height: 100vh;
   display: flex;
@@ -79,21 +79,21 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-body::-webkit-scrollbar {
+.body::-webkit-scrollbar {
   width: 0.5rem;
 }
 
-body::-webkit-scrollbar-track {
+.body::-webkit-scrollbar-track {
   background: hsla(var(--accent), 0.2);
 }
 
-body::-webkit-scrollbar-thumb {
+.body::-webkit-scrollbar-thumb {
   background: hsla(var(--accent), 0.7);
   background-clip: content-box;
   border-radius: 100vw;
 }
 
-body::-webkit-scrollbar-thumb:hover {
+.body::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--accent-dark));
 }
 
@@ -112,7 +112,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Noto Sans", sans-serif;
+  font-family: var(--font-Open-Sans);
   margin: 0;
   padding-top: 2rem;
 }
@@ -141,13 +141,15 @@ main {
 /* Header styles */
 
 .i-header {
-  background-color: hsl(var(--font-700));
+  /* background-color: hsl(var(--font-700)); */
+  background-color: hsl(var(--bg-700));
   color: hsl(var(--primary));
   padding: 1rem 0;
   position: sticky;
   top: 0;
+  box-shadow: 0 0 4px hsl(var(--bg-400));
   z-index: 9;
-  border-bottom: 1px solid hsl(var(--bg-300));
+  /* border-bottom: 1px solid hsl(var(--bg-300)); */
 }
 
 .i-header .header-logo {
@@ -221,7 +223,7 @@ main {
   text-align: center;
   padding: 0.5rem 0;
   font-size: 1.5rem;
-  letter-spacing: -2px;
+  /* letter-spacing: -2px; */
 }
 
 .no-margin {
