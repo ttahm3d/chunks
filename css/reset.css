@@ -39,4 +39,5 @@ button {
   outline: 1px solid transparent;
   outline-offset: 2px;
   font-family: inherit;
+  cursor: pointer;
 }
