@@ -17,10 +17,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../../css/style.css" />
     <title>Chunks</title>
   </head>
-  <body>
+  <body class="body">
     <header class="i-header">
       <nav class="i-navbar i-container">
         <div class="i-nav-item">
@@ -87,12 +93,12 @@
           </div>
         </aside>
         <article>
-          <h3>Typography</h3>
-          <h4>Font Family</h4>
+          <h3 class="heading-3">Typography</h3>
+          <h4 class="heading-4">Font Family</h4>
           <div class="component-description">
             <p class="justify">
               <span>Lato</span> is the primary font-family and
-              <span>Noto Sans</span> is the font-family for headings. Both of
+              <span>Open Sans</span> is the font-family for headings. Both of
               these can be added from Google fonts.
             </p>
           </div>
@@ -107,7 +113,7 @@
             </div>
           </div>
 
-          <h4>Headings</h4>
+          <h4 class="heading-4">Headings</h4>
           <div class="component-description">
             <p class="justify">
               <span>Chunks</span> has the below headings from h1 through to h6
@@ -115,51 +121,64 @@
           </div>
 
           <div class="component-example">
-            <h1>The quick brown fox jumps over the lazy dog</h1>
-            <h2>The quick brown fox jumps over the lazy dog</h2>
-            <h3>The quick brown fox jumps over the lazy dog</h3>
-            <h4>The quick brown fox jumps over the lazy dog</h4>
-            <h5>The quick brown fox jumps over the lazy dog</h5>
-            <h6>The quick brown fox jumps over the lazy dog</h6>
+            <h1 class="heading-1">
+              The quick brown fox jumps over the lazy dog
+            </h1>
+            <h2 class="heading-2">
+              The quick brown fox jumps over the lazy dog
+            </h2>
+            <h3 class="heading-3">
+              The quick brown fox jumps over the lazy dog
+            </h3>
+            <h4 class="heading-4">
+              The quick brown fox jumps over the lazy dog
+            </h4>
+            <h5 class="heading-5">
+              The quick brown fox jumps over the lazy dog
+            </h5>
+            <h6 class="heading-6">
+              The quick brown fox jumps over the lazy dog
+            </h6>
           </div>
 
           <div class="code-example">
             <pre><code class="html">
-<h1>The quick brown fox jumps over the lazy dog</h1>
-<h2>The quick brown fox jumps over the lazy dog</h2>
-<h3>The quick brown fox jumps over the lazy dog</h3>
-<h4>The quick brown fox jumps over the lazy dog</h4>
-<h5>The quick brown fox jumps over the lazy dog</h5>
-<h6>The quick brown fox jumps over the lazy dog</h6>
+<h1 class="heading-1">The quick brown fox jumps over the lazy dog</h1>
+<h2 class="heading-2">The quick brown fox jumps over the lazy dog</h2>
+<h3 class="heading-3">The quick brown fox jumps over the lazy dog</h3>
+<h4 class="heading-4">The quick brown fox jumps over the lazy dog</h4>
+<h5 class="heading-5">The quick brown fox jumps over the lazy dog</h5>
+<h6 class="heading-6">The quick brown fox jumps over the lazy dog</h6>
             </code></pre>
           </div>
 
-          <h4>Paragraphs (font-weights)</h4>
+          <h4 class="heading-4">Paragraphs (font-weights)</h4>
 
           <div class="component-description">
             <p class="justify">
               <span>Chunks</span> has below pragraphy styles. Adding a class
               <code class="inline-code">.bold</code> makes the paragraph bolder
               and <code class="inline-code">.light</code> makes it lighter. And
-              for normal font, dont use any class.
+              for normal font, use the class
+              <code class="inline-code">.normal</code>
             </p>
           </div>
 
           <div class="component-example">
             <p class="bold">The quick brown fox jumps over the lazy dog</p>
-            <p>The quick brown fox jumps over the lazy dog</p>
+            <p class="normal">The quick brown fox jumps over the lazy dog</p>
             <p class="light">The quick brown fox jumps over the lazy dog</p>
           </div>
 
           <div class="code-example">
             <pre><code class="html">
 <p class="bold">The quick brown fox jumps over the lazy dog</p>
-<p>The quick brown fox jumps over the lazy dog</p>
+<p clas="normal">The quick brown fox jumps over the lazy dog</p>
 <p class="light">The quick brown fox jumps over the lazy dog</p>
             </code></pre>
           </div>
 
-          <h4>Paragraphs (font-colors)</h4>
+          <h4 class="heading-4">Paragraphs (font-colors)</h4>
 
           <div class="component-description">
             <p class="justify">
@@ -171,16 +190,18 @@
           </div>
 
           <div class="component-example">
-            <p class="black">The quick brown fox jumps over the lazy dog</p>
-            <p class="off-black">The quick brown fox jumps over the lazy dog</p>
-            <p class="gray">The quick brown fox jumps over the lazy dog</p>
+            <p class="fg-darker">The quick brown fox jumps over the lazy dog</p>
+            <p class="fg-medium">The quick brown fox jumps over the lazy dog</p>
+            <p class="fg-lighter">
+              The quick brown fox jumps over the lazy dog
+            </p>
           </div>
 
           <div class="code-example">
             <pre><code class="html">
-<p class="black">The quick brown fox jumps over the lazy dog</p>
-<p class="off-black">The quick brown fox jumps over the lazy dog</p>
-<p class="gray">The quick brown fox jumps over the lazy dog</p>
+<p class="fg-darker">The quick brown fox jumps over the lazy dog</p>
+<p class="fg-medium">The quick brown fox jumps over the lazy dog</p>
+<p class="fg-lighter">The quick brown fox jumps over the lazy dog</p>
             </code></pre>
           </div>
 

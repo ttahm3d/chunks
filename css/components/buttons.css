@@ -3,15 +3,28 @@
   cursor: pointer;
   border: 0;
   padding: 0.5rem 0.8rem;
+  transition: 0.2s all ease;
   border-radius: 0.25rem;
   font-size: 1rem;
+}
+
+.btn-outline {
+  outline: 0;
+  cursor: pointer;
+  border: 0;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.25rem;
+  transition: 0.2s all ease;
+  font-size: 1rem;
+  background-color: var(--pure-white);
 }
 
 .btn:active {
   transform: scale(1.01);
 }
 
-.btn:hover {
+.btn:hover,
+.btn-outline:hover {
   box-shadow: 0 2px 9px hsla(var(--font-700), 0.25);
 }
 
@@ -20,9 +33,8 @@
 }
 
 .link {
-  padding: 0.5rem 0.8rem 0.25rem;
+  padding: 0.5rem 0.25rem 0.25rem;
   display: inline-block;
-  border-radius: 0.25rem;
 }
 
 .link-primary {
@@ -41,7 +53,7 @@
   border-radius: 2rem;
 }
 
-.rounded {
+.btn-round {
   border-radius: 50%;
 }
 
@@ -71,7 +83,7 @@
 }
 
 .btn-secondary:hover {
-  background-color: hsla(var(--bg-600), 0.9);
+  background-color: hsla(var(--bg-700), 0.9);
 }
 
 .btn-success {
@@ -87,19 +99,20 @@
 }
 
 .btn-danger {
-  background-color: hsl(var(--red-300));
-  color: hsl(var(--red-700));
+  background-color: hsla(var(--red-500), 0.9);
+  color: var(--pure-white);
   border: 1px solid hsl(var(--red-700));
   transition: all 0.1s ease-in-out;
 }
 
 .btn-danger:hover {
   background-color: hsl(var(--red-500));
-  color: hsl(var(--bg-700));
+  color: var(--pure-white);
 }
 
 .btn-outline-primary {
   border: 1px solid hsl(var(--blue-700));
+  background-color: hsl(var(--bg-700));
   color: hsl(var(--blue-700));
 }
 
@@ -110,11 +123,12 @@
 
 .btn-outline-secondary {
   border: 1px solid hsl(var(--font-700));
+  background-color: hsl(var(--bg-700));
   color: hsl(var(--font-700));
 }
 
 .btn-outline-secondary:hover {
-  background-color: hsla(var(--bg-600), 0.9);
+  background-color: hsla(var(--bg-700), 0.9);
   color: hsl(var(--font-600));
 }
 
