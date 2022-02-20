@@ -39,22 +39,26 @@ p > span {
   font-weight: 600;
 }
 
-p.bold {
+.bold {
   font-weight: 600;
 }
 
-p.light {
+.light {
   font-weight: 300;
 }
 
-.black {
+.normal {
+  font-weight: 400;
+}
+
+.fg-darker {
   color: hsl(var(--font-700));
 }
 
-.off-black {
+.fg-medium {
   color: hsla(var(--font-700), 0.8);
 }
 
-.gray {
-  color: hsla(var(--font-600), 0.7);
+.fg-lighter {
+  color: hsla(var(--font-700), 0.7);
 }
