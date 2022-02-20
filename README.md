@@ -27,7 +27,7 @@ Add the below import into your css file at the top.
 
 Below is list of components available in <span style="color: #1890ff">Chunks</span>
 
-- [Alerts](https://chunksui.netlify.app/docs/alerts)
+- [Alerts](https://chunksui.netlify.app/docs/alert)
 - [Avatars](https://chunksui.netlify.app/docs/avatar)
 - [Badges](https://chunksui.netlify.app/docs/badge)
 - [Buttons](https://chunksui.netlify.app/docs/button)
