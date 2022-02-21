@@ -11,6 +11,29 @@ Latest Build Status
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7b36e178-fb6e-4c9d-abc7-4b39247a3c65/deploy-status)](https://app.netlify.com/sites/chunksui/deploys)
 
+### Dark Mode
+
+Desktop view
+
+![chunksui netlify app_dark mode desktop](https://user-images.githubusercontent.com/53032124/154975627-c924d914-262c-4cfa-b7f2-40dc49b92f84.png)
+
+
+Mobile View
+
+<img src="https://user-images.githubusercontent.com/53032124/154975335-e93dacb6-05bb-45eb-bf39-41153f3de209.png" alt="chunks ui in mobile screen dark mode" width="360" height="800" />
+
+
+### Light Mode
+
+Desktop view
+
+![chunksui netlify app_light mode desktop](https://user-images.githubusercontent.com/53032124/154975744-fef9be57-371d-4b25-8604-f5553c463be5.png)
+
+
+Mobile View
+
+<img src="https://user-images.githubusercontent.com/53032124/154975032-df3ea9f1-6a36-4b49-b494-0a5105f0533f.png" alt="chunks ui in mobile screen light mode" width="360" height="800" />
+
 ---
 
 ## Usage
