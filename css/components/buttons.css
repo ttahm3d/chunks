@@ -77,7 +77,7 @@
 }
 
 .btn-secondary {
-  background-color: hsl(var(--bg-700));
+  background-color: var(--pure-white);
   transition: all 0.3s ease-in-out;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }

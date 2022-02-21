@@ -55,6 +55,57 @@
   --pure-black: #000;
 }
 
+body.dark-mode {
+  --primary-darker: 209, 100%, 20%;
+  --primary-dark: 209, 80%, 35%;
+  --primary: 209, 100%, 55%;
+  --primary-light: 209, 100%, 70%;
+  --primary-lighter: 209, 65%, 85%;
+  --accent-darker: 11, 100%, 20%;
+  --accent-dark: 11, 100%, 35%;
+  --accent: 11, 100%, 51%;
+  --accent-light: 11, 100%, 70%;
+  --accent-lighter: 11, 100%, 85%;
+  /* --bg-700: 0, 0%, 98%;
+  --bg-600: 0, 0%, 90%;
+  --bg-500: 0, 0%, 85%;
+  --bg-400: 0, 0%, 80%;
+  --bg-300: 0, 0%, 70%;
+  --bg-200: 0, 0%, 70%;
+  --font-700: 0, 0%, 7%;
+  --font-600: 0, 0%, 14%;
+  --font-500: 0, 0%, 28%;
+  --font-400: 0, 0%, 42%;
+  --font-300: 0, 0%, 56%; */
+  --font-700: 0, 0%, 98%;
+  --font-600: 0, 0%, 90%;
+  --font-500: 0, 0%, 85%;
+  --font-400: 0, 0%, 80%;
+  --font-300: 0, 0%, 70%;
+  --font-200: 0, 0%, 70%;
+  --bg-700: 0, 0%, 7%;
+  --bg-600: 0, 0%, 14%;
+  --bg-500: 0, 0%, 28%;
+  --bg-400: 0, 0%, 42%;
+  --bg-300: 0, 0%, 56%;
+  --red-700: 0, 65%, 42%;
+  --red-500: 0, 100%, 65%;
+  --red-300: 0, 90%, 95%;
+  --green-700: 135, 68%, 27%;
+  --green-500: 135, 72%, 34%;
+  --green-300: 135, 100%, 95%;
+  --orange-700: 34, 100%, 30%;
+  --orange-500: 34, 100%, 65%;
+  --orange-300: 34, 100%, 95%;
+  --blue-700: 219, 100%, 35%;
+  --blue-500: 219, 85%, 62%;
+  --blue-300: 219, 86%, 92%;
+  --font-Open-Sans: "Open Sans", sans-serif;
+  --font-Lato: "Lato", sans-serif;
+  --pure-white: #fff;
+  --pure-black: #000;
+}
+
 body {
   margin: 0;
   background-color: hsl(var(--bg-700));
@@ -67,7 +118,6 @@ body {
   line-height: 1.5;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  transition: all 0.3s ease-in-out;
 }
 
 .body::-webkit-scrollbar {
@@ -140,6 +190,28 @@ body {
   margin: 0;
   list-style: none;
   font-size: 1.2rem;
+}
+
+.i-nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.btnToggle {
+  font-size: 1.2rem;
+  border-radius: 0.25rem;
+  border: 1px solid hsl(var(--bg-400));
+  background: transparent;
+  padding: 0.25rem;
+  color: inherit;
+}
+
+.btnToggle:hover {
+  background: hsla(var(--bg-400), 0.15);
+}
+
+.btnToggle:active {
+  background: hsla(var(--bg-400), 0.35);
 }
 
 .i-navlist-item {
