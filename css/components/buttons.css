@@ -25,7 +25,8 @@
 }
 
 .btn:hover,
-.btn-outline:hover {
+.btn-outline:hover,
+.link:hover {
   box-shadow: 0 2px 9px hsla(var(--font-700), 0.25);
 }
 
@@ -79,12 +80,9 @@
 
 .btn-secondary {
   background-color: var(--pure-white);
+  color: var(--pure-black);
   transition: all 0.3s ease-in-out;
   border: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-.btn-secondary:hover {
-  background-color: hsla(var(--bg-700), 0.9);
 }
 
 .btn-success {
