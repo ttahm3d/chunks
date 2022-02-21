@@ -12,7 +12,7 @@
   --primary-lighter: 209, 65%, 85%;
   --accent-darker: 11, 100%, 20%;
   --accent-dark: 11, 100%, 35%;
-  --accent: 11, 100%, 51%;
+  --accent: 11, 100%, 38%;
   --accent-light: 11, 100%, 70%;
   --accent-lighter: 11, 100%, 85%;
   --bg-700: 0, 0%, 98%;
@@ -52,7 +52,7 @@ body.dark-mode {
   --primary-lighter: 209, 65%, 85%;
   --accent-darker: 11, 100%, 20%;
   --accent-dark: 11, 100%, 35%;
-  --accent: 11, 100%, 51%;
+  --accent: 11, 91%, 42%;
   --accent-light: 11, 100%, 70%;
   --accent-lighter: 11, 100%, 85%;
   --font-700: 0, 0%, 98%;
@@ -67,7 +67,7 @@ body.dark-mode {
   --bg-300: 222, 16%, 36%;
   --bg-200: 222, 16%, 42%;
   --red-700: 0, 65%, 42%;
-  --red-500: 0, 100%, 65%;
+  --red-500: 358, 65%, 40.4%;
   --red-300: 0, 90%, 95%;
   --green-700: 135, 68%, 27%;
   --green-500: 135, 72%, 34%;
@@ -176,12 +176,11 @@ body {
 }
 
 .btnToggle {
-  font-size: 1.2rem;
   border-radius: 0.25rem;
   border: 1px solid hsl(var(--bg-400));
   background: transparent;
-  padding: 0.25rem;
-  color: inherit;
+  padding: 0.5rem;
+  color: hsl(var(--font-700));
 }
 
 .btnToggle:hover {
@@ -344,6 +343,7 @@ article {
   }
 
   .component-list {
+    background-color: inherit;
     margin-top: 1.5rem;
     scroll-padding-top: 5.6rem;
     overflow-y: auto;
