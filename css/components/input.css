@@ -65,7 +65,7 @@
 }
 
 .input-error .input-validation {
-  color: hsla(var(--red-500), 0.8);
+  color: hsl(var(--red-500));
 }
 
 .input-error .input-item {
@@ -73,7 +73,7 @@
 }
 
 .input-success .input-validation {
-  color: hsla(var(--green-700), 0.8);
+  color: hsl(var(--green-500));
 }
 
 .input-success .input-item {

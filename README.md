@@ -27,7 +27,7 @@ Add the below import into your css file at the top.
 
 Below is list of components available in <span style="color: #1890ff">Chunks</span>
 
-- [Alerts](https://chunksui.netlify.app/docs/alerts)
+- [Alerts](https://chunksui.netlify.app/docs/alert)
 - [Avatars](https://chunksui.netlify.app/docs/avatar)
 - [Badges](https://chunksui.netlify.app/docs/badge)
 - [Buttons](https://chunksui.netlify.app/docs/button)
@@ -44,7 +44,7 @@ Below is list of components available in <span style="color: #1890ff">Chunks</sp
 ### Typography
 
 - Normal text: [Lato](https://fonts.google.com/specimen/Lato)
-- Headings: [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans)
+- Headings: [Open Sans](https://fonts.google.com/noto/specimen/Open+Sans)
 
 [Visit this page](https://chunksui.netlify.app/docs/typography) for more detals
 

@@ -12,21 +12,21 @@
     />
     <link
       rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
       integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../../css/style.css" />
     <title>Input | Chunks</title>
   </head>
-  <body>
+  <body class="body">
     <header class="i-header">
       <nav class="i-navbar i-container">
         <div class="i-nav-item">
@@ -50,6 +50,9 @@
               </a>
             </li>
           </ul>
+          <button class="btnToggle">
+            <i class="fas fa-moon"></i>
+          </button>
         </div>
       </nav>
     </header>
@@ -94,14 +97,14 @@
           </div>
         </aside>
         <article>
-          <h3>Input</h3>
+          <h3 class="heading-3">Input</h3>
           <div class="component-description">
             <p class="justify">
               Input is another way the user interacts with websites. They are
               used to get user&apos;s inputs and choices.
             </p>
           </div>
-          <h4>Input Fields</h4>
+          <h4 class="heading-4">Input Fields</h4>
           <div class="component-description">
             <p class="justify">
               Input fields usually have a label along with the actual input
@@ -146,7 +149,7 @@
             </code></pre>
           </div>
 
-          <h4>Input Fields with Validation styles</h4>
+          <h4 class="heading-4">Input Fields with Validation styles</h4>
           <div class="component-description">
             <p class="justify">
               By adding class
@@ -212,7 +215,7 @@
             </code></pre>
           </div>
 
-          <h4>Radio Buttons</h4>
+          <h4 class="heading-4">Radio Buttons</h4>
           <div class="component-description">
             Radio butons are used to select from a set of given values for a
             particular field
@@ -254,7 +257,7 @@
             </code></pre>
           </div>
 
-          <h4>Checkbox</h4>
+          <h4 class="heading-4">Checkbox</h4>
           <div class="component-description">
             Checkbox is used to take multiple inputs for a same field.
           </div>
@@ -300,7 +303,7 @@
             </code></pre>
           </div>
 
-          <h4>Dropdown</h4>
+          <h4 class="heading-4">Dropdown</h4>
           <div class="component-description">
             Dropdown&apos;s are used to display List of Values. The user can
             select one of the values for a particular property
@@ -394,6 +397,7 @@
       hljs.highlightAll();
     </script>
     <script src="../../js/sidebar.js"></script>
+    <script src="../../js/script.js"></script>
     <script src="../../js/codeblocks.js"></script>
   </body>
 </html>

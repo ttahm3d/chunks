@@ -97,7 +97,7 @@
 }
 
 .discount-percentage {
-  background-color: hsla(var(--green-300), 0.53);
+  background-color: hsla(var(--green-300), 0.13);
   color: hsla(var(--green-700));
   font-weight: 600;
   display: inline-block;
