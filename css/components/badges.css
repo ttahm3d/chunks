@@ -29,21 +29,22 @@
 }
 
 .badge-clr-blue {
-  color: hsl(var(--bg-700));
+  color: var(--pure-white);
   background-color: hsl(var(--blue-700));
 }
 
 .badge-clr-red {
-  color: hsl(var(--bg-700));
+  color: var(--pure-white);
   background-color: hsl(var(--red-700));
 }
 
 .badge-clr-green {
-  color: hsl(var(--bg-700));
+  color: var(--pure-white);
   background-color: hsl(var(--green-700));
 }
 
 .badge-clr-orange {
+  color: var(--pure-black);
   background-color: hsl(var(--orange-500));
 }
 
@@ -73,7 +74,7 @@
   top: 0px;
   right: 0px;
   background: hsl(var(--bg-700));
-  border: 0.03125rem solid hsl(var(--font-300));
+  border: 1px solid hsl(var(--font-300));
   width: 0.85rem;
   height: 0.85rem;
   border-radius: 50%;
