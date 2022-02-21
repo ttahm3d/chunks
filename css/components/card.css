@@ -122,6 +122,10 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.h-card img {
+  max-height: 100%;
+}
+
 .card-row {
   display: grid;
   grid-template-columns: 1fr;
