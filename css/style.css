@@ -38,7 +38,7 @@
   --bg-400: 0, 0%, 42%;
   --bg-300: 0, 0%, 56%; */
   --red-700: 0, 65%, 42%;
-  --red-500: 0, 100%, 65%;
+  --red-500: 358, 99.9%, 42.9%;
   --red-300: 0, 90%, 95%;
   --green-700: 135, 68%, 27%;
   --green-500: 135, 72%, 34%;
@@ -261,6 +261,7 @@ body {
   font-size: 1rem;
   margin: 0.75rem 0 0;
   border-bottom: 1px solid hsl(var(--font-600));
+  color: inherit;
 }
 
 .i-sidebar-btn i {
@@ -275,7 +276,7 @@ body {
 }
 
 .component-example {
-  background-color: hsla(var(--primary-lighter), 0.35);
+  background-color: hsla(var(--primary-lighter), 0.19);
   padding: 1rem;
   margin: 0.5rem 0;
   border-radius: 0.25rem;
@@ -325,7 +326,8 @@ body {
 }
 
 .inline-code {
-  background-color: hsla(var(--primary-light), 0.8);
+  background-color: hsla(var(--primary-dark), 0.9);
+  color: var(--pure-white);
   padding: 0.2rem;
   border-radius: 0.25rem;
 }

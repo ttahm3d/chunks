@@ -17,6 +17,7 @@
   transition: 0.2s all ease;
   font-size: 1rem;
   background-color: var(--pure-white);
+  color: var(--pure-black);
 }
 
 .btn:active {
@@ -58,7 +59,7 @@
 }
 
 .btn-primary {
-  color: hsl(var(--bg-700));
+  color: var(--pure-white);
   background-color: hsl(var(--primary-dark));
   transition: all 0.3s ease-in-out;
 }
@@ -88,7 +89,7 @@
 
 .btn-success {
   background-color: hsl(var(--green-700));
-  color: hsl(var(--bg-700));
+  color: var(--pure-white);
   transition: all 0.3s ease-in-out;
 }
 
@@ -99,7 +100,7 @@
 }
 
 .btn-danger {
-  background-color: hsla(var(--red-500), 0.9);
+  background-color: hsla(var(--red-500), 0.86);
   color: var(--pure-white);
   border: 1px solid hsl(var(--red-700));
   transition: all 0.1s ease-in-out;
@@ -112,24 +113,12 @@
 
 .btn-outline-primary {
   border: 1px solid hsl(var(--blue-700));
-  background-color: hsl(var(--bg-700));
   color: hsl(var(--blue-700));
 }
 
 .btn-outline-primary:hover {
   background-color: hsl(var(--primary-dark));
   color: hsl(var(--bg-700));
-}
-
-.btn-outline-secondary {
-  border: 1px solid hsl(var(--font-700));
-  background-color: hsl(var(--bg-700));
-  color: hsl(var(--font-700));
-}
-
-.btn-outline-secondary:hover {
-  background-color: hsla(var(--bg-700), 0.9);
-  color: hsl(var(--font-600));
 }
 
 .btn-outline-success {
