@@ -17,10 +17,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../../css/style.css" />
     <title>Navbar | Chunks</title>
   </head>
-  <body>
+  <body class="body">
     <header class="i-header">
       <nav class="i-navbar i-container">
         <div class="i-nav-item">
@@ -44,6 +50,9 @@
               </a>
             </li>
           </ul>
+          <button class="btnToggle">
+            <i class="fas fa-moon"></i>
+          </button>
         </div>
       </nav>
     </header>
@@ -88,7 +97,7 @@
           </div>
         </aside>
         <article>
-          <h3>Navbar</h3>
+          <h3 class="heading-3">Navbar</h3>
           <div class="component-description">
             <p class="justify">
               Navbar is sometimes the very first component that gets created in
@@ -97,22 +106,55 @@
               can use as described below.
             </p>
           </div>
-          <h4>Simple Navbar</h4>
+          <h4 class="heading-4">Simple Navbar</h4>
           <div class="component-example">
-            <nav class="navbar">
+            <nav class="navbar navbar-simple">
               <div class="nav-logo">Logo</div>
-              <div class="nav-list">
-                <ul class="i-nav-item">
-                  Home
-                </ul>
-                <ul class="nav-item">
-                  About
-                </ul>
-                <ul class="nav-item">
-                  Blogs
+              <div class="nav-items">
+                <ul class="nav-list-simple">
+                  <li class="nav-item">Home</li>
+                  <li class="nav-item">About</li>
+                  <li class="nav-item">Blogs</li>
                 </ul>
               </div>
             </nav>
+          </div>
+
+          <div class="code-example">
+            <pre><code class="html">
+<nav class="navbar">
+  <div class="nav-logo">Logo</div>  
+  <div class="nav-list">
+    <ul class="nav-item">Home</ul>
+    <ul class="nav-item">About</ul>
+    <ul class="nav-item">Blogs</ul>
+  </div>
+</nav>
+            </code></pre>
+          </div>
+
+          <h4 class="heading-4">Hamburger Navbar</h4>
+          <div class="component-description">
+            <p class="justify">
+              This navbar collapses to a Hamburger menu when viewed in Mobile
+              Viewports.
+            </p>
+          </div>
+          <div class="component-example">
+            <div class="navexample-wrapper">
+              <nav class="navbar navbar-hamburger">
+                <div class="nav-logo">Logo</div>
+                <div class="nav-items">
+                  <ul class="nav-list-hamburger" data-visible-example="false">
+                    <li class="nav-item">Home</li>
+                    <li class="nav-item">About</li>
+                    <li class="nav-item">Blogs</li>
+                  </ul>
+                  <button class="hamBtn"><i class="fas fa-bars"></i></button>
+                </div>
+              </nav>
+              <div class="navbar-demo-body"></div>
+            </div>
           </div>
 
           <div class="code-example">
@@ -189,6 +231,8 @@
       hljs.highlightAll();
     </script>
     <script src="../../js/sidebar.js"></script>
+    <script src="../../js/script.js"></script>
     <script src="../../js/codeblocks.js"></script>
+    <script src="../../js/nav-demo.js"></script>
   </body>
 </html>

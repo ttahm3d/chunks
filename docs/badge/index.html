@@ -17,10 +17,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../../css/style.css" />
     <title>Badge | Chunks</title>
   </head>
-  <body>
+  <body class="body">
     <header class="i-header">
       <nav class="i-navbar i-container">
         <div class="i-nav-item">
@@ -44,6 +50,9 @@
               </a>
             </li>
           </ul>
+          <button class="btnToggle">
+            <i class="fas fa-moon"></i>
+          </button>
         </div>
       </nav>
     </header>
@@ -88,7 +97,7 @@
           </div>
         </aside>
         <article>
-          <h3>Badge</h3>
+          <h3 class="heading-3">Badge</h3>
           <div class="component-description">
             <p class="justify">
               Badges are usually seen in social media apps to indicate the
@@ -98,12 +107,17 @@
             </p>
           </div>
 
-          <h4>Badge on icon</h4>
+          <h4 class="heading-4">Badge on icon</h4>
           <div class="component-description">
             <p class="justify">
               Badge on icon can be used to show number of notifications, unread
               messages and so on. It usually has a icon with a number
               representing count on that notification. The position of badge can
+              be changed using the classes
+              <code class="inline-code">.badge-top-right</code> to position it
+              top right of the icon and
+              <code class="inline-code">.badge-top-left</code> to position it
+              top left of the icon.
             </p>
           </div>
           <div class="component-example">
@@ -164,7 +178,7 @@
 						</code></pre>
           </div>
 
-          <h4>Badge on avatar</h4>
+          <h4 class="heading-4">Badge on avatar</h4>
           <div class="component-description">
             <p class="justify">
               Badges on avatars can be used to indicate the status of the person
@@ -249,10 +263,12 @@
           <!-- prettier ignore -->
           <div class="code-example">
             <pre><code class="html">
+<!-- Add URL in src -->
+
 <!-- badges with dot -->
 <div class="badge">
   <div class="avatar avatar-border">
-    <img src="add image url here" class="avatar-round avatar-sm"/>
+    <img src="" class="avatar-round avatar-sm"/>
   </div>
   <div class="badge-white-container">
     <div class="badge-dot-green"></div>
@@ -260,7 +276,7 @@
 </div>
 <div class="badge">
   <div class="avatar avatar-border">
-    <img src="add image url here" class="avatar-round avatar-sm"/>
+    <img src="" class="avatar-round avatar-sm"/>
   </div>
   <div class="badge-white-container">
     <div class="badge-dot-orange"></div>
@@ -268,7 +284,7 @@
 </div>
 <div class="badge">
   <div class="avatar avatar-border">
-    <img src="add image url here" class="avatar-round avatar-sm"/>
+    <img src="" class="avatar-round avatar-sm"/>
   </div>
   <div class="badge-white-container">
     <div class="badge-dot-red"></div>
@@ -279,17 +295,17 @@
 
 <div class="badge badge-red">
   <div class="avatar">
-    <img src="add image url here" class="avatar-round avatar-sm"/>
+    <img src="" class="avatar-round avatar-sm"/>
   </div>
 </div>
 <div class="badge badge-green">
   <div class="avatar">
-    <img src="add image url here" class="avatar-round avatar-sm" />
+    <img src="" class="avatar-round avatar-sm" />
   </div>
 </div>
 <div class="badge badge-orange">
   <div class="avatar">
-    <img src="add image url here" class="avatar-round avatar-sm" />
+    <img src="" class="avatar-round avatar-sm" />
   </div>
 </div>              
             </code></pre>
@@ -357,6 +373,7 @@
       hljs.highlightAll();
     </script>
     <script src="../../js/sidebar.js"></script>
+    <script src="../../js/script.js"></script>
     <script src="../../js/codeblocks.js"></script>
   </body>
 </html>

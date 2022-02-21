@@ -20,48 +20,52 @@
 
 .primary-darker {
   background-color: hsl(var(--primary-darker));
-  color: #fff;
+  color: var(--pure-white);
 }
 
 .primary-dark {
   background-color: hsl(var(--primary-dark));
-  color: #fff;
+  color: var(--pure-white);
 }
 
 .primary {
   background-color: hsl(var(--primary));
-  color: #fff;
+  color: var(--pure-white);
 }
 
 .primary-light {
   background-color: hsl(var(--primary-light));
+  color: var(--pure-black);
 }
 
 .primary-lighter {
   background-color: hsl(var(--primary-lighter));
+  color: var(--pure-black);
 }
 
 .accent-darker {
   background-color: hsl(var(--accent-darker));
-  color: #fff;
+  color: var(--pure-white);
 }
 
 .accent-dark {
   background-color: hsl(var(--accent-dark));
-  color: #fff;
+  color: var(--pure-white);
 }
 
 .accent {
   background-color: hsl(var(--accent));
-  color: #fff;
+  color: var(--pure-white);
 }
 
 .accent-light {
   background-color: hsl(var(--accent-light));
+  color: var(--pure-black);
 }
 
 .accent-lighter {
   background-color: hsl(var(--accent-lighter));
+  color: var(--pure-black);
 }
 
 .bg-700 {
@@ -86,65 +90,70 @@
 
 .font-700 {
   background-color: hsl(var(--font-700));
-  color: #fff;
+  color: hsl(var(--bg-700));
 }
 
 .font-600 {
   background-color: hsl(var(--font-600));
-  color: #fff;
+  color: hsl(var(--bg-700));
 }
 
 .font-500 {
   background-color: hsl(var(--font-500));
-  color: #fff;
+  color: hsl(var(--bg-700));
 }
 
 .font-400 {
   background-color: hsl(var(--font-400));
+  color: hsl(var(--bg-700));
 }
 
 .font-300 {
   background-color: hsl(var(--font-300));
+  color: hsl(var(--bg-700));
 }
 
 .red-700 {
   background-color: hsl(var(--red-700));
-  color: #fff;
+  color: var(--pure-white);
 }
 
 .red-500 {
   background-color: hsl(var(--red-500));
-  color: #fff;
+  color: var(--pure-white);
 }
 
 .red-300 {
   background-color: hsl(var(--red-300));
+  color: var(--pure-black);
 }
 
 .orange-700 {
   background-color: hsl(var(--orange-700));
-  color: #fff;
+  color: var(--pure-white);
 }
 
 .orange-500 {
   background-color: hsl(var(--orange-500));
-  color: #fff;
+  color: var(--pure-white);
 }
 
 .orange-300 {
   background-color: hsl(var(--orange-300));
+  color: var(--pure-black);
 }
 
 .green-700 {
   background-color: hsl(var(--green-700));
-  color: #fff;
+  color: var(--pure-white);
 }
 
 .green-500 {
   background-color: hsl(var(--green-500));
-  color: #fff;
+  color: var(--pure-white);
 }
 
 .green-300 {
   background-color: hsl(var(--green-300));
+  color: var(--pure-black);
 }
