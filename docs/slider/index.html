@@ -109,28 +109,6 @@
           <div class="component-example flex flex-center">
             <div class="slider-container">
               <label for="priceRange">Price Range:</label>
-              <!-- <input
-                type="range"
-                name="price-range"
-                min="0"
-                max="50000"
-                id="price-range-slider"
-                list="tickmarks"
-              />
-
-              <datalist id="tickmarks">
-                <option value="0" label="0"></option>
-                <option value="5000" label="5000"></option>
-                <option value="10000" label="10000"></option>
-                <option value="15000" label="15000"></option>
-                <option value="20000" label="20000"></option>
-                <option value="25000" label="25000"></option>
-                <option value="30000" label="30000"></option>
-                <option value="35000" label="35000"></option>
-                <option value="40000" label="40000"></option>
-                <option value="45000" label="45000"></option>
-                <option value="50000" label="50000"></option>
-              </datalist> -->
               <input
                 type="range"
                 min="0"
@@ -138,19 +116,28 @@
                 step="2500"
                 list="tickmarks"
                 class="slider"
+                value="2500"
               />
-              <datalist id="tickmarks" class="flex-between txt-sm">
-                <option value="0" class="txt-semibold" label="0"></option>
-                <option value="2500" class="hide"></option>
-                <option value="5000" class="txt-semibold" label="5K"></option>
-                <option value="7500" class="hide"></option>
-                <option value="10000" class="txt-semibold" label="10K"></option>
+              <datalist id="tickmarks" class="flex justify-between">
+                <option value="0" label="0"></option>
+                <option value="2500">2.5K</option>
+                <option value="5000" label="5K"></option>
+                <option value="7500">7.5K</option>
+                <option value="10000" label="10K"></option>
               </datalist>
             </div>
           </div>
           <div class="code-example">
             <pre><code class="html">
- <input type="range" name="price-range" id="price-range-slider" />
+<label for="priceRange">Price Range:</label>
+<input type="range" min="0" max="10000" step="2500" list="tickmarks" class="slider" />
+<datalist id="tickmarks" class="flex justify-between">
+  <option value="0" label="0"></option>
+  <option value="2500">2.5K</option>
+  <option value="5000"  label="5K"></option>
+  <option value="7500">7.5K</option>
+  <option value="10000" label="10K"></option>
+</datalist>
             </code></pre>
           </div>
           <div class="navigation-footer-links">
