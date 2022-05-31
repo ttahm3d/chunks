@@ -38,9 +38,7 @@
   --blue-700: 219, 100%, 35%;
   --blue-500: 219, 85%, 62%;
   --blue-300: 219, 86%, 92%;
-  --font-Open-Sans: "Open Sans", sans-serif;
-  --font-Lato: "Lato", sans-serif;
-  --font-poppins: "Poppins", sans-serif;
+  --font-IBM-Plex: "IBM Plex Sans", sans-serif;
   --pure-white: #fff;
   --pure-black: #000;
 }
@@ -79,9 +77,7 @@ body.dark-mode {
   --blue-700: 219, 100%, 35%;
   --blue-500: 219, 85%, 62%;
   --blue-300: 219, 86%, 92%;
-  --font-Open-Sans: "Open Sans", sans-serif;
-  --font-Lato: "Lato", sans-serif;
-  --font-poppins: "Poppins", sans-serif;
+  --font-IBM-Plex: "IBM Plex Sans", sans-serif;
   --pure-white: #fff;
   --pure-black: #000;
 }
@@ -107,7 +103,7 @@ body.dark-mode {
 body {
   margin: 0;
   background-color: hsl(var(--bg-700));
-  font-family: var(--font-Lato);
+  font-family: var(--font-IBM-Plex);
   color: hsl(var(--font-600));
   min-height: 100vh;
   display: flex;
