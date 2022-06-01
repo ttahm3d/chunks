@@ -6,8 +6,8 @@
 }
 
 .color-grid-item {
-  box-shadow: 0 0 0.25rem hsla(var(--font-700), 0.4),
-    0 0 0.25rem hsla(var(--font-700), 0.2);
+  box-shadow: 0 0 0.25rem hsla(var(--bg-700), 0.4),
+    0 0 0.25rem hsla(var(--bg-600), 0.2);
   min-height: 7rem;
   padding: 0.5rem;
   transition: 0.2s all ease-in;

@@ -1,14 +1,14 @@
 :root {
-  --primary-darker: 209, 100%, 20%;
-  --primary-dark: 209, 80%, 35%;
+  --primary-darker: 214, 59%, 15%;
+  --primary-dark: 211, 90%, 34%;
   --primary: 209, 100%, 55%;
-  --primary-light: 209, 100%, 70%;
-  --primary-lighter: 209, 65%, 85%;
-  --accent-darker: 11, 100%, 20%;
-  --accent-dark: 11, 100%, 35%;
-  --accent: 11, 100%, 38%;
-  --accent-light: 11, 100%, 70%;
-  --accent-lighter: 11, 100%, 85%;
+  --primary-light: 210, 77%, 78%;
+  --primary-lighter: 210, 100%, 94%;
+  --accent-darker: 26, 90%, 12%;
+  --accent-dark: 25, 100%, 29%;
+  --accent: 24, 94%, 50%;
+  --accent-light: 24, 100%, 75%;
+  --accent-lighter: 25, 100%, 92%;
   --bg-700: 210, 33%, 99%;
   --bg-600: 210, 17%, 98%;
   --bg-500: 210, 17%, 95%;
@@ -39,16 +39,16 @@
 }
 
 .dark-mode {
-  --primary-darker: 209, 100%, 20%;
-  --primary-dark: 209, 80%, 35%;
+  --primary-darker: 214, 59%, 15%;
+  --primary-dark: 211, 90%, 34%;
   --primary: 209, 100%, 55%;
-  --primary-light: 209, 100%, 70%;
-  --primary-lighter: 209, 65%, 85%;
-  --accent-darker: 11, 100%, 20%;
-  --accent-dark: 11, 100%, 35%;
-  --accent: 11, 91%, 42%;
-  --accent-light: 11, 100%, 70%;
-  --accent-lighter: 11, 100%, 85%;
+  --primary-light: 210, 77%, 78%;
+  --primary-lighter: 210, 100%, 94%;
+  --accent-darker: 26, 90%, 12%;
+  --accent-dark: 25, 100%, 29%;
+  --accent: 24, 94%, 50%;
+  --accent-light: 24, 100%, 75%;
+  --accent-lighter: 25, 100%, 92%;
   --font-700: 0, 0%, 98%;
   --font-600: 120, 8%, 95%;
   --font-500: 120, 6%, 91%;
