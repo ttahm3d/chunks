@@ -38,32 +38,35 @@
 }
 
 .avatar-border {
-  border: 2px solid hsl(var(--bg-500));
   border-radius: 50%;
 }
 
 .avatar-shadow {
-  box-shadow: rgb(90 96 99 / 2%) 0px 0.25rem 0.75rem 0px;
+  box-shadow: 0 0 4px hsl(var(--shadow-color));
 }
 
 .avatar-bg-blue {
   background-color: hsl(var(--blue-300));
+  color: hsl(var(--blue-500));
+  border: 1px solid hsl(var(--blue-700));
 }
 
 .avatar-bg-red {
   background-color: hsl(var(--red-300));
+  color: hsl(var(--red-500));
+  border: 1px solid hsl(var(--red-700));
 }
 
 .avatar-bg-orange {
   background-color: hsl(var(--orange-300));
+  color: hsl(var(--orange-500));
+  border: 1px solid hsl(var(--orange-700));
 }
 
 .avatar-bg-green {
   background-color: hsl(var(--green-300));
-}
-
-.avatar-bg-grey {
-  background-color: hsl(0, 0%, 63%);
+  color: hsl(var(--green-500));
+  border: 1px solid hsl(var(--green-700));
 }
 
 .avatar-text {

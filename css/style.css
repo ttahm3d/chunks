@@ -1,114 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600;700&display=swap");
+@import url("./color-palette.css");
 @import url("./components/index.css");
 @import url("./reset.css");
 
 /* color palette */
 
-:root {
-  --primary-darker: 209, 100%, 20%;
-  --primary-dark: 209, 80%, 35%;
-  --primary: 209, 100%, 55%;
-  --primary-light: 209, 100%, 70%;
-  --primary-lighter: 209, 65%, 85%;
-  --accent-darker: 11, 100%, 20%;
-  --accent-dark: 11, 100%, 35%;
-  --accent: 11, 100%, 38%;
-  --accent-light: 11, 100%, 70%;
-  --accent-lighter: 11, 100%, 85%;
-  --bg-700: 0, 0%, 98%;
-  --bg-600: 0, 0%, 90%;
-  --bg-500: 0, 0%, 85%;
-  --bg-400: 0, 0%, 80%;
-  --bg-300: 0, 0%, 70%;
-  --bg-200: 0, 0%, 70%;
-  --font-700: 0, 0%, 7%;
-  --font-600: 0, 0%, 14%;
-  --font-500: 0, 0%, 28%;
-  --font-400: 0, 0%, 42%;
-  --font-300: 0, 0%, 56%;
-  --red-700: 0, 85%, 15%;
-  --red-500: 358, 99.9%, 42.9%;
-  --red-300: 0, 90%, 95%;
-  --green-700: 135, 85%, 15%;
-  --green-500: 127, 85%, 24%;
-  --green-300: 135, 100%, 95%;
-  --orange-700: 34, 100%, 30%;
-  --orange-500: 34, 100%, 65%;
-  --orange-300: 34, 100%, 95%;
-  --blue-700: 219, 100%, 35%;
-  --blue-500: 219, 85%, 62%;
-  --blue-300: 219, 86%, 92%;
-  --font-Open-Sans: "Open Sans", sans-serif;
-  --font-Lato: "Lato", sans-serif;
-  --font-poppins: "Poppins", sans-serif;
-  --pure-white: #fff;
-  --pure-black: #000;
-}
-
-body.dark-mode {
-  --primary-darker: 209, 100%, 20%;
-  --primary-dark: 209, 80%, 35%;
-  --primary: 209, 100%, 55%;
-  --primary-light: 209, 100%, 70%;
-  --primary-lighter: 209, 65%, 85%;
-  --accent-darker: 11, 100%, 20%;
-  --accent-dark: 11, 100%, 35%;
-  --accent: 11, 91%, 42%;
-  --accent-light: 11, 100%, 70%;
-  --accent-lighter: 11, 100%, 85%;
-  --font-700: 0, 0%, 98%;
-  --font-600: 0, 0%, 90%;
-  --font-500: 0, 0%, 85%;
-  --font-400: 0, 0%, 80%;
-  --font-300: 0, 0%, 70%;
-  --bg-700: 222, 16%, 12%;
-  --bg-600: 222, 16%, 18%;
-  --bg-500: 222, 16%, 24%;
-  --bg-400: 222, 16%, 32%;
-  --bg-300: 222, 16%, 36%;
-  --bg-200: 222, 16%, 42%;
-  --red-700: 0, 87%, 30%;
-  --red-500: 0, 100%, 80%;
-  --red-300: 0, 87%, 90%;
-  --green-700: 127, 90%, 19%;
-  --green-500: 127, 90%, 42%;
-  --green-300: 127, 90%, 85%;
-  --orange-700: 34, 100%, 30%;
-  --orange-500: 34, 100%, 65%;
-  --orange-300: 34, 100%, 95%;
-  --blue-700: 219, 100%, 35%;
-  --blue-500: 219, 85%, 62%;
-  --blue-300: 219, 86%, 92%;
-  --font-Open-Sans: "Open Sans", sans-serif;
-  --font-Lato: "Lato", sans-serif;
-  --font-poppins: "Poppins", sans-serif;
-  --pure-white: #fff;
-  --pure-black: #000;
-}
-
-/* 
-
-.redDark {
-  --red1: hsl(353 23.0% 9.8%);
-  --red2: hsl(357 34.4% 12.0%);
-  --red3: hsl(356 43.4% 16.4%);
-  --red4: hsl(356 47.6% 19.2%);
-  --red5: hsl(356 51.1% 21.9%);
-  --red6: hsl(356 55.2% 25.9%);
-  --red7: hsl(357 60.2% 31.8%);
-  --red8: hsl(358 65.0% 40.4%);
-  --red9: hsl(358 75.0% 59.0%);
-  --red10: hsl(358 85.3% 64.0%);
-  --red11: hsl(358 100% 69.5%);
-  --red12: hsl(351 89.0% 96.0%);
-}
-*/
-
 body {
   margin: 0;
-  background-color: hsl(var(--bg-700));
-  font-family: var(--font-Lato);
-  color: hsl(var(--font-600));
+  background-color: hsl(var(--bg-600));
+  font-family: var(--font-IBM-Plex);
+  color: hsl(var(--font-700));
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -139,7 +40,7 @@ body {
 .i-footer {
   margin-top: auto;
   padding: 1rem 2rem;
-  box-shadow: 0 0 2px hsl(var(--bg-400));
+  border-top: 1px solid hsl(var(--bg-300));
 }
 
 /* Header styles */
@@ -150,7 +51,7 @@ body {
   padding: 1rem 0;
   position: sticky;
   top: 0;
-  box-shadow: 0 0 2px hsl(var(--bg-400));
+  border-bottom: 1px solid hsl(var(--bg-300));
   z-index: 9;
 }
 
@@ -220,8 +121,7 @@ body {
 }
 
 .i-container {
-  width: 90vw;
-  max-width: 80rem;
+  width: min(100vw - 2rem, 95em);
   margin: 0 auto;
 }
 
@@ -254,7 +154,7 @@ body {
   outline-offset: 2px;
   cursor: pointer;
   border: none;
-  background: hsl(var(--bg-700));
+  background: hsl(var(--bg-600));
   font-size: 1rem;
   margin: 0.75rem 0 0;
   border-bottom: 1px solid hsl(var(--font-600));
@@ -273,7 +173,7 @@ body {
 }
 
 .component-example {
-  background-color: hsla(var(--primary-lighter), 0.19);
+  background-color: hsla(var(--blue-500), 0.15);
   padding: 1rem;
   margin: 0.5rem 0;
   border-radius: 0.25rem;
@@ -310,7 +210,7 @@ body {
 .component-section {
   display: grid;
   grid-template-columns: 1fr;
-  transition: 0.4s all linear;
+  /* transition: 0.4s all linear; */
 }
 
 .component-description {
@@ -323,8 +223,9 @@ body {
 }
 
 .inline-code {
-  background-color: hsla(var(--primary-dark), 0.9);
-  color: var(--pure-white);
+  background-color: hsla(var(--blue-300), 1);
+  color: hsla(var(--blue-500), 1);
+  border: 1px solid hsla(var(--blue-700), 1);
   padding: 0.2rem;
   border-radius: 0.25rem;
 }
@@ -358,14 +259,15 @@ article {
 
 @media screen and (min-width: 48em) {
   .component-section {
-    grid-template-columns: 1fr 3fr;
-    gap: 1rem;
+    grid-template-columns: 1fr 4fr;
+    gap: 2rem;
   }
 
   .component-list {
     background-color: inherit;
     margin-top: 1.5rem;
     scroll-padding-top: 5.6rem;
+    padding: 1rem;
     overflow-y: auto;
     height: calc(100vh - 9rem);
   }

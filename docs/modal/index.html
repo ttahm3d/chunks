@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../css/style.css" />
@@ -125,6 +125,30 @@
             </div>
           </div>
 
+          <div class="demo-modal-container">
+            <div class="demo-modal-content">
+              <div class="modal">
+                <div class="modal-heading">Save</div>
+                <div class="modal-text">
+                  Are you sure that you want to save changes?
+                </div>
+                <div class="modal-links justify-end">
+                  <button class="btn btn-secondary">Cancel</button>
+                  <button class="btn btn-primary">Save Changes</button>
+                </div>
+                <div class="demo-modal-close-btn">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button class="btn btn-primary demo-button">
+              Click to open Modal
+            </button>
+          </div>
+
           <div class="code-example">
             <pre><code class="html">
 <div class="modal-container">
@@ -206,6 +230,7 @@
     <script>
       hljs.highlightAll();
     </script>
+    <script src="../../js/modal.js"></script>
     <script src="../../js/sidebar.js"></script>
     <script src="../../js/script.js"></script>
     <script src="../../js/codeblocks.js"></script>

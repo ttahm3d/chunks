@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../css/style.css" />
@@ -102,23 +102,26 @@
             <p class="justify">
               Usually seen in E-commerce websites and in e-ticket booking
               systems, ratings act as an indicator of how good a product / movie
-              / show or per say any form of art is.
-            </p>
-            <p class="justify">
-              Use the class <code class="inline-code">.filled</code> to indicate
-              a full star and class
-              <code class="inline-code">.half-filled</code> to indicate half
-              filled star.
+              / show or per say any form of art is. Use the class
+              <code class="inline-code">.star</code> to indicate a full star.
             </p>
           </div>
           <div class="component-example flex flex-center">
             <ul class="rating">
-              <li class="rating-icon"><i class="fas fa-star filled"></i></li>
-              <li class="rating-icon"><i class="fas fa-star filled"></i></li>
-              <li class="rating-icon"><i class="fas fa-star filled"></i></li>
-              <li class="rating-icon"><i class="fas fa-star filled"></i></li>
               <li class="rating-icon">
-                <i class="fas fa-star half-filled"></i>
+                <i class="fas fa-star star"></i>
+              </li>
+              <li class="rating-icon">
+                <i class="fas fa-star star"></i>
+              </li>
+              <li class="rating-icon">
+                <i class="fas fa-star star"></i>
+              </li>
+              <li class="rating-icon">
+                <i class="fas fa-star star"></i>
+              </li>
+              <li class="rating-icon">
+                <i class="fas fa-star star"></i>
               </li>
             </ul>
           </div>
@@ -126,11 +129,11 @@
           <div class="code-example">
             <pre><code class="html">
 <ul class="rating">
-  <li class="rating-icon"><i class="fas fa-star filled"></i></li>
-  <li class="rating-icon"><i class="fas fa-star filled"></i></li>
-  <li class="rating-icon"><i class="fas fa-star filled"></i></li>
-  <li class="rating-icon"><i class="fas fa-star filled"></i></li>
-  <li class="rating-icon"><i class="fas fa-star half-filled"></i></li>
+  <li class="rating-icon"><i class="fas fa-star star"></i></li>
+  <li class="rating-icon"><i class="fas fa-star star"></i></li>
+  <li class="rating-icon"><i class="fas fa-star star"></i></li>
+  <li class="rating-icon"><i class="fas fa-star star"></i></li>
+  <li class="rating-icon"><i class="fas fa-star star"></i></li>
 </ul>
             </code></pre>
           </div>
@@ -196,6 +199,7 @@
     <script>
       hljs.highlightAll();
     </script>
+    <script src="../../js/rating.js"></script>
     <script src="../../js/sidebar.js"></script>
     <script src="../../js/script.js"></script>
     <script src="../../js/codeblocks.js"></script>

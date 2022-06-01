@@ -26,7 +26,7 @@
 
 .btn:hover,
 .btn-outline:hover {
-  box-shadow: 0 2px 9px hsla(var(--font-700), 0.25);
+  box-shadow: 0 2px 9px hsla(var(--shadow-color));
 }
 
 .btn-rounded {
@@ -78,26 +78,31 @@
 }
 
 .btn-secondary {
-  background-color: var(--pure-white);
-  color: var(--pure-black);
+  background-color: hsl(var(--bg-600));
+  color: hsl(var(--blue-500));
+  border: 1px solid hsl(var(--blue-700));
   transition: all 0.3s ease-in-out;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.btn-secondary:hover {
+  background-color: hsl(var(--blue-500));
+  color: var(--pure-white);
 }
 
 .btn-success {
-  background-color: hsl(var(--green-700));
+  background-color: hsl(var(--green-500), 0.9);
   color: var(--pure-white);
   transition: all 0.3s ease-in-out;
 }
 
 .btn-success:hover {
-  background-color: hsl(var(--green-500));
-  color: hsl(var(--bg-700));
+  background-color: hsl(var(--green-700));
+  color: var(--pure-white);
   transition: all 0.3s ease-in-out;
 }
 
 .btn-danger {
-  background-color: hsla(var(--red-500), 0.86);
+  background-color: hsla(var(--red-500), 0.75);
   color: var(--pure-white);
   border: 1px solid hsl(var(--red-700));
   transition: all 0.1s ease-in-out;
@@ -110,37 +115,39 @@
 
 .btn-outline-primary {
   border: 1px solid hsl(var(--blue-700));
-  color: hsl(var(--blue-700));
+  background-color: hsl(var(--blue-300));
+  color: hsl(var(--blue-500));
 }
 
 .btn-outline-primary:hover {
   background-color: hsl(var(--primary-dark));
-  color: hsl(var(--bg-700));
+  color: var(--pure-white);
 }
 
 .btn-outline-success {
   border: 1px solid hsl(var(--green-700));
-  color: hsl(var(--green-700));
+  background-color: hsl(var(--green-300));
+  color: hsl(var(--green-500));
 }
 
 .btn-outline-success:hover {
-  background-color: hsl(var(--green-700));
-  color: hsl(var(--bg-700));
+  background-color: hsl(var(--green-500));
+  color: var(--pure-white);
 }
 
 .btn-outline-danger {
   border: 1px solid hsl(var(--red-700));
-  color: hsl(var(--red-700));
+  background-color: hsl(var(--red-300));
+  color: hsl(var(--red-500));
 }
 
 .btn-outline-danger:hover {
-  background-color: hsl(var(--red-700));
-  color: hsl(var(--bg-700));
+  background-color: hsl(var(--red-500));
+  color: var(--pure-white);
 }
 
 .btn-float {
   border: 0;
-  /* padding: 0.5rem 0.6rem; */
   min-width: 2rem;
   min-height: 2.2rem;
   align-items: center;

@@ -6,8 +6,8 @@
 }
 
 .color-grid-item {
-  box-shadow: 0 0 0.25rem hsla(var(--font-700), 0.4),
-    0 0 0.25rem hsla(var(--font-700), 0.2);
+  box-shadow: 0 0 0.25rem hsla(var(--bg-700), 0.4),
+    0 0 0.25rem hsla(var(--bg-600), 0.2);
   min-height: 7rem;
   padding: 0.5rem;
   transition: 0.2s all ease-in;
@@ -125,7 +125,6 @@
 
 .red-300 {
   background-color: hsl(var(--red-300));
-  color: var(--pure-black);
 }
 
 .orange-700 {
@@ -140,7 +139,6 @@
 
 .orange-300 {
   background-color: hsl(var(--orange-300));
-  color: var(--pure-black);
 }
 
 .green-700 {
@@ -155,5 +153,4 @@
 
 .green-300 {
   background-color: hsl(var(--green-300));
-  color: var(--pure-black);
 }

@@ -5,6 +5,7 @@
 
 .badge {
   position: relative;
+  color: hsl(var(--primary-dark));
 }
 
 .badge-counter {
@@ -15,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2%;
+  padding: 3%;
 }
 
 .badge-top-right {
@@ -30,21 +31,21 @@
 
 .badge-clr-blue {
   color: var(--pure-white);
-  background-color: hsl(var(--blue-700));
+  background-color: hsl(var(--blue-500));
 }
 
 .badge-clr-red {
   color: var(--pure-white);
-  background-color: hsl(var(--red-700));
+  background-color: hsl(var(--red-500));
 }
 
 .badge-clr-green {
   color: var(--pure-white);
-  background-color: hsl(var(--green-700));
+  background-color: hsl(var(--green-500));
 }
 
 .badge-clr-orange {
-  color: var(--pure-black);
+  color: var(--pure-white);
   background-color: hsl(var(--orange-500));
 }
 
@@ -58,7 +59,7 @@
 }
 
 .badge-dot-green {
-  background-color: hsl(var(--green-700));
+  background-color: hsl(var(--green-500));
 }
 
 .badge-dot-orange {
@@ -66,7 +67,7 @@
 }
 
 .badge-dot-red {
-  background-color: hsl(var(--red-700));
+  background-color: hsl(var(--red-500));
 }
 
 .badge-white-container {
@@ -94,6 +95,6 @@
 }
 
 .badge-orange {
-  border: 0.25rem solid hsl(var(--orange-500));
+  border: 0.25rem solid hsla(var(--orange-500), 0.85);
   border-radius: 50%;
 }
