@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  background-color: hsl(var(--bg-700));
+  background-color: hsl(var(--bg-600));
   font-family: var(--font-IBM-Plex);
   color: hsl(var(--font-700));
   min-height: 100vh;
@@ -121,8 +121,7 @@ body {
 }
 
 .i-container {
-  width: 90vw;
-  max-width: 80rem;
+  width: min(100vw - 2rem, 95em);
   margin: 0 auto;
 }
 
@@ -259,14 +258,15 @@ article {
 
 @media screen and (min-width: 48em) {
   .component-section {
-    grid-template-columns: 1fr 3fr;
-    gap: 1rem;
+    grid-template-columns: 1fr 4fr;
+    gap: 2rem;
   }
 
   .component-list {
     background-color: inherit;
     margin-top: 1.5rem;
     scroll-padding-top: 5.6rem;
+    padding: 1rem;
     overflow-y: auto;
     height: calc(100vh - 9rem);
   }
