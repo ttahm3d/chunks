@@ -1,7 +1,8 @@
 .toast {
   padding: 0.5rem 1rem;
-  background-color: hsla(var(--accent), 0.95);
-  color: hsla(0 0% 98% / 0.95);
+  background-color: hsl(var(--orange-300));
+  border: 1px solid hsl(var(--orange-700));
+  color: hsl(var(--orange-500));
   display: flex;
   justify-content: space-between;
   gap: 2rem;
@@ -12,12 +13,13 @@
 }
 
 .toast-dismiss {
-  background-color: hsl(var(--accent-darker));
-  color: hsla(0 0% 98% / 0.86);
+  background-color: hsl(var(--orange-700));
+  color: var(--pure-white);
   padding: 0.25rem;
   font-size: 0.8rem;
   text-transform: uppercase;
   display: flex;
+  cursor: pointer;
   justify-content: space-between;
   gap: 0.5rem;
   align-items: center;
@@ -28,4 +30,24 @@
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.demo-toast-btn-container {
+  padding-bottom: 4rem;
+}
+
+.demo-toast {
+  position: fixed;
+  left: 25%;
+  right: 25%;
+  bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.show-toast {
+  display: block;
+  transition: 0.3s bottom linear;
 }
