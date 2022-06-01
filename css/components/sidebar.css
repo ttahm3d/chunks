@@ -39,6 +39,7 @@
 
 .sidebar-item.active {
   border-left: 0.25rem solid hsla(var(--primary), 0.9);
+  background-color: hsl(var(--blue-300));
   font-weight: 700;
   color: hsl(var(--blue-500));
 }
