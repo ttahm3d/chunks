@@ -33,6 +33,7 @@
   --blue-500: 211, 100%, 43%;
   --blue-300: 210, 100%, 98%;
   --font-IBM-Plex: "IBM Plex Sans", sans-serif;
+  --shadow-color: 210, 17%, 98%;
   --pure-white: #fff;
   --pure-black: #000;
 }
@@ -71,6 +72,7 @@
   --blue-700: 211, 86%, 27%;
   --blue-500: 210, 100%, 66%;
   --blue-300: 216, 50%, 12%;
+  --shadow-color: 195, 7%, 11%;
   --font-IBM-Plex: "IBM Plex Sans", sans-serif;
   --pure-white: #fff;
   --pure-black: #000;
