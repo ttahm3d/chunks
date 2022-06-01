@@ -173,7 +173,7 @@ body {
 }
 
 .component-example {
-  background-color: hsla(var(--primary-lighter), 0.19);
+  background-color: hsla(var(--blue-500), 0.15);
   padding: 1rem;
   margin: 0.5rem 0;
   border-radius: 0.25rem;
