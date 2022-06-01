@@ -1,86 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600;700&display=swap");
+@import url("./color-palette.css");
 @import url("./components/index.css");
 @import url("./reset.css");
 
 /* color palette */
-
-:root {
-  --primary-darker: 209, 100%, 20%;
-  --primary-dark: 209, 80%, 35%;
-  --primary: 209, 100%, 55%;
-  --primary-light: 209, 100%, 70%;
-  --primary-lighter: 209, 65%, 85%;
-  --accent-darker: 11, 100%, 20%;
-  --accent-dark: 11, 100%, 35%;
-  --accent: 11, 100%, 38%;
-  --accent-light: 11, 100%, 70%;
-  --accent-lighter: 11, 100%, 85%;
-  --bg-700: 0, 0%, 98%;
-  --bg-600: 0, 0%, 90%;
-  --bg-500: 0, 0%, 85%;
-  --bg-400: 0, 0%, 80%;
-  --bg-300: 0, 0%, 70%;
-  --bg-200: 0, 0%, 70%;
-  --font-700: 0, 0%, 7%;
-  --font-600: 0, 0%, 14%;
-  --font-500: 0, 0%, 28%;
-  --font-400: 0, 0%, 42%;
-  --font-300: 0, 0%, 56%;
-  --red-700: 0, 85%, 15%;
-  --red-500: 358, 99.9%, 42.9%;
-  --red-300: 0, 90%, 95%;
-  --green-700: 135, 85%, 15%;
-  --green-500: 127, 85%, 24%;
-  --green-300: 135, 100%, 95%;
-  --orange-700: 34, 100%, 30%;
-  --orange-500: 34, 100%, 65%;
-  --orange-300: 34, 100%, 95%;
-  --blue-700: 219, 100%, 35%;
-  --blue-500: 219, 85%, 62%;
-  --blue-300: 219, 86%, 92%;
-  --font-IBM-Plex: "IBM Plex Sans", sans-serif;
-  --pure-white: #fff;
-  --pure-black: #000;
-}
-
-body.dark-mode {
-  --primary-darker: 209, 100%, 20%;
-  --primary-dark: 209, 80%, 35%;
-  --primary: 209, 100%, 55%;
-  --primary-light: 209, 100%, 70%;
-  --primary-lighter: 209, 65%, 85%;
-  --accent-darker: 11, 100%, 20%;
-  --accent-dark: 11, 100%, 35%;
-  --accent: 11, 91%, 42%;
-  --accent-light: 11, 100%, 70%;
-  --accent-lighter: 11, 100%, 85%;
-  --font-700: 0, 0%, 98%;
-  --font-600: 0, 0%, 90%;
-  --font-500: 0, 0%, 85%;
-  --font-400: 0, 0%, 80%;
-  --font-300: 0, 0%, 70%;
-  --bg-700: 222, 16%, 12%;
-  --bg-600: 222, 16%, 18%;
-  --bg-500: 222, 16%, 24%;
-  --bg-400: 222, 16%, 32%;
-  --bg-300: 222, 16%, 36%;
-  --bg-200: 222, 16%, 42%;
-  --red-700: 0, 87%, 30%;
-  --red-500: 0, 100%, 80%;
-  --red-300: 0, 87%, 90%;
-  --green-700: 127, 90%, 19%;
-  --green-500: 127, 90%, 42%;
-  --green-300: 127, 90%, 85%;
-  --orange-700: 34, 95%, 30%;
-  --orange-500: 34, 95%, 65%;
-  --orange-300: 34, 95%, 95%;
-  --blue-700: 219, 100%, 35%;
-  --blue-500: 219, 85%, 62%;
-  --blue-300: 219, 86%, 92%;
-  --font-IBM-Plex: "IBM Plex Sans", sans-serif;
-  --pure-white: #fff;
-  --pure-black: #000;
-}
 
 body {
   margin: 0;
