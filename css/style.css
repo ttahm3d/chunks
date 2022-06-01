@@ -9,7 +9,7 @@ body {
   margin: 0;
   background-color: hsl(var(--bg-700));
   font-family: var(--font-IBM-Plex);
-  color: hsl(var(--font-600));
+  color: hsl(var(--font-700));
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@ body {
 .i-footer {
   margin-top: auto;
   padding: 1rem 2rem;
-  box-shadow: 0 0 2px hsl(var(--bg-400));
+  border-top: 1px solid hsl(var(--bg-300));
 }
 
 /* Header styles */
@@ -51,7 +51,7 @@ body {
   padding: 1rem 0;
   position: sticky;
   top: 0;
-  box-shadow: 0 0 2px hsl(var(--bg-400));
+  border-bottom: 1px solid hsl(var(--bg-300));
   z-index: 9;
 }
 
@@ -155,7 +155,7 @@ body {
   outline-offset: 2px;
   cursor: pointer;
   border: none;
-  background: hsl(var(--bg-700));
+  background: hsl(var(--bg-600));
   font-size: 1rem;
   margin: 0.75rem 0 0;
   border-bottom: 1px solid hsl(var(--font-600));
@@ -175,7 +175,6 @@ body {
 
 .component-example {
   background-color: hsla(var(--primary-lighter), 0.19);
-  border: 1px solid hsla(var(--primary), 0.76);
   padding: 1rem;
   margin: 0.5rem 0;
   border-radius: 0.25rem;

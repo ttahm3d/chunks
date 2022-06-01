@@ -125,7 +125,6 @@
 
 .red-300 {
   background-color: hsl(var(--red-300));
-  color: var(--pure-black);
 }
 
 .orange-700 {
@@ -140,7 +139,6 @@
 
 .orange-300 {
   background-color: hsl(var(--orange-300));
-  color: var(--pure-black);
 }
 
 .green-700 {
@@ -155,5 +153,4 @@
 
 .green-300 {
   background-color: hsl(var(--green-300));
-  color: var(--pure-black);
 }
