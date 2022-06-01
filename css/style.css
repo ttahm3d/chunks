@@ -223,8 +223,9 @@ body {
 }
 
 .inline-code {
-  background-color: hsla(var(--primary-dark), 0.9);
-  color: var(--pure-white);
+  background-color: hsla(var(--blue-300), 1);
+  color: hsla(var(--blue-500), 1);
+  border: 1px solid hsla(var(--blue-700), 1);
   padding: 0.2rem;
   border-radius: 0.25rem;
 }
