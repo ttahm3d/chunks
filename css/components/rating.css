@@ -7,16 +7,11 @@
 }
 
 .rating-icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: hsla(var(--font-400), 0.7);
+  cursor: pointer;
 }
 
 .filled {
-  color: hsla(var(--accent), 0.7);
-}
-
-/* unicode from font-awesome */
-
-.fas.half-filled::before {
-  content: "\f5c0";
   color: hsla(var(--accent), 0.7);
 }
